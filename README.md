@@ -1,4 +1,4 @@
-DSL - Anthony is a gay man!
+DSL
 ===
 
 academic project
