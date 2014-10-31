@@ -18,29 +18,29 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 1:
         return new ConceptDescriptorBuilder("ArduinoML.structure.Action").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").properties("target").references("component").create();
       case 2:
-        return new ConceptDescriptorBuilder("ArduinoML.structure.ArduinoML").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").children(new String[]{"rules"}, new boolean[]{true}).create();
+        return new ConceptDescriptorBuilder("ArduinoML.structure.ArduinoML").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").children(new String[]{"rules", "components"}, new boolean[]{true, true}).create();
       case 3:
         return new ConceptDescriptorBuilder("ArduinoML.structure.Component").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").abstract_().create();
       case 4:
         return new ConceptDescriptorBuilder("ArduinoML.structure.ComponentIN").super_("ArduinoML.structure.Component").parents("ArduinoML.structure.Component").children(new String[]{"pin"}, new boolean[]{true}).create();
       case 5:
-        return new ConceptDescriptorBuilder("ArduinoML.structure.ComponentOUT").super_("ArduinoML.structure.Component").parents("ArduinoML.structure.Component").children(new String[]{"pin"}, new boolean[]{true}).create();
+        return new ConceptDescriptorBuilder("ArduinoML.structure.ComponentOUT").super_("ArduinoML.structure.Component").parents("ArduinoML.structure.Component").children(new String[]{"pin"}, new boolean[]{false}).create();
       case 6:
         return new ConceptDescriptorBuilder("ArduinoML.structure.Condition").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").properties("expected").references("component").create();
       case 7:
         return new ConceptDescriptorBuilder("ArduinoML.structure.Decision").super_("ArduinoML.structure.AbstractRule").parents("ArduinoML.structure.AbstractRule").children(new String[]{"actions"}, new boolean[]{true}).create();
       case 8:
-        return new ConceptDescriptorBuilder("ArduinoML.structure.DigitalIN").super_("ArduinoML.structure.PinIN").parents("ArduinoML.structure.PinIN").create();
+        return new ConceptDescriptorBuilder("ArduinoML.structure.DigitalIN").super_("ArduinoML.structure.PinIN").parents("ArduinoML.structure.PinIN").final_().create();
       case 9:
-        return new ConceptDescriptorBuilder("ArduinoML.structure.DigitalOUT").super_("ArduinoML.structure.PinOUT").parents("ArduinoML.structure.PinOUT").create();
+        return new ConceptDescriptorBuilder("ArduinoML.structure.DigitalOUT").super_("ArduinoML.structure.PinOUT").parents("ArduinoML.structure.PinOUT").final_().create();
       case 10:
-        return new ConceptDescriptorBuilder("ArduinoML.structure.Exception").super_("ArduinoML.structure.AbstractRule").parents("ArduinoML.structure.AbstractRule").create();
+        return new ConceptDescriptorBuilder("ArduinoML.structure.Exception").super_("ArduinoML.structure.AbstractRule").parents("ArduinoML.structure.AbstractRule").properties("numError").create();
       case 11:
         return new ConceptDescriptorBuilder("ArduinoML.structure.Pin").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").properties("state", "pin").abstract_().create();
       case 12:
-        return new ConceptDescriptorBuilder("ArduinoML.structure.PinIN").super_("ArduinoML.structure.Pin").parents("ArduinoML.structure.Pin").create();
+        return new ConceptDescriptorBuilder("ArduinoML.structure.PinIN").super_("ArduinoML.structure.Pin").parents("ArduinoML.structure.Pin").abstract_().create();
       case 13:
-        return new ConceptDescriptorBuilder("ArduinoML.structure.PinOUT").super_("ArduinoML.structure.Pin").parents("ArduinoML.structure.Pin").create();
+        return new ConceptDescriptorBuilder("ArduinoML.structure.PinOUT").super_("ArduinoML.structure.Pin").parents("ArduinoML.structure.Pin").abstract_().create();
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);
     }

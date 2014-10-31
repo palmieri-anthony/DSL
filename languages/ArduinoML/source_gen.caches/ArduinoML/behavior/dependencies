@@ -36,8 +36,6 @@
     <classNode dependClassName="ArduinoML.behavior.DigitalIN_BehaviorDescriptor" />
     <classNode dependClassName="ArduinoML.behavior.DigitalOUT_BehaviorDescriptor" />
     <classNode dependClassName="ArduinoML.behavior.Exception_BehaviorDescriptor" />
-    <classNode dependClassName="ArduinoML.behavior.PinIN_BehaviorDescriptor" />
-    <classNode dependClassName="ArduinoML.behavior.PinOUT_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorDescriptor" />

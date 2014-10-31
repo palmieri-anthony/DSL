@@ -16,17 +16,42 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   public Collection<ConceptEditor> getEditors(ConceptDescriptor descriptor) {
     switch (Arrays.binarySearch(stringSwitchCases_xbvbvu_a0a0b, descriptor.getConceptFqName())) {
       case 0:
+        return Collections.<ConceptEditor>singletonList(new Action_Editor());
+      case 1:
+        return Collections.<ConceptEditor>singletonList(new Component_Editor());
+      case 2:
+        return Collections.<ConceptEditor>singletonList(new ComponentIN_Editor());
+      case 3:
+        return Collections.<ConceptEditor>singletonList(new ComponentOUT_Editor());
+      case 4:
+        return Collections.<ConceptEditor>singletonList(new Condition_Editor());
+      case 5:
         return Collections.<ConceptEditor>singletonList(new Decision_Editor());
+      case 6:
+        return Collections.<ConceptEditor>singletonList(new DigitalIN_Editor());
+      case 7:
+        return Collections.<ConceptEditor>singletonList(new DigitalOUT_Editor());
+      case 8:
+        return Collections.<ConceptEditor>singletonList(new Pin_Editor());
       default:
     }
     return Collections.<ConceptEditor>emptyList();
   }
 
   public Collection<ConceptEditorComponent> getEditorComponents(ConceptDescriptor descriptor, String editorComponentId) {
+    switch (Arrays.binarySearch(stringSwitchCases_xbvbvu_a0a0c, descriptor.getConceptFqName())) {
+      case 0:
+        if ("ArduinoML.editor.Component".equals(editorComponentId)) {
+          return Collections.<ConceptEditorComponent>singletonList(new Component());
+        }
+        break;
+      default:
+    }
     return Collections.<ConceptEditorComponent>emptyList();
   }
 
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"ArduinoML.structure.Decision"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"ArduinoML.structure.Action", "ArduinoML.structure.Component", "ArduinoML.structure.ComponentIN", "ArduinoML.structure.ComponentOUT", "ArduinoML.structure.Condition", "ArduinoML.structure.Decision", "ArduinoML.structure.DigitalIN", "ArduinoML.structure.DigitalOUT", "ArduinoML.structure.Pin"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0c = new String[]{"ArduinoML.structure.Component"};
 }

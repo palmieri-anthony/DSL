@@ -26,10 +26,6 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new ComponentIN_BehaviorDescriptor();
       case 8:
         return new Exception_BehaviorDescriptor();
-      case 9:
-        return new PinIN_BehaviorDescriptor();
-      case 10:
-        return new PinOUT_BehaviorDescriptor();
       case 6:
         return new DigitalIN_BehaviorDescriptor();
       case 7:
@@ -39,5 +35,5 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
     }
   }
 
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"ArduinoML.structure.Action", "ArduinoML.structure.ArduinoML", "ArduinoML.structure.ComponentIN", "ArduinoML.structure.ComponentOUT", "ArduinoML.structure.Condition", "ArduinoML.structure.Decision", "ArduinoML.structure.DigitalIN", "ArduinoML.structure.DigitalOUT", "ArduinoML.structure.Exception", "ArduinoML.structure.PinIN", "ArduinoML.structure.PinOUT"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"ArduinoML.structure.Action", "ArduinoML.structure.ArduinoML", "ArduinoML.structure.ComponentIN", "ArduinoML.structure.ComponentOUT", "ArduinoML.structure.Condition", "ArduinoML.structure.Decision", "ArduinoML.structure.DigitalIN", "ArduinoML.structure.DigitalOUT", "ArduinoML.structure.Exception"};
 }
