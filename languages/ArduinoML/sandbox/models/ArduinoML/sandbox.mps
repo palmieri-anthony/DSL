@@ -24,26 +24,6 @@
         <property name="pin" nameId="upjk.6957858817575165709" value="3" />
       </node>
     </node>
-    <node role="rules" roleId="upjk.6957858817574877671" type="upjk.Decision" typeId="upjk.5347434755052293742" id="5495481488340518304" nodeInfo="ng">
-      <node role="actions" roleId="upjk.6957858817575162257" type="upjk.Action" typeId="upjk.5347434755052293834" id="5495481488340573839" nodeInfo="ng" />
-      <node role="actions" roleId="upjk.6957858817575162257" type="upjk.Action" typeId="upjk.5347434755052293834" id="5495481488340518328" nodeInfo="ng">
-        <link role="component" roleId="upjk.6957858817575162263" targetNodeId="5495481488340518319" resolveInfo="ok" />
-      </node>
-      <node role="actions" roleId="upjk.6957858817575162257" type="upjk.Action" typeId="upjk.5347434755052293834" id="5495481488340545945" nodeInfo="ng" />
-      <node role="actions" roleId="upjk.6957858817575162257" type="upjk.Action" typeId="upjk.5347434755052293834" id="5495481488340545948" nodeInfo="ng" />
-      <node role="actions" roleId="upjk.6957858817575162257" type="upjk.Action" typeId="upjk.5347434755052293834" id="5495481488340545952" nodeInfo="ng" />
-      <node role="conditions" roleId="upjk.6957858817575162259" type="upjk.Condition" typeId="upjk.5347434755052293888" id="5495481488340518310" nodeInfo="ng">
-        <link role="component" roleId="upjk.6957858817575162261" targetNodeId="5495481488340492221" resolveInfo="ko" />
-      </node>
-    </node>
-    <node role="rules" roleId="upjk.6957858817574877671" type="upjk.Decision" typeId="upjk.5347434755052293742" id="5495481488340573917" nodeInfo="ng">
-      <node role="actions" roleId="upjk.6957858817575162257" type="upjk.Action" typeId="upjk.5347434755052293834" id="5495481488340573920" nodeInfo="ng" />
-      <node role="conditions" roleId="upjk.6957858817575162259" type="upjk.Condition" typeId="upjk.5347434755052293888" id="5495481488340573923" nodeInfo="ng">
-        <property name="expected" nameId="upjk.6957858817575162230" value="HIGH" />
-      </node>
-      <node role="conditions" roleId="upjk.6957858817575162259" type="upjk.Condition" typeId="upjk.5347434755052293888" id="5495481488340573936" nodeInfo="ng" />
-      <node role="conditions" roleId="upjk.6957858817575162259" type="upjk.Condition" typeId="upjk.5347434755052293888" id="5495481488340573939" nodeInfo="ng" />
-    </node>
   </root>
 </model>
 

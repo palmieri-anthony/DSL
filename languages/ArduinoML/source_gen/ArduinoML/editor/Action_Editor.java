@@ -86,7 +86,7 @@ public class Action_Editor extends DefaultNodeEditor {
   }
 
   private EditorCell createConstant_8bscln_b0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "equals");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "passTo");
     editorCell.setCellId("Constant_8bscln_b0");
     editorCell.setDefaultText("");
     return editorCell;

@@ -10,14 +10,8 @@
   <import index="hfuk" modelUID="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpf8" modelUID="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" version="2" implicit="yes" />
-  <import index="upjk" modelUID="r:92c44410-65d7-453c-aed5-43b797abae4b(ArduinoML.structure)" version="1" implicit="yes" />
   <root type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="6983057834610541531" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="main" />
-  </root>
-  <root type="tpf8.TemplateDeclaration" typeId="tpf8.1092059087312" id="6957858817575377698" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="reduce_Exception" />
-    <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="upjk.6957858817574878885" resolveInfo="Exception" />
-    <node role="contentNode" roleId="tpf8.1092060348987" type="tpck.BaseConcept" typeId="tpck.1133920641626" id="6957858817575377699" nodeInfo="ng" />
   </root>
 </model>
 

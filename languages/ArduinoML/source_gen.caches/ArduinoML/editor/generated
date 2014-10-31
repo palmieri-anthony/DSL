@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="aid15shtqy2g6schmbgyc7irj301eze">
+<dependencies version="2" modelHash="8uajzhgbrfcqrrb2x2qemgsambji6nz">
   <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cellLayout(MPS.Editor/jetbrains.mps.nodeEditor.cellLayout@java_stub)" />
   <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" />
   <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.descriptor(MPS.Editor/jetbrains.mps.openapi.editor.descriptor@java_stub)" />
@@ -54,7 +54,7 @@
     <dep model="r:92c44410-65d7-453c-aed5-43b797abae4b(ArduinoML.structure)" />
     <file name="Condition_Editor.java" />
   </source>
-  <source id="5495481488340434207" name="Action_Editor" hash="-7kps8soqnkvb3opy1lz422w5d7fsztm">
+  <source id="5495481488340434207" name="Action_Editor" hash="7dehrxqvha2fmwjv8x1jpm27cnfof1r">
     <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" />
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c8959029f(jetbrains.mps.lang.editor.generator.baseLanguage.template.main@generator)" />
