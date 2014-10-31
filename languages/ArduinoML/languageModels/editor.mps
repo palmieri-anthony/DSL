@@ -18,6 +18,7 @@
           <property name="text" nameId="tpc2.1073389577007" value="when" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="5495481488340434100" nodeInfo="ng">
+          <property name="separatorText" nameId="tpc2.1140524450557" value=" AND" />
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="upjk.6957858817575162259" />
           <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="5495481488340434102" nodeInfo="nn" />
         </node>
@@ -38,6 +39,9 @@
           <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="5495481488340559919" nodeInfo="ng">
             <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="upjk.6957858817575162257" />
             <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="5495481488340559921" nodeInfo="nn" />
+            <node role="emptyCellModel" roleId="tpc2.1140524464359" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8159266483479366275" nodeInfo="nn">
+              <property name="text" nameId="tpc2.1073389577007" value="and" />
+            </node>
           </node>
           <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="5495481488340559906" nodeInfo="nn" />
         </node>
