@@ -8,7 +8,6 @@
   <sourcePath />
   <usedLanguages>
     <usedLanguage>89165a04-ff0e-41f7-ae38-9bda96804b03(ArduinoML)</usedLanguage>
-    <usedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</usedLanguage>
   </usedLanguages>
 </solution>
 
