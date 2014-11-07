@@ -18,6 +18,18 @@
         <property name="pin" nameId="upjk.6957858817575165709" value="23" />
       </node>
     </node>
+    <node role="components" roleId="upjk.5495481488340174672" type="upjk.ComponentIN" typeId="upjk.5347434755052293927" id="170812001322846729" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="titi" />
+      <node role="pin" roleId="upjk.6957858817575165741" type="upjk.DigitalIN" typeId="upjk.6957858817575165802" id="170812001322880373" nodeInfo="ng">
+        <property name="pin" nameId="upjk.6957858817575165709" value="54" />
+      </node>
+    </node>
+    <node role="components" roleId="upjk.5495481488340174672" type="upjk.ComponentIN" typeId="upjk.5347434755052293927" id="170812001322897352" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="pourt" />
+      <node role="pin" roleId="upjk.6957858817575165741" type="upjk.DigitalIN" typeId="upjk.6957858817575165802" id="170812001322897364" nodeInfo="ng">
+        <property name="pin" nameId="upjk.6957858817575165709" value="58" />
+      </node>
+    </node>
   </root>
 </model>
 

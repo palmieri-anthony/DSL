@@ -19,4 +19,6 @@ public abstract class Component_BehaviorDescriptor extends BaseConcept_BehaviorD
   public String getConceptFqName() {
     return "ArduinoML.structure.Component";
   }
+
+  public abstract String virtual_ggg_170812001322983771(SNode thisNode);
 }
