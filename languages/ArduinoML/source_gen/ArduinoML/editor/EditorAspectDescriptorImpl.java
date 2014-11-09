@@ -20,20 +20,18 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
       case 1:
         return Collections.<ConceptEditor>singletonList(new ArduinoML_Editor());
       case 2:
-        return Collections.<ConceptEditor>singletonList(new Component_Editor());
-      case 3:
         return Collections.<ConceptEditor>singletonList(new ComponentIN_Editor());
-      case 4:
+      case 3:
         return Collections.<ConceptEditor>singletonList(new ComponentOUT_Editor());
-      case 5:
+      case 4:
         return Collections.<ConceptEditor>singletonList(new Condition_Editor());
-      case 6:
+      case 5:
         return Collections.<ConceptEditor>singletonList(new Decision_Editor());
-      case 7:
+      case 6:
         return Collections.<ConceptEditor>singletonList(new DigitalIN_Editor());
-      case 8:
+      case 7:
         return Collections.<ConceptEditor>singletonList(new DigitalOUT_Editor());
-      case 9:
+      case 8:
         return Collections.<ConceptEditor>singletonList(new Pin_Editor());
       default:
     }
@@ -54,6 +52,6 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
 
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"ArduinoML.structure.Action", "ArduinoML.structure.ArduinoML", "ArduinoML.structure.Component", "ArduinoML.structure.ComponentIN", "ArduinoML.structure.ComponentOUT", "ArduinoML.structure.Condition", "ArduinoML.structure.Decision", "ArduinoML.structure.DigitalIN", "ArduinoML.structure.DigitalOUT", "ArduinoML.structure.Pin"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"ArduinoML.structure.Action", "ArduinoML.structure.ArduinoML", "ArduinoML.structure.ComponentIN", "ArduinoML.structure.ComponentOUT", "ArduinoML.structure.Condition", "ArduinoML.structure.Decision", "ArduinoML.structure.DigitalIN", "ArduinoML.structure.DigitalOUT", "ArduinoML.structure.Pin"};
   private static String[] stringSwitchCases_xbvbvu_a0a0c = new String[]{"ArduinoML.structure.Component"};
 }

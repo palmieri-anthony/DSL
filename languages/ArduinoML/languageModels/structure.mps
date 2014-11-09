@@ -143,7 +143,7 @@
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5347434755052016177" resolveInfo="AbstractRule" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6957858817575369107" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="numError" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6957858817575165712" nodeInfo="ig">
