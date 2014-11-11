@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="ArduinoML#6983057834610541530" uuid="5dc230b4-9d14-4129-8ce0-e1751c5aded4">
+    <generator name="" generatorUID="ArduinoML#6983057834610541530" uuid="5dc230b4-9d14-4129-8ce0-e1751c5aded4">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -15,6 +15,7 @@
       </models>
       <external-templates />
       <dependencies>
+        <dependency reexport="false">89165a04-ff0e-41f7-ae38-9bda96804b03(ArduinoML)</dependency>
         <dependency reexport="false">a1250a4d-c090-42c3-ad7c-d298a3357dd4(jetbrains.mps.make.runtime)</dependency>
       </dependencies>
       <usedLanguages>

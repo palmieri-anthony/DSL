@@ -41,20 +41,6 @@
           </node>
           <node role="part" roleId="2omo.1237306115446" type="2omo.NewLineAppendPart" typeId="2omo.1237305208784" id="4453370684997091032" nodeInfo="ng" />
         </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="3691149528040172207" nodeInfo="nn">
-          <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.StatementCommentPart" typeId="tpee.6329021646629175143" id="3691149528040172213" nodeInfo="nn">
-            <node role="commentedStatement" roleId="tpee.6329021646629175144" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="31221120725946074" nodeInfo="nn">
-              <node role="part" roleId="2omo.1237306115446" type="2omo.CollectionAppendPart" typeId="2omo.1237305491868" id="31221120725946205" nodeInfo="ng">
-                <node role="list" roleId="2omo.1237305945551" type="tpee.DotExpression" typeId="tpee.1197027756228" id="31221120725946328" nodeInfo="nn">
-                  <node role="operand" roleId="tpee.1197027771414" type="2omo.NodeParameter" typeId="2omo.1233748055915" id="31221120725946227" nodeInfo="nn" />
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="3691149528040237872" nodeInfo="nn">
-                    <link role="link" roleId="tp25.1138056546658" targetNodeId="upjk.5495481488340174672" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="4453370684997091269" nodeInfo="nn">
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="4453370684997091377" nodeInfo="ng">
             <property name="value" nameId="2omo.1237305576108" value="void loop() {" />

@@ -68,9 +68,6 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="5495481488340174932" nodeInfo="ng">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="upjk.6957858817575162230" resolveInfo="expected" />
       </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5941665616066354102" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="compo" />
-      </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="5495481488340174899" nodeInfo="nn" />
     </node>
   </root>
@@ -87,7 +84,7 @@
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5495481488340518477" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="passTo" />
+        <property name="text" nameId="tpc2.1073389577007" value="pass to" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="5495481488340434251" nodeInfo="ng">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="upjk.6957858817575162228" resolveInfo="target" />
