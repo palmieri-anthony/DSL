@@ -12,28 +12,32 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
 
   public BehaviorDescriptor getDescriptor(String fqName) {
     switch (Arrays.binarySearch(stringSwitchCases_846f5o_a0a0b, fqName)) {
-      case 1:
-        return new ArduinoML_BehaviorDescriptor();
-      case 5:
-        return new Decision_BehaviorDescriptor();
-      case 0:
-        return new Action_BehaviorDescriptor();
-      case 4:
-        return new Condition_BehaviorDescriptor();
-      case 3:
-        return new ComponentOUT_BehaviorDescriptor();
       case 2:
-        return new ComponentIN_BehaviorDescriptor();
-      case 8:
-        return new Exception_BehaviorDescriptor();
+        return new ArduinoML_BehaviorDescriptor();
       case 6:
-        return new DigitalIN_BehaviorDescriptor();
+        return new Decision_BehaviorDescriptor();
+      case 1:
+        return new ActionOnComponent_BehaviorDescriptor();
+      case 5:
+        return new Condition_BehaviorDescriptor();
+      case 4:
+        return new ComponentOUT_BehaviorDescriptor();
+      case 3:
+        return new ComponentIN_BehaviorDescriptor();
+      case 9:
+        return new Exception_BehaviorDescriptor();
       case 7:
+        return new DigitalIN_BehaviorDescriptor();
+      case 8:
         return new DigitalOUT_BehaviorDescriptor();
+      case 10:
+        return new Module_BehaviorDescriptor();
+      case 0:
+        return new ActionCallModule_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
 
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"ArduinoML.structure.Action", "ArduinoML.structure.ArduinoML", "ArduinoML.structure.ComponentIN", "ArduinoML.structure.ComponentOUT", "ArduinoML.structure.Condition", "ArduinoML.structure.Decision", "ArduinoML.structure.DigitalIN", "ArduinoML.structure.DigitalOUT", "ArduinoML.structure.Exception"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"ArduinoML.structure.ActionCallModule", "ArduinoML.structure.ActionOnComponent", "ArduinoML.structure.ArduinoML", "ArduinoML.structure.ComponentIN", "ArduinoML.structure.ComponentOUT", "ArduinoML.structure.Condition", "ArduinoML.structure.Decision", "ArduinoML.structure.DigitalIN", "ArduinoML.structure.DigitalOUT", "ArduinoML.structure.Exception", "ArduinoML.structure.Module"};
 }

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="ArduinoML.sandbox.ok" file="ok" />
+  <dependency className="ArduinoML.sandbox.DualCheck-Alarm" file="DualCheck-Alarm" />
+  <dependency className="ArduinoML.sandbox.SimpleAlarm" file="SimpleAlarm" />
+  <dependency className="ArduinoML.sandbox.TestMultiBranches" file="TestMultiBranches" />
 </dependenciesRoot>
 

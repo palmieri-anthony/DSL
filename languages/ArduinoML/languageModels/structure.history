@@ -12,5 +12,23 @@
     </dependencies>
     <rename id="upjk.6957858817575162263" type="REFERENCE" from="compoenent" to="component" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="upjk" modelUID="r:92c44410-65d7-453c-aed5-43b797abae4b(ArduinoML.structure)" version="1" />
+    </dependencies>
+    <rename id="upjk.5347434755052014377" type="CONCEPT" from="ArduinoML" to="Module" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="upjk" modelUID="r:92c44410-65d7-453c-aed5-43b797abae4b(ArduinoML.structure)" version="2" />
+    </dependencies>
+    <rename id="upjk.5347434755052014377" type="CONCEPT" from="Module" to="ArduinoML" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="upjk" modelUID="r:92c44410-65d7-453c-aed5-43b797abae4b(ArduinoML.structure)" version="3" />
+    </dependencies>
+    <rename id="upjk.5347434755052293834" type="CONCEPT" from="Action" to="ActionOnComponent" />
+  </StructureModification>
 </history>
 

@@ -33,6 +33,7 @@
   <dependencies>
     <dependency reexport="false">89165a04-ff0e-41f7-ae38-9bda96804b03(ArduinoML)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>96ee7a94-411d-4cf8-9b94-96cad7e52411(jetbrains.mps.baseLanguage.jdk7)</usedLanguage>

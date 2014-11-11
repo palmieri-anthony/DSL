@@ -9,16 +9,16 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
-import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
+import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
 import jetbrains.mps.smodel.action.NodeFactoryManager;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultReferenceSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
-import jetbrains.mps.openapi.editor.style.Style;
-import jetbrains.mps.editor.runtime.style.StyleImpl;
-import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
 public class ComponentIN_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -49,8 +49,11 @@ public class ComponentIN_Editor extends DefaultNodeEditor {
 
   private EditorCell createRefNodeList_xkte51_c0(EditorContext editorContext, SNode node) {
     AbstractCellListHandler handler = new ComponentIN_Editor.pinListHandler_xkte51_c0(node, "pin", editorContext);
-    EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
+    EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Horizontal(), false);
     editorCell.setCellId("refNodeList_pin");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
+    editorCell.getStyle().putAll(style);
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }

@@ -2,7 +2,7 @@
 <model modelUID="r:793552cd-2fcc-4de6-b855-4dd5e2957b96(ArduinoML.MultiStateAlarm)">
   <persistence version="8" />
   <language namespace="89165a04-ff0e-41f7-ae38-9bda96804b03(ArduinoML)" />
-  <import index="upjk" modelUID="r:92c44410-65d7-453c-aed5-43b797abae4b(ArduinoML.structure)" version="1" implicit="yes" />
+  <import index="upjk" modelUID="r:92c44410-65d7-453c-aed5-43b797abae4b(ArduinoML.structure)" version="4" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <root type="upjk.ArduinoML" typeId="upjk.5347434755052014377" id="4453370684998012904" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="MultiStateAlarm" />
@@ -27,9 +27,9 @@
         <property name="pin" nameId="upjk.6957858817575165709" value="12" />
       </node>
     </node>
-    <node role="rules" roleId="upjk.6957858817574877671" type="upjk.Decision" typeId="upjk.5347434755052293742" id="4453370684998012992" nodeInfo="ng">
+    <node role="rules" type="upjk.Decision" typeId="upjk.5347434755052293742" id="4453370684998012992" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="d1" />
-      <node role="actions" roleId="upjk.6957858817575162257" type="upjk.Action" typeId="upjk.5347434755052293834" id="4453370684998013005" nodeInfo="ng">
+      <node role="actions" roleId="upjk.6957858817575162257" type="upjk.ActionOnComponent" typeId="upjk.5347434755052293834" id="4453370684998013005" nodeInfo="ng">
         <link role="component" roleId="upjk.6957858817575162263" targetNodeId="4453370684998012951" resolveInfo="buzzer" />
       </node>
       <node role="conditions" roleId="upjk.6957858817575162259" type="upjk.Condition" typeId="upjk.5347434755052293888" id="4453370684998012994" nodeInfo="ng">
@@ -44,12 +44,12 @@
         <link role="component" roleId="upjk.6957858817575162261" targetNodeId="4453370684998012951" resolveInfo="buzzer" />
       </node>
     </node>
-    <node role="rules" roleId="upjk.6957858817574877671" type="upjk.Decision" typeId="upjk.5347434755052293742" id="4453370684998013017" nodeInfo="ng">
+    <node role="rules" type="upjk.Decision" typeId="upjk.5347434755052293742" id="4453370684998013017" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="d2" />
-      <node role="actions" roleId="upjk.6957858817575162257" type="upjk.Action" typeId="upjk.5347434755052293834" id="4453370684998013041" nodeInfo="ng">
+      <node role="actions" roleId="upjk.6957858817575162257" type="upjk.ActionOnComponent" typeId="upjk.5347434755052293834" id="4453370684998013041" nodeInfo="ng">
         <link role="component" roleId="upjk.6957858817575162263" targetNodeId="4453370684998012934" resolveInfo="led" />
       </node>
-      <node role="actions" roleId="upjk.6957858817575162257" type="upjk.Action" typeId="upjk.5347434755052293834" id="4453370684998013047" nodeInfo="ng">
+      <node role="actions" roleId="upjk.6957858817575162257" type="upjk.ActionOnComponent" typeId="upjk.5347434755052293834" id="4453370684998013047" nodeInfo="ng">
         <property name="target" nameId="upjk.6957858817575162228" value="LOW" />
         <link role="component" roleId="upjk.6957858817575162263" targetNodeId="4453370684998012951" resolveInfo="buzzer" />
       </node>
@@ -64,9 +64,9 @@
         <link role="component" roleId="upjk.6957858817575162261" targetNodeId="4453370684998012951" resolveInfo="buzzer" />
       </node>
     </node>
-    <node role="rules" roleId="upjk.6957858817574877671" type="upjk.Decision" typeId="upjk.5347434755052293742" id="4453370684998013072" nodeInfo="ng">
+    <node role="rules" type="upjk.Decision" typeId="upjk.5347434755052293742" id="4453370684998013072" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="d3" />
-      <node role="actions" roleId="upjk.6957858817575162257" type="upjk.Action" typeId="upjk.5347434755052293834" id="4453370684998013125" nodeInfo="ng">
+      <node role="actions" roleId="upjk.6957858817575162257" type="upjk.ActionOnComponent" typeId="upjk.5347434755052293834" id="4453370684998013125" nodeInfo="ng">
         <property name="target" nameId="upjk.6957858817575162228" value="LOW" />
         <link role="component" roleId="upjk.6957858817575162263" targetNodeId="4453370684998012934" resolveInfo="led" />
       </node>
