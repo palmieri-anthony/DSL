@@ -30,5 +30,29 @@
     </dependencies>
     <rename id="upjk.5347434755052293834" type="CONCEPT" from="Action" to="ActionOnComponent" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="upjk" modelUID="r:92c44410-65d7-453c-aed5-43b797abae4b(ArduinoML.structure)" version="4" />
+    </dependencies>
+    <rename id="upjk.6957858817575165741" type="CHILD" from="pin" to="pins" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="upjk" modelUID="r:92c44410-65d7-453c-aed5-43b797abae4b(ArduinoML.structure)" version="5" />
+    </dependencies>
+    <rename id="upjk.6957858817575165771" type="CHILD" from="pin" to="pins" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="upjk" modelUID="r:92c44410-65d7-453c-aed5-43b797abae4b(ArduinoML.structure)" version="6" />
+    </dependencies>
+    <rename id="upjk.6957858817575165709" type="PROPERTY" from="pin" to="number" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="upjk" modelUID="r:92c44410-65d7-453c-aed5-43b797abae4b(ArduinoML.structure)" version="7" />
+    </dependencies>
+    <rename id="upjk.3276207124034553439" type="PROPERTY" from="milliSecondes" to="timeInMilliSecondes" />
+  </StructureModification>
 </history>
 
