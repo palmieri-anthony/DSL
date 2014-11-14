@@ -11,10 +11,6 @@ import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
-import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
-import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
-import jetbrains.mps.smodel.IOperationContext;
-import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
@@ -49,46 +45,19 @@ public class Decision_Editor extends DefaultNodeEditor {
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(this.createConstant_hep6zc_a0a(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_hep6zc_b0a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_hep6zc_c0a(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_hep6zc_d0a(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_hep6zc_b0a(editorContext, node));
     return editorCell;
   }
 
   private EditorCell createConstant_hep6zc_a0a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "rule:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "when");
     editorCell.setCellId("Constant_hep6zc_a0a");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createProperty_hep6zc_b0a(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("name");
-    provider.setNoTargetText("<no name>");
-    EditorCell editorCell;
-    editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_name");
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    Class attributeKind = provider.getRoleAttributeClass();
-    if (attributeConcept != null) {
-      IOperationContext opContext = editorContext.getOperationContext();
-      EditorManager manager = EditorManager.getInstanceFromContext(opContext);
-      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
-    } else
-    return editorCell;
-  }
-
-  private EditorCell createConstant_hep6zc_c0a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "when");
-    editorCell.setCellId("Constant_hep6zc_c0a");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-
-  private EditorCell createRefNodeList_hep6zc_d0a(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Decision_Editor.conditionsListHandler_hep6zc_d0a(node, "conditions", editorContext);
+  private EditorCell createRefNodeList_hep6zc_b0a(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new Decision_Editor.conditionsListHandler_hep6zc_b0a(node, "conditions", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Horizontal(), false);
     editorCell.setCellId("refNodeList_conditions");
     Style style = new StyleImpl();
@@ -98,8 +67,8 @@ public class Decision_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static class conditionsListHandler_hep6zc_d0a extends RefNodeListHandler {
-    public conditionsListHandler_hep6zc_d0a(SNode ownerNode, String childRole, EditorContext context) {
+  private static class conditionsListHandler_hep6zc_b0a extends RefNodeListHandler {
+    public conditionsListHandler_hep6zc_b0a(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 

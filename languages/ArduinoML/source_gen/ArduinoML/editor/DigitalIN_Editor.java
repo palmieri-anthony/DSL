@@ -18,11 +18,11 @@ public class DigitalIN_Editor extends DefaultNodeEditor {
 
   private EditorCell createProperty_h1kdpz_a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("pin");
-    provider.setNoTargetText("<no pin>");
+    provider.setRole("number");
+    provider.setNoTargetText("<no number>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_pin");
+    editorCell.setCellId("property_number");
     editorCell.setBig(true);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();

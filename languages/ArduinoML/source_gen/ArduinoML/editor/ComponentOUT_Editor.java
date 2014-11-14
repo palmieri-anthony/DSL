@@ -48,9 +48,9 @@ public class ComponentOUT_Editor extends DefaultNodeEditor {
   }
 
   private EditorCell createRefNodeList_s20hf1_c0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new ComponentOUT_Editor.pinListHandler_s20hf1_c0(node, "pin", editorContext);
+    AbstractCellListHandler handler = new ComponentOUT_Editor.pinsListHandler_s20hf1_c0(node, "pins", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Horizontal(), false);
-    editorCell.setCellId("refNodeList_pin");
+    editorCell.setCellId("refNodeList_pins");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
@@ -58,8 +58,8 @@ public class ComponentOUT_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static class pinListHandler_s20hf1_c0 extends RefNodeListHandler {
-    public pinListHandler_s20hf1_c0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class pinsListHandler_s20hf1_c0 extends RefNodeListHandler {
+    public pinsListHandler_s20hf1_c0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <unitInfo fileName="AbstractAction_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="ArduinoML.behavior.AbstractAction_BehaviorDescriptor" />
-  <unitInfo fileName="AbstractRule_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="ArduinoML.behavior.AbstractRule_BehaviorDescriptor" />
+  <unitInfo fileName="AbstractRule_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="ArduinoML.behavior.AbstractRule_BehaviorDescriptor" />
   <unitInfo fileName="ActionCallModule_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="ArduinoML.behavior.ActionCallModule_BehaviorDescriptor" />
   <unitInfo fileName="ActionOnComponent_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="ArduinoML.behavior.ActionOnComponent_BehaviorDescriptor" />
   <unitInfo fileName="ArduinoML_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="ArduinoML.behavior.ArduinoML_BehaviorDescriptor" />
-  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="44" endPosition="0" unitName="ArduinoML.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="46" endPosition="0" unitName="ArduinoML.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="Break_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="ArduinoML.behavior.Break_BehaviorDescriptor" />
   <unitInfo fileName="ComponentIN_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="ArduinoML.behavior.ComponentIN_BehaviorDescriptor" />
   <unitInfo fileName="ComponentOUT_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="ArduinoML.behavior.ComponentOUT_BehaviorDescriptor" />
   <unitInfo fileName="Component_BehaviorDescriptor.java" startLine="11" startPosition="0" endLine="26" endPosition="0" unitName="ArduinoML.behavior.Component_BehaviorDescriptor" />
@@ -13,7 +14,7 @@
   <unitInfo fileName="Decision_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="ArduinoML.behavior.Decision_BehaviorDescriptor" />
   <unitInfo fileName="DigitalIN_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="20" endPosition="0" unitName="ArduinoML.behavior.DigitalIN_BehaviorDescriptor" />
   <unitInfo fileName="DigitalOUT_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="20" endPosition="0" unitName="ArduinoML.behavior.DigitalOUT_BehaviorDescriptor" />
-  <unitInfo fileName="Exception_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="ArduinoML.behavior.Exception_BehaviorDescriptor" />
+  <unitInfo fileName="Exception_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="ArduinoML.behavior.Exception_BehaviorDescriptor" />
   <unitInfo fileName="Module_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="ArduinoML.behavior.Module_BehaviorDescriptor" />
   <unitInfo fileName="PinIN_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="ArduinoML.behavior.PinIN_BehaviorDescriptor" />
   <unitInfo fileName="PinOUT_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="ArduinoML.behavior.PinOUT_BehaviorDescriptor" />
@@ -40,11 +41,11 @@
     <unitInfo nodeId="170812001322983006" fileName="Component_Behavior.java" startLine="11" startPosition="0" endLine="25" endPosition="0" unitName="ArduinoML.behavior.Component_Behavior" />
   </root>
   <root nodeRef="r:c64d610f-c073-4e0b-bbbd-2c671d635d55(ArduinoML.behavior)/170812001322983832">
-    <nodeInfo nodeId="4453370684997362901" fileName="ComponentIN_Behavior.java" startLine="13" startPosition="81" endLine="14" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4453370684997362901" fileName="ComponentIN_Behavior.java" startLine="13" startPosition="81" endLine="14" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="170812001322983832" fileName="ComponentIN_Behavior.java" startLine="10" startPosition="0" endLine="12" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
     <nodeInfo nodeId="170812001322983832" fileName="ComponentIN_Behavior.java" startLine="13" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getPins_4453370684997361065#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/List;" />
     <scopeInfo nodeId="170812001322983834" fileName="ComponentIN_Behavior.java" startLine="10" startPosition="43" endLine="10" endPosition="43" />
-    <scopeInfo nodeId="4453370684997362895" fileName="ComponentIN_Behavior.java" startLine="13" startPosition="81" endLine="14" endPosition="61" />
+    <scopeInfo nodeId="4453370684997362895" fileName="ComponentIN_Behavior.java" startLine="13" startPosition="81" endLine="14" endPosition="62" />
     <scopeInfo nodeId="170812001322983832" fileName="ComponentIN_Behavior.java" startLine="10" startPosition="0" endLine="12" endPosition="0">
       <varInfo nodeId="170812001322983832" varName="thisNode" />
     </scopeInfo>
@@ -54,8 +55,8 @@
     <unitInfo nodeId="170812001322983832" fileName="ComponentIN_Behavior.java" startLine="9" startPosition="0" endLine="17" endPosition="0" unitName="ArduinoML.behavior.ComponentIN_Behavior" />
   </root>
   <root nodeRef="r:c64d610f-c073-4e0b-bbbd-2c671d635d55(ArduinoML.behavior)/170812001322992336">
-    <nodeInfo nodeId="4453370684997361169" fileName="ComponentOUT_Behavior.java" startLine="13" startPosition="81" endLine="14" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4453370684997361152" fileName="ComponentOUT_Behavior.java" startLine="14" startPosition="61" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="4453370684997361169" fileName="ComponentOUT_Behavior.java" startLine="13" startPosition="81" endLine="14" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4453370684997361152" fileName="ComponentOUT_Behavior.java" startLine="14" startPosition="62" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
     <nodeInfo nodeId="170812001322992336" fileName="ComponentOUT_Behavior.java" startLine="10" startPosition="0" endLine="12" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
     <nodeInfo nodeId="170812001322992336" fileName="ComponentOUT_Behavior.java" startLine="13" startPosition="0" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getPins_4453370684997361065#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/List;" />
     <scopeInfo nodeId="170812001322992338" fileName="ComponentOUT_Behavior.java" startLine="10" startPosition="43" endLine="10" endPosition="43" />
@@ -67,6 +68,17 @@
       <varInfo nodeId="170812001322992336" varName="thisNode" />
     </scopeInfo>
     <unitInfo nodeId="170812001322992336" fileName="ComponentOUT_Behavior.java" startLine="9" startPosition="0" endLine="18" endPosition="0" unitName="ArduinoML.behavior.ComponentOUT_Behavior" />
+  </root>
+  <root nodeRef="r:c64d610f-c073-4e0b-bbbd-2c671d635d55(ArduinoML.behavior)/1895809058294940486">
+    <nodeInfo nodeId="1895809058294945379" fileName="ArduinoML_Behavior.java" startLine="11" startPosition="43" endLine="12" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1895809058295066641" fileName="ArduinoML_Behavior.java" startLine="12" startPosition="83" endLine="13" endPosition="130" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1895809058298670343" fileName="ArduinoML_Behavior.java" startLine="13" startPosition="130" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="1895809058294940486" fileName="ArduinoML_Behavior.java" startLine="11" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <scopeInfo nodeId="1895809058294940790" fileName="ArduinoML_Behavior.java" startLine="11" startPosition="43" endLine="14" endPosition="0" />
+    <scopeInfo nodeId="1895809058294940486" fileName="ArduinoML_Behavior.java" startLine="11" startPosition="0" endLine="16" endPosition="0">
+      <varInfo nodeId="1895809058294940486" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="1895809058294940486" fileName="ArduinoML_Behavior.java" startLine="10" startPosition="0" endLine="17" endPosition="0" unitName="ArduinoML.behavior.ArduinoML_Behavior" />
   </root>
   <root nodeRef="r:c64d610f-c073-4e0b-bbbd-2c671d635d55(ArduinoML.behavior)/4453370684997355454">
     <nodeInfo nodeId="4453370684997412329" fileName="DigitalIN_Behavior.java" startLine="11" startPosition="76" endLine="12" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -83,7 +95,7 @@
     <unitInfo nodeId="4453370684997355454" fileName="DigitalIN_Behavior.java" startLine="7" startPosition="0" endLine="15" endPosition="0" unitName="ArduinoML.behavior.DigitalIN_Behavior" />
   </root>
   <root nodeRef="r:c64d610f-c073-4e0b-bbbd-2c671d635d55(ArduinoML.behavior)/4453370684997412073">
-    <nodeInfo nodeId="4453370684997791277" fileName="Pin_Behavior.java" startLine="15" startPosition="75" endLine="16" endPosition="77" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4453370684997791277" fileName="Pin_Behavior.java" startLine="15" startPosition="75" endLine="16" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="20" startPosition="73" endLine="21" endPosition="123" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="25" startPosition="106" endLine="26" endPosition="228" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="12" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
@@ -91,7 +103,7 @@
     <nodeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="19" startPosition="0" endLine="23" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_getType_4453370684997412076#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
     <nodeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="24" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="callSuper_getType_4453370684997412076#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Ljava/lang/String;" />
     <scopeInfo nodeId="4453370684997412075" fileName="Pin_Behavior.java" startLine="12" startPosition="43" endLine="12" endPosition="43" />
-    <scopeInfo nodeId="4453370684997791206" fileName="Pin_Behavior.java" startLine="15" startPosition="75" endLine="16" endPosition="77" />
+    <scopeInfo nodeId="4453370684997791206" fileName="Pin_Behavior.java" startLine="15" startPosition="75" endLine="16" endPosition="80" />
     <scopeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="20" startPosition="73" endLine="21" endPosition="123" />
     <scopeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="25" startPosition="106" endLine="26" endPosition="228" />
     <scopeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="12" startPosition="0" endLine="14" endPosition="0">

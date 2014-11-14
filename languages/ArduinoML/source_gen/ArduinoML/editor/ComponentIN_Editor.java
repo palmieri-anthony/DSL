@@ -48,9 +48,9 @@ public class ComponentIN_Editor extends DefaultNodeEditor {
   }
 
   private EditorCell createRefNodeList_xkte51_c0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new ComponentIN_Editor.pinListHandler_xkte51_c0(node, "pin", editorContext);
+    AbstractCellListHandler handler = new ComponentIN_Editor.pinsListHandler_xkte51_c0(node, "pins", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Horizontal(), false);
-    editorCell.setCellId("refNodeList_pin");
+    editorCell.setCellId("refNodeList_pins");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
@@ -58,8 +58,8 @@ public class ComponentIN_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static class pinListHandler_xkte51_c0 extends RefNodeListHandler {
-    public pinListHandler_xkte51_c0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class pinsListHandler_xkte51_c0 extends RefNodeListHandler {
+    public pinsListHandler_xkte51_c0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 
@@ -92,19 +92,6 @@ public class ComponentIN_Editor extends DefaultNodeEditor {
           elementCell.setSubstituteInfo(new DefaultChildSubstituteInfo(listOwner, elementNode, super.getLinkDeclaration(), editorContext));
         }
       }
-    }
-
-    @Override
-    public EditorCell createSeparatorCell(EditorContext editorContext, SNode prevNode, SNode nextNode) {
-      EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, this.getOwner(), ", ");
-      editorCell.setSelectable(false);
-      Style style = new StyleImpl();
-      style.set(StyleAttributes.LAYOUT_CONSTRAINT, "");
-      style.set(StyleAttributes.PUNCTUATION_LEFT, true);
-      editorCell.getStyle().putAll(style);
-      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(prevNode));
-      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(prevNode));
-      return editorCell;
     }
   }
 }

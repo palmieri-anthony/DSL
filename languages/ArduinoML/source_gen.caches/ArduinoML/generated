@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="ejqmstmznkilvdt61ql0b9w11val4p3">
+<dependencies version="2" modelHash="3priaaogllek2cog0cqocgcw68ujkix">
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
-  <dep model="r:59c44cf3-9950-4a7f-9ad3-56675838923a(ArduinoML.editor)" hash="-bbz6k8kmno0b6yt32paza8uc78mbr8q" />
+  <dep model="r:59c44cf3-9950-4a7f-9ad3-56675838923a(ArduinoML.editor)" hash="1tcjkt1jarkcteyknn8f9nqf8efivxn" />
   <dep model="r:b2104075-d28b-42ff-bdf9-af90f68d556c(ArduinoML.typesystem)" hash="c27vo7ii2u7s3ryyg2jcf7rwv1z0gdh" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
