@@ -67,9 +67,9 @@ public class QueriesGenerated {
         SLinkOperations.setTarget(ledLow, "component", SLinkOperations.getTarget(program, "componentException", true), false);
 
         SNode break1 = SConceptOperations.createNewNode("ArduinoML.structure.Break", null);
-        SPropertyOperations.set(break1, "timeInMilliSecondes", "" + (1000));
+        SPropertyOperations.set(break1, "timeInMilliSecondes", "" + (500));
         SNode break2 = SConceptOperations.createNewNode("ArduinoML.structure.Break", null);
-        SPropertyOperations.set(break2, "timeInMilliSecondes", "" + (1000));
+        SPropertyOperations.set(break2, "timeInMilliSecondes", "" + (500));
 
         ListSequence.fromList(SLinkOperations.getTargets(decisionException, "actions", true)).addElement(ledHigh);
         ListSequence.fromList(SLinkOperations.getTargets(decisionException, "actions", true)).addElement(break1);
@@ -78,7 +78,7 @@ public class QueriesGenerated {
       }
 
       SNode finalBreak = SConceptOperations.createNewNode("ArduinoML.structure.Break", null);
-      SPropertyOperations.set(finalBreak, "timeInMilliSecondes", "" + (1000));
+      SPropertyOperations.set(finalBreak, "timeInMilliSecondes", "" + (500));
       ListSequence.fromList(SLinkOperations.getTargets(decisionException, "actions", true)).addElement(finalBreak);
 
       SNode callModule = SConceptOperations.createNewNode("ArduinoML.structure.ActionCallModule", null);
@@ -92,6 +92,6 @@ public class QueriesGenerated {
 
   public static void mappingScript_CodeBlock_3276207124036642494(final MappingScriptContext _context) {
     SNode arduinoML = ListSequence.fromList(SModelOperations.getNodes(_context.getModel(), "ArduinoML.structure.ArduinoML")).first();
-    ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).addElement(SLinkOperations.getTarget(arduinoML, "componentException", true));
+    SPropertyOperations.set(SLinkOperations.getTarget(arduinoML, "componentException", true), "name", _context.createUniqueName("compoException", arduinoML));
   }
 }
