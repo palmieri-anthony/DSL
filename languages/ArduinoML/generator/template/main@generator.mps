@@ -89,7 +89,7 @@
             </node>
           </node>
           <node role="actions" roleId="upjk.6957858817575162257" type="upjk.ActionCallModule" typeId="upjk.1895809058294874947" id="1895809058299608363" nodeInfo="ng">
-            <link role="moduleToCall" roleId="upjk.1895809058294874948" targetNodeId="1895809058299604600" resolveInfo="main" />
+            <link role="moduleToCall" roleId="upjk.1895809058294874948" targetNodeId="2923940279953976402" resolveInfo="mai2n" />
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="1895809058299611614" nodeInfo="nn">
               <property name="linkRole" nameId="tpck.1757699476691236116" value="moduleToCall" />
               <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="1895809058299611615" nodeInfo="nn">
@@ -151,8 +151,8 @@
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="1895809058300398634" nodeInfo="ng" />
         </node>
       </node>
-      <node role="modules" roleId="upjk.3691149528040069865" type="upjk.Module" typeId="upjk.3691149528040067273" id="1895809058299604600" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="main" />
+      <node role="modules" roleId="upjk.3691149528040069865" type="upjk.Module" typeId="upjk.3691149528040067273" id="2923940279953976402" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="mai2n" />
       </node>
       <node role="components" roleId="upjk.5495481488340174672" type="upjk.ComponentIN" typeId="upjk.5347434755052293927" id="1895809058298973348" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="button" />
