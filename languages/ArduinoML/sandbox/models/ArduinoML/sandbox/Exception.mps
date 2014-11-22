@@ -14,6 +14,7 @@
         </node>
         <node role="conditions" roleId="upjk.6957858817575162259" type="upjk.Condition" typeId="upjk.5347434755052293888" id="1695169151245864177" nodeInfo="ng">
           <link role="component" roleId="upjk.6957858817575162261" targetNodeId="1695169151245864058" resolveInfo="gg" />
+          <link role="pinLook" roleId="upjk.1695169151237798900" targetNodeId="1695169151245864113" resolveInfo="5" />
         </node>
       </node>
     </node>
