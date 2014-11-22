@@ -45,6 +45,9 @@ public class Pin_Constraints extends BaseConstraintsDescriptor {
       public boolean validateValue(SNode node, final String propertyValue) {
         String propertyName = "number";
         {
+          if ((SPropertyOperations.getInteger(propertyValue)) < -1) {
+            return false;
+          }
           List<SNode> pins = new ArrayList<SNode>();
           SNode program = SNodeOperations.getAncestor(node, "ArduinoML.structure.ArduinoML", false, false);
           ListSequence.fromList(pins).addSequence(ListSequence.fromList(SNodeOperations.getDescendants(program, "ArduinoML.structure.Pin", false, new String[]{})));
