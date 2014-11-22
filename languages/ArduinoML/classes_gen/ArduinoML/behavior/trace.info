@@ -18,7 +18,7 @@
   <unitInfo fileName="Module_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="ArduinoML.behavior.Module_BehaviorDescriptor" />
   <unitInfo fileName="PinIN_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="ArduinoML.behavior.PinIN_BehaviorDescriptor" />
   <unitInfo fileName="PinOUT_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="ArduinoML.behavior.PinOUT_BehaviorDescriptor" />
-  <unitInfo fileName="Pin_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="19" endPosition="0" unitName="ArduinoML.behavior.Pin_BehaviorDescriptor" />
+  <unitInfo fileName="Pin_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="25" endPosition="0" unitName="ArduinoML.behavior.Pin_BehaviorDescriptor" />
   <root nodeRef="r:c64d610f-c073-4e0b-bbbd-2c671d635d55(ArduinoML.behavior)/170812001322983006">
     <nodeInfo nodeId="170812001322983006" fileName="Component_Behavior.java" startLine="16" startPosition="78" endLine="17" endPosition="154" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="170812001322983006" fileName="Component_Behavior.java" startLine="21" startPosition="111" endLine="22" endPosition="265" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />

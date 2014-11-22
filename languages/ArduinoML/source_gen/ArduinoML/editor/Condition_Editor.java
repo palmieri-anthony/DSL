@@ -13,6 +13,13 @@ import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.InlineCellProvider;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.smodel.behaviour.BehaviorReflection;
+import java.util.List;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
 public class Condition_Editor extends DefaultNodeEditor {
@@ -25,8 +32,11 @@ public class Condition_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Collection_2lgv54_a");
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createRefCell_2lgv54_a0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_2lgv54_b0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_2lgv54_c0(editorContext, node));
+    if (renderingCondition_2lgv54_a1a(node, editorContext)) {
+      editorCell.addEditorCell(this.createCollection_2lgv54_b0(editorContext, node));
+    }
+    editorCell.addEditorCell(this.createConstant_2lgv54_c0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_2lgv54_d0(editorContext, node));
     return editorCell;
   }
 
@@ -85,14 +95,91 @@ public class Condition_Editor extends DefaultNodeEditor {
     }
   }
 
-  private EditorCell createConstant_2lgv54_b0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, " is ");
-    editorCell.setCellId("Constant_2lgv54_b0");
+  private EditorCell createCollection_2lgv54_b0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_2lgv54_b0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(this.createConstant_2lgv54_a1a(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_2lgv54_b1a(editorContext, node));
+    return editorCell;
+  }
+
+  private static boolean renderingCondition_2lgv54_a1a(SNode node, EditorContext editorContext) {
+    return ListSequence.fromList(BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), SLinkOperations.getTarget(node, "component", false), "virtual_getPins_4453370684997361065", new Object[]{})).count() > 1;
+  }
+
+  private EditorCell createConstant_2lgv54_a1a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "at pin");
+    editorCell.setCellId("Constant_2lgv54_a1a");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createProperty_2lgv54_c0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_2lgv54_b1a(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
+    provider.setRole("pinLook");
+    provider.setNoTargetText("<no pinLook>");
+    EditorCell editorCell;
+    provider.setAuxiliaryCellProvider(new Condition_Editor._Inline_2lgv54_a1b0());
+    editorCell = provider.createEditorCell(editorContext);
+    if (editorCell.getRole() == null) {
+      editorCell.setReferenceCell(true);
+      editorCell.setRole("pinLook");
+    }
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      IOperationContext opContext = editorContext.getOperationContext();
+      EditorManager manager = EditorManager.getInstanceFromContext(opContext);
+      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+    } else
+    return editorCell;
+  }
+
+  public static class _Inline_2lgv54_a1b0 extends InlineCellProvider {
+    public _Inline_2lgv54_a1b0() {
+      super();
+    }
+
+    public EditorCell createEditorCell(EditorContext editorContext) {
+      return this.createEditorCell(editorContext, this.getSNode());
+    }
+
+    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
+      return this.createProperty_2lgv54_a0b1a(editorContext, node);
+    }
+
+    private EditorCell createProperty_2lgv54_a0b1a(EditorContext editorContext, SNode node) {
+      CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+      provider.setRole("number");
+      provider.setNoTargetText("<no number>");
+      provider.setReadOnly(true);
+      EditorCell editorCell;
+      editorCell = provider.createEditorCell(editorContext);
+      editorCell.setCellId("property_number");
+      editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+      SNode attributeConcept = provider.getRoleAttribute();
+      Class attributeKind = provider.getRoleAttributeClass();
+      if (attributeConcept != null) {
+        IOperationContext opContext = editorContext.getOperationContext();
+        EditorManager manager = EditorManager.getInstanceFromContext(opContext);
+        return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+      } else
+      return editorCell;
+    }
+  }
+
+  private EditorCell createConstant_2lgv54_c0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, " is ");
+    editorCell.setCellId("Constant_2lgv54_c0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createProperty_2lgv54_d0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("expected");
     provider.setNoTargetText("<no expected>");
