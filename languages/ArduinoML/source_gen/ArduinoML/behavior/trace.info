@@ -4,8 +4,9 @@
   <unitInfo fileName="AbstractRule_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="ArduinoML.behavior.AbstractRule_BehaviorDescriptor" />
   <unitInfo fileName="ActionCallModule_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="ArduinoML.behavior.ActionCallModule_BehaviorDescriptor" />
   <unitInfo fileName="ActionOnComponent_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="ArduinoML.behavior.ActionOnComponent_BehaviorDescriptor" />
+  <unitInfo fileName="AnalogicIN_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="20" endPosition="0" unitName="ArduinoML.behavior.AnalogicIN_BehaviorDescriptor" />
   <unitInfo fileName="ArduinoML_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="ArduinoML.behavior.ArduinoML_BehaviorDescriptor" />
-  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="46" endPosition="0" unitName="ArduinoML.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="48" endPosition="0" unitName="ArduinoML.behavior.BehaviorAspectDescriptor" />
   <unitInfo fileName="Break_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="ArduinoML.behavior.Break_BehaviorDescriptor" />
   <unitInfo fileName="ComponentIN_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="ArduinoML.behavior.ComponentIN_BehaviorDescriptor" />
   <unitInfo fileName="ComponentOUT_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="ArduinoML.behavior.ComponentOUT_BehaviorDescriptor" />
@@ -19,6 +20,20 @@
   <unitInfo fileName="PinIN_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="ArduinoML.behavior.PinIN_BehaviorDescriptor" />
   <unitInfo fileName="PinOUT_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="ArduinoML.behavior.PinOUT_BehaviorDescriptor" />
   <unitInfo fileName="Pin_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="25" endPosition="0" unitName="ArduinoML.behavior.Pin_BehaviorDescriptor" />
+  <root nodeRef="r:c64d610f-c073-4e0b-bbbd-2c671d635d55(ArduinoML.behavior)/1695169151243066736">
+    <nodeInfo nodeId="1695169151243067650" fileName="AnalogicIN_Behavior.java" startLine="11" startPosition="76" endLine="12" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1695169151243066736" fileName="AnalogicIN_Behavior.java" startLine="8" startPosition="0" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <nodeInfo nodeId="1695169151243066736" fileName="AnalogicIN_Behavior.java" startLine="11" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getType_4453370684997412076#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+    <scopeInfo nodeId="1695169151243066738" fileName="AnalogicIN_Behavior.java" startLine="8" startPosition="43" endLine="8" endPosition="43" />
+    <scopeInfo nodeId="1695169151243066827" fileName="AnalogicIN_Behavior.java" startLine="11" startPosition="76" endLine="12" endPosition="22" />
+    <scopeInfo nodeId="1695169151243066736" fileName="AnalogicIN_Behavior.java" startLine="8" startPosition="0" endLine="10" endPosition="0">
+      <varInfo nodeId="1695169151243066736" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="1695169151243066736" fileName="AnalogicIN_Behavior.java" startLine="11" startPosition="0" endLine="14" endPosition="0">
+      <varInfo nodeId="1695169151243066736" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="1695169151243066736" fileName="AnalogicIN_Behavior.java" startLine="7" startPosition="0" endLine="15" endPosition="0" unitName="ArduinoML.behavior.AnalogicIN_Behavior" />
+  </root>
   <root nodeRef="r:c64d610f-c073-4e0b-bbbd-2c671d635d55(ArduinoML.behavior)/170812001322983006">
     <nodeInfo nodeId="170812001322983006" fileName="Component_Behavior.java" startLine="16" startPosition="78" endLine="17" endPosition="154" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="170812001322983006" fileName="Component_Behavior.java" startLine="21" startPosition="111" endLine="22" endPosition="265" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />

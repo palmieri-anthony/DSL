@@ -12,34 +12,36 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
 
   public BehaviorDescriptor getDescriptor(String fqName) {
     switch (Arrays.binarySearch(stringSwitchCases_846f5o_a0a0b, fqName)) {
-      case 2:
+      case 3:
         return new ArduinoML_BehaviorDescriptor();
-      case 7:
+      case 8:
         return new Decision_BehaviorDescriptor();
       case 1:
         return new ActionOnComponent_BehaviorDescriptor();
-      case 6:
+      case 7:
         return new Condition_BehaviorDescriptor();
-      case 5:
+      case 6:
         return new ComponentOUT_BehaviorDescriptor();
-      case 4:
+      case 5:
         return new ComponentIN_BehaviorDescriptor();
-      case 10:
-        return new Exception_BehaviorDescriptor();
-      case 8:
-        return new DigitalIN_BehaviorDescriptor();
-      case 9:
-        return new DigitalOUT_BehaviorDescriptor();
       case 11:
+        return new Exception_BehaviorDescriptor();
+      case 9:
+        return new DigitalIN_BehaviorDescriptor();
+      case 10:
+        return new DigitalOUT_BehaviorDescriptor();
+      case 12:
         return new Module_BehaviorDescriptor();
       case 0:
         return new ActionCallModule_BehaviorDescriptor();
-      case 3:
+      case 4:
         return new Break_BehaviorDescriptor();
+      case 2:
+        return new AnalogicIN_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
 
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"ArduinoML.structure.ActionCallModule", "ArduinoML.structure.ActionOnComponent", "ArduinoML.structure.ArduinoML", "ArduinoML.structure.Break", "ArduinoML.structure.ComponentIN", "ArduinoML.structure.ComponentOUT", "ArduinoML.structure.Condition", "ArduinoML.structure.Decision", "ArduinoML.structure.DigitalIN", "ArduinoML.structure.DigitalOUT", "ArduinoML.structure.Exception", "ArduinoML.structure.Module"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"ArduinoML.structure.ActionCallModule", "ArduinoML.structure.ActionOnComponent", "ArduinoML.structure.AnalogicIN", "ArduinoML.structure.ArduinoML", "ArduinoML.structure.Break", "ArduinoML.structure.ComponentIN", "ArduinoML.structure.ComponentOUT", "ArduinoML.structure.Condition", "ArduinoML.structure.Decision", "ArduinoML.structure.DigitalIN", "ArduinoML.structure.DigitalOUT", "ArduinoML.structure.Exception", "ArduinoML.structure.Module"};
 }

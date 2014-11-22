@@ -228,5 +228,9 @@
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1695169151243066476" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="AnalogicIN" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6957858817575165712" resolveInfo="PinIN" />
+  </root>
 </model>
 
