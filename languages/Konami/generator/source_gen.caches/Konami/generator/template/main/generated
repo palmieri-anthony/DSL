@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="3l5jy4e1kp7jxx6hipk7w4t4q4s59my">
+<dependencies version="2" modelHash="-6k46536ijxw1ja388ya8a359999a0b6">
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
@@ -12,13 +12,14 @@
   <dep model="r:00000000-0000-4000-0000-011c895902e9(jetbrains.mps.lang.generator.generator.baseLanguage.template.main@generator)" hash="-15uwdtf1y5pg0o0e3fc6ujv2qcw23bv" />
   <dep model="r:00000000-0000-4000-0000-011c895902f3(jetbrains.mps.lang.generator.generationContext.structure)" hash="1asz6tzm7ij8loh89ca48n9onph6wiu" />
   <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" hash="-8z73tx2nml9xagbxlfmq60ehji8q3f5" />
+  <dep model="r:69d76dd4-b742-46b8-ac87-0a9939af5af3(Konami.behavior)" hash="-4n0bd4otjzgx8e6bfkovzasd7wyk5uh" />
   <dep model="r:92c44410-65d7-453c-aed5-43b797abae4b(ArduinoML.structure)" hash="-60x1r7g7zpkaw2k87krmov7j6629dy3" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
   <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" hash="e5zswcvgdspmt039m3gg97emcadi0ez" />
-  <dep model="r:c69e8c7c-4425-4b12-95f8-9d84eb8652ac(Konami.structure)" hash="7dc7rjrpqjb07puz3rhq1mldr1aa2v6" />
+  <dep model="r:c69e8c7c-4425-4b12-95f8-9d84eb8652ac(Konami.structure)" hash="5ltyiy0az4jdcju25e3lbjfrkbtq5t6" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" hash="-8chtguhcvj45cjy0bx3xiqekte2lox7" />
-  <common hash="-7rfezis2dk45s5dg12sjbesytnkfaku" dependsOnNodes="true">
+  <common hash="9t4al0qze58smgllx3hzgqaudkspcmy" dependsOnNodes="true">
     <dep root="835646908222287882" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
@@ -31,6 +32,7 @@
     <dep model="r:00000000-0000-4000-0000-011c895902de(jetbrains.mps.baseLanguage.blTypes.primitiveDescriptors)" />
     <dep model="r:00000000-0000-4000-0000-011c895902f3(jetbrains.mps.lang.generator.generationContext.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:69d76dd4-b742-46b8-ac87-0a9939af5af3(Konami.behavior)" />
     <dep model="r:92c44410-65d7-453c-aed5-43b797abae4b(ArduinoML.structure)" />
     <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
     <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
@@ -42,6 +44,6 @@
   <source id="1695169151241763874" name="main" hash="bcaen5v6vt6jhe75xzxpceb0a7fraaj">
     <dep model="r:00000000-0000-4000-0000-011c895902e9(jetbrains.mps.lang.generator.generator.baseLanguage.template.main@generator)" />
   </source>
-  <source id="835646908222287882" name="script" hash="-a03o3elayzvsdqtt62ncp6y4emsx3m1" />
+  <source id="835646908222287882" name="script" hash="-1itktfs6gw6ocfnsytn4mrtkl0frhhc" />
 </dependencies>
 

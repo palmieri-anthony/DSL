@@ -10,6 +10,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import Konami.behavior.StateProxy_Behavior;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 
 @Generated
@@ -26,9 +27,6 @@ public class QueriesGenerated {
     ListSequence.fromList(SLinkOperations.getTargets(konamiComposant, "pins", true)).addElement(SLinkOperations.getTarget(SLinkOperations.getTarget(konamiProg, "konami", true), "pinButton", true));
     ListSequence.fromList(SLinkOperations.getTargets(konamiComposant, "pins", true)).addElement(SLinkOperations.getTarget(SLinkOperations.getTarget(konamiProg, "konami", true), "pinX", true));
     ListSequence.fromList(SLinkOperations.getTargets(konamiComposant, "pins", true)).addElement(SLinkOperations.getTarget(SLinkOperations.getTarget(konamiProg, "konami", true), "pinY", true));
-    SNode mainly = SConceptOperations.createNewNode("ArduinoML.structure.Module", null);
-    SPropertyOperations.set(mainly, "name", "mainly");
-    SNode begin = SConceptOperations.createNewNode("ArduinoML.structure.Decision", null);
 
     for (int numTransition = 0; numTransition < 3; numTransition++) {
       for (int numStep = 0; numStep < ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count(); numStep++) {
@@ -36,9 +34,17 @@ public class QueriesGenerated {
         SPropertyOperations.set(module, "name", "Step" + Integer.toString(numTransition) + Integer.toString(numStep));
         ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).addElement(module);
       }
+    }
+    for (int i = 0; i < 3; i++) {
       SNode moduleBatard = SConceptOperations.createNewNode("ArduinoML.structure.Module", null);
-      SPropertyOperations.set(moduleBatard, "name", "BatardStep" + Integer.toString(numTransition));
+      SPropertyOperations.set(moduleBatard, "name", "BatardStep" + Integer.toString(i));
       ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).addElement(moduleBatard);
+    }
+
+    for (int i = 0; i < 3; i++) {
+      for (int j = 0; j < ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count(); j++) {
+        StateProxy_Behavior.call_populateModule_835646908222906844(ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).getElement(j), ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + j), ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + j + 1), ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() - (2 - i)), ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), SLinkOperations.getTarget(konamiProg, "konami", true), konamiComposant);
+      }
     }
 
     SNodeOperations.replaceWithAnother(konamiProg, arduinoML);

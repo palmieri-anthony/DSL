@@ -2,11 +2,12 @@ void mainly ();
 void setup() {
   pinMode(INPUT,54);
   pinMode(INPUT,41);
+  pinMode(OUTPUT,4);
   pinMode(OUTPUT,5);
 }
 void mainly() {
-  if (digitalRead(5)==HIGH) {
-    digitalWrite(5,HIGH);
+  if (digitalRead(4)==HIGH) {
+    digitalWrite(4,HIGH);
   }
 }
 void loop() {

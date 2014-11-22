@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="Konami.generator.template.main.QueriesGenerated" file="QueriesGenerated.java">
+    <classNode dependClassName="Konami.behavior.StateProxy_Behavior" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="jetbrains.mps.generator.runtime.Generated" />
     <classNode dependClassName="jetbrains.mps.generator.template.MappingScriptContext" />
