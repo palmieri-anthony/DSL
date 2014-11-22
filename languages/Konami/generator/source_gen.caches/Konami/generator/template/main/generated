@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-6k46536ijxw1ja388ya8a359999a0b6">
+<dependencies version="2" modelHash="-9ozoc8m8wc3qpfznunz7u3av3jxx4dl">
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
@@ -44,6 +44,6 @@
   <source id="1695169151241763874" name="main" hash="bcaen5v6vt6jhe75xzxpceb0a7fraaj">
     <dep model="r:00000000-0000-4000-0000-011c895902e9(jetbrains.mps.lang.generator.generator.baseLanguage.template.main@generator)" />
   </source>
-  <source id="835646908222287882" name="script" hash="-1itktfs6gw6ocfnsytn4mrtkl0frhhc" />
+  <source id="835646908222287882" name="script" hash="3e8pjhpwintpwv153lnhhw5oe9ns7qa" />
 </dependencies>
 

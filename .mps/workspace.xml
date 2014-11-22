@@ -17,23 +17,11 @@
     </breakpoint>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a65b504a-61b5-411d-82ac-b4000067c487" name="Default" comment="tt">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/generator/classes_gen/Konami/generator/template/main/QueriesGenerated.class" afterPath="$PROJECT_DIR$/languages/Konami/generator/classes_gen/Konami/generator/template/main/QueriesGenerated.class" />
+    <list default="true" id="a65b504a-61b5-411d-82ac-b4000067c487" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/generator/source_gen/Konami/generator/template/main/QueriesGenerated.java" afterPath="$PROJECT_DIR$/languages/Konami/generator/source_gen/Konami/generator/template/main/QueriesGenerated.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/languageModels/behavior.mps" afterPath="$PROJECT_DIR$/languages/Konami/languageModels/behavior.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/generator/source_gen.caches/Konami/generator/template/main/dependencies" afterPath="$PROJECT_DIR$/languages/Konami/generator/source_gen.caches/Konami/generator/template/main/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ArduinoML/sandbox/source_gen.caches/ArduinoML/sandbox/Exception/generated" afterPath="$PROJECT_DIR$/languages/ArduinoML/sandbox/source_gen.caches/ArduinoML/sandbox/Exception/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/generator/source_gen.caches/Konami/generator/template/main/generated" afterPath="$PROJECT_DIR$/languages/Konami/generator/source_gen.caches/Konami/generator/template/main/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/source_gen.caches/Konami/generated" afterPath="$PROJECT_DIR$/languages/Konami/source_gen.caches/Konami/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/source_gen.caches/Konami/behavior/generated" afterPath="$PROJECT_DIR$/languages/Konami/source_gen.caches/Konami/behavior/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/source_gen.caches/Konami/editor/generated" afterPath="$PROJECT_DIR$/languages/Konami/source_gen.caches/Konami/editor/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/source_gen.caches/Konami/structure/generated" afterPath="$PROJECT_DIR$/languages/Konami/source_gen.caches/Konami/structure/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/generator/template/main@generator.mps" afterPath="$PROJECT_DIR$/languages/Konami/generator/template/main@generator.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/ArduinoML/sandbox/source_gen/ArduinoML/sandbox/Exception/test" afterPath="$PROJECT_DIR$/languages/ArduinoML/sandbox/source_gen/ArduinoML/sandbox/Exception/test" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/classes_gen/Konami/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/Konami/classes_gen/Konami/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/generator/classes_gen/Konami/generator/template/main/trace.info" afterPath="$PROJECT_DIR$/languages/Konami/generator/classes_gen/Konami/generator/template/main/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/generator/source_gen/Konami/generator/template/main/trace.info" afterPath="$PROJECT_DIR$/languages/Konami/generator/source_gen/Konami/generator/template/main/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/source_gen/Konami/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/Konami/source_gen/Konami/behavior/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
     </list>
     <ignored path="DSL.iws" />
@@ -75,45 +63,15 @@
         <entry file="mps://node://Konami#1695169151241763873/Konami.generator.template.main@generator/script">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="4">
+              <memento viewPositionX="0" viewPositionY="152">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="351" />
-                    <property name="caretXRelative" value="104" />
+                    <property name="caretX" value="303" />
+                    <property name="caretXRelative" value="56" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="property_name" cellNumber="0" isInList="false">
                       <node node_reference="r:ed11ed62-b073-4570-9ba4-4a8db9777c8e(Konami.generator.template.main@generator)/835646908224173441" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorLabels />
-                <folded />
-                <enabledHints />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:ed11ed62-b073-4570-9ba4-4a8db9777c8e(Konami.generator.template.main@generator)/835646908224173441" viewPositionX="0" viewPositionY="-7">
-                <selectionStack />
-                <errorLabels />
-                <folded />
-                <enabledHints />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://node://ArduinoML#6983057834610541530/ArduinoML.generator.template.main@generator/main">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="293">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="31" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="empty_dropRootRule" cellNumber="0" isInList="false">
-                      <node node_reference="r:2f707cfd-9641-4af5-b37f-3bc8a24f911f(ArduinoML.generator.template.main@generator)/6983057834610541531" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -135,15 +93,15 @@
         <entry file="mps://node://Konami/Konami.structure/StateProxy">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-              <memento viewPositionX="0" viewPositionY="503">
+              <memento viewPositionX="0" viewPositionY="572">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="319" />
-                    <property name="caretXRelative" value="80" />
+                    <property name="caretX" value="223" />
+                    <property name="caretXRelative" value="12" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:69d76dd4-b742-46b8-ac87-0a9939af5af3(Konami.behavior)/1695169151247697422" />
+                      <node node_reference="r:69d76dd4-b742-46b8-ac87-0a9939af5af3(Konami.behavior)/835646908224000237" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -1507,12 +1465,12 @@
     <entry file="mps://node://Konami#1695169151241763873/Konami.generator.template.main@generator/script">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="4">
+          <memento viewPositionX="0" viewPositionY="152">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="351" />
-                <property name="caretXRelative" value="104" />
+                <property name="caretX" value="303" />
+                <property name="caretXRelative" value="56" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="property_name" cellNumber="0" isInList="false">
                   <node node_reference="r:ed11ed62-b073-4570-9ba4-4a8db9777c8e(Konami.generator.template.main@generator)/835646908224173441" />
@@ -1871,46 +1829,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://ArduinoML.sandbox/ArduinoML.sandbox.Konami/Test">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="187" />
-                <property name="caretXRelative" value="16" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_state" cellNumber="0" isInList="false">
-                  <node node_reference="r:33a5a5b2-35af-4e3e-b7fb-2bd38a3bcf7f(ArduinoML.sandbox.Konami)/1695169151246360647" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-            <enabledHints />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:33a5a5b2-35af-4e3e-b7fb-2bd38a3bcf7f(ArduinoML.sandbox.Konami)/1695169151246360647" viewPositionX="0" viewPositionY="-7">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://Konami/Konami.structure/StateProxy">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="503">
+          <memento viewPositionX="0" viewPositionY="572">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="319" />
-                <property name="caretXRelative" value="80" />
+                <property name="caretX" value="223" />
+                <property name="caretXRelative" value="12" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:69d76dd4-b742-46b8-ac87-0a9939af5af3(Konami.behavior)/1695169151247697422" />
+                  <node node_reference="r:69d76dd4-b742-46b8-ac87-0a9939af5af3(Konami.behavior)/835646908224000237" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1947,7 +1877,37 @@
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:ed11ed62-b073-4570-9ba4-4a8db9777c8e(Konami.generator.template.main@generator)/835646908224173441" viewPositionX="0" viewPositionY="-7">
+          <inspectorMemento currentlyEditedNode="r:2f707cfd-9641-4af5-b37f-3bc8a24f911f(ArduinoML.generator.template.main@generator)/6983057834610541531" viewPositionX="0" viewPositionY="-7">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ArduinoML.sandbox/ArduinoML.sandbox.Konami/Test">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="selectionStart" value="0" />
+                <property name="hasNonTrivialSelection" value="true" />
+                <property name="caretX" value="263" />
+                <property name="selectionEnd" value="2" />
+                <property name="caretXRelative" value="20" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_number" cellNumber="0" isInList="false">
+                  <node node_reference="r:33a5a5b2-35af-4e3e-b7fb-2bd38a3bcf7f(ArduinoML.sandbox.Konami)/1695169151245511211" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+            <enabledHints />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:33a5a5b2-35af-4e3e-b7fb-2bd38a3bcf7f(ArduinoML.sandbox.Konami)/1695169151245511211" viewPositionX="0" viewPositionY="-7">
             <selectionStack />
             <errorLabels />
             <folded />

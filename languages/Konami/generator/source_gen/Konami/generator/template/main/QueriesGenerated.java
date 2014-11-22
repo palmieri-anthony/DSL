@@ -23,10 +23,12 @@ public class QueriesGenerated {
     SPropertyOperations.set(arduinoML, "name", SPropertyOperations.getString(konamiProg, "name"));
     ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).addElement(SLinkOperations.getTarget(konamiProg, "ledError", true));
     ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).addElement(SLinkOperations.getTarget(konamiProg, "ledOK", true));
+
     SNode konamiComposant = SConceptOperations.createNewNode("ArduinoML.structure.ComponentIN", null);
     ListSequence.fromList(SLinkOperations.getTargets(konamiComposant, "pins", true)).addElement(SLinkOperations.getTarget(SLinkOperations.getTarget(konamiProg, "konami", true), "pinButton", true));
     ListSequence.fromList(SLinkOperations.getTargets(konamiComposant, "pins", true)).addElement(SLinkOperations.getTarget(SLinkOperations.getTarget(konamiProg, "konami", true), "pinX", true));
     ListSequence.fromList(SLinkOperations.getTargets(konamiComposant, "pins", true)).addElement(SLinkOperations.getTarget(SLinkOperations.getTarget(konamiProg, "konami", true), "pinY", true));
+    ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).addElement(konamiComposant);
 
     for (int numTransition = 0; numTransition < 3; numTransition++) {
       for (int numStep = 0; numStep < ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count(); numStep++) {
