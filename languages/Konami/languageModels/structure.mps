@@ -32,6 +32,7 @@
   <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="1695169151244867887" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="KonamiState" />
     <property name="memberIdentifierPolicy" nameId="tpce.1197591154882" value="custom" />
+    <property name="hasNoDefaultMember" nameId="tpce.1212080844762" value="false" />
     <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="1695169151244867888" nodeInfo="ig">
       <property name="internalValue" nameId="tpce.1083923523171" value="U" />
