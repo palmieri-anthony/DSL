@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <root nodeRef="r:1f874304-1222-42a3-b3d7-a0e31ee71ea0(Konami.textGen)/1695169151243710728">
+    <nodeInfo nodeId="1695169151243711253" fileName="KonamiComposant_TextGen.java" startLine="12" startPosition="42" endLine="13" endPosition="184" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="1695169151243711253" fileName="KonamiComposant_TextGen.java" startLine="12" startPosition="42" endLine="13" endPosition="184" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151243710728" fileName="KonamiComposant_TextGen.java" startLine="12" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <scopeInfo nodeId="1695169151243710728" fileName="KonamiComposant_TextGen.java" startLine="12" startPosition="42" endLine="13" endPosition="184" />
+    <scopeInfo nodeId="1695169151243711253" fileName="KonamiComposant_TextGen.java" startLine="12" startPosition="42" endLine="13" endPosition="184" />
+    <scopeInfo nodeId="1695169151243710728" fileName="KonamiComposant_TextGen.java" startLine="12" startPosition="0" endLine="15" endPosition="0">
+      <varInfo nodeId="1695169151243710728" varName="node" />
+    </scopeInfo>
+    <unitInfo nodeId="1695169151243710728" fileName="KonamiComposant_TextGen.java" startLine="11" startPosition="0" endLine="16" endPosition="0" unitName="Konami.textGen.KonamiComposant_TextGen" />
+  </root>
+</debugInfo>
+

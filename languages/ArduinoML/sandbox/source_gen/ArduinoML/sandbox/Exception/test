@@ -1,0 +1,10 @@
+void mainly ();
+void setup() {
+  pinMode(INPUT,47);
+  pinMode(INPUT,54);
+}
+void mainly() {
+}
+void loop() {
+mainly();
+}

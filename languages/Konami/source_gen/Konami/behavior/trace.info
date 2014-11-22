@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="28" endPosition="0" unitName="Konami.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="KonamiComposant_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Konami.behavior.KonamiComposant_BehaviorDescriptor" />
+  <unitInfo fileName="KonamiProgram_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="Konami.behavior.KonamiProgram_BehaviorDescriptor" />
+  <unitInfo fileName="StateProxy_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Konami.behavior.StateProxy_BehaviorDescriptor" />
+</debugInfo>
+
