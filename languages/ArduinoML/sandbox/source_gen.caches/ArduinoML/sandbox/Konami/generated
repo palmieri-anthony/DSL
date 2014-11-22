@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="epi3umdwnc0q5ikskfws4ns6l9x12zd">
-  <common hash="-1udx0ntr4fwcekbaaziwrq2hk9hifi" />
-  <source id="1695169151245129863" hash="-7ltq0np9epmyuwrybcgjgi3391u7p8j" />
+<dependencies version="2" modelHash="1danoe5dxtsl334zmhc9dqfviw3g01i">
+  <common hash="bxlubztzv79gnvpi0rdezfnjj0qbme1" />
+  <source id="1695169151245511205" name="Test" hash="8610zy5nqxzlalhcs15xp7wrxjero43">
+    <file name="map_KonamiProgram" />
+  </source>
 </dependencies>
 

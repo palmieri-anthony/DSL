@@ -1,31 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-163g0fcecvsbaezx268a6gte0ufncjw">
-  <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="5sdbpqxziyuazpb9j1p4zdk6bnvbn49" />
-  <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
-  <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" hash="-8z73tx2nml9xagbxlfmq60ehji8q3f5" />
-  <dep model="r:1e88207e-a8e3-4e7e-8d9b-916f60cbdc61(jetbrains.mps.lang.textGen.generator.template.main@generator)" hash="2dmcrv2ms72bspqknfyxvb6b7exhx9o" />
-  <dep model="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" hash="9wy5xay4fxryhg7hl9tcowq0jfepue8" />
-  <dep model="r:8a59767a-d272-4276-a600-4c89def30b8b(ArduinoML.textGen)" hash="-1k0bbd0ma4ql4raohth86gmq5vsvq27" />
-  <dep model="r:92c44410-65d7-453c-aed5-43b797abae4b(ArduinoML.structure)" hash="-7ct6dfa51690wasrym6iow7mj7tzdjm" />
-  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
-  <dep model="r:c64d610f-c073-4e0b-bbbd-2c671d635d55(ArduinoML.behavior)" hash="419yvh4xhjkbhoxjm8ixpevryp2t4yz" />
-  <dep model="r:c69e8c7c-4425-4b12-95f8-9d84eb8652ac(Konami.structure)" hash="zt1rus5l3hm5b2aeyj5izpu7evnksd" />
-  <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
-  <common hash="403l2zvaczyj0orvc5wbgkd4vbbn4ny" dependsOnNodes="true">
-    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
-  </common>
-  <source id="1695169151243710728" name="KonamiComposant_TextGen" hash="-eku45a8ovv6mb1ognphw7xhdqnlryob">
-    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
-    <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
-    <dep model="r:1e88207e-a8e3-4e7e-8d9b-916f60cbdc61(jetbrains.mps.lang.textGen.generator.template.main@generator)" />
-    <dep model="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
-    <dep model="r:8a59767a-d272-4276-a600-4c89def30b8b(ArduinoML.textGen)" />
-    <dep model="r:92c44410-65d7-453c-aed5-43b797abae4b(ArduinoML.structure)" />
-    <dep model="r:c64d610f-c073-4e0b-bbbd-2c671d635d55(ArduinoML.behavior)" />
-    <dep model="r:c69e8c7c-4425-4b12-95f8-9d84eb8652ac(Konami.structure)" />
-    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
-    <file name="KonamiComposant_TextGen.java" />
-  </source>
+<dependencies version="2" modelHash="9zlngu6td6yygc4g7cxjck09ev2obno">
+  <common hash="9zlngu6td6yygc4g7cxjck09ev2obno" />
 </dependencies>
 

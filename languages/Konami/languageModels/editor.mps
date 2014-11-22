@@ -13,9 +13,6 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1695169151242589091" nodeInfo="nn">
         <property name="text" nameId="tpc2.1073389577007" value="connect konami" />
       </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="1695169151242589100" nodeInfo="ng">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-      </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1695169151243970535" nodeInfo="nn">
         <property name="text" nameId="tpc2.1073389577007" value="to [X,Y,Z] " />
       </node>
