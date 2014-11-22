@@ -6,5 +6,11 @@
     </dependencies>
     <rename id="qdza.1695169151244882202" type="PROPERTY" from="expected2" to="expected" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="qdza" modelUID="r:c69e8c7c-4425-4b12-95f8-9d84eb8652ac(Konami.structure)" version="0" />
+    </dependencies>
+    <rename id="qdza.66643460714003782" type="PROPERTY" from="string" to="ID" />
+  </StructureModification>
 </history>
 

@@ -11,6 +11,10 @@ public abstract class Pin_BehaviorDescriptor extends BaseConcept_BehaviorDescrip
   public Pin_BehaviorDescriptor() {
   }
 
+  public String virtual_expectedValue_66643460712565918(SNode thisNode, String state) {
+    return Pin_Behavior.virtual_expectedValue_66643460712565918(thisNode, state);
+  }
+
   public String virtual_getFqName_1213877404258(SNode thisNode) {
     return INamedConcept_Behavior.virtual_getFqName_1213877404258(thisNode);
   }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="1danoe5dxtsl334zmhc9dqfviw3g01i">
-  <common hash="bxlubztzv79gnvpi0rdezfnjj0qbme1" />
-  <source id="1695169151245511205" name="Test" hash="8610zy5nqxzlalhcs15xp7wrxjero43">
+<dependencies version="2" modelHash="-98k52soarccggrzx4o6pwhwdlgr2hfj">
+  <common hash="89nimsb5vcy47mfydm9txq6zpnpqa71" />
+  <source id="1695169151245511205" name="Test" hash="-1x5e0edbrglnfmyny1hvsgqcw379syv">
     <file name="map_KonamiProgram" />
   </source>
 </dependencies>

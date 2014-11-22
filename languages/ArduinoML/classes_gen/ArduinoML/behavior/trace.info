@@ -4,7 +4,7 @@
   <unitInfo fileName="AbstractRule_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="ArduinoML.behavior.AbstractRule_BehaviorDescriptor" />
   <unitInfo fileName="ActionCallModule_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="ArduinoML.behavior.ActionCallModule_BehaviorDescriptor" />
   <unitInfo fileName="ActionOnComponent_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="ArduinoML.behavior.ActionOnComponent_BehaviorDescriptor" />
-  <unitInfo fileName="AnalogicIN_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="20" endPosition="0" unitName="ArduinoML.behavior.AnalogicIN_BehaviorDescriptor" />
+  <unitInfo fileName="AnalogicIN_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="24" endPosition="0" unitName="ArduinoML.behavior.AnalogicIN_BehaviorDescriptor" />
   <unitInfo fileName="ArduinoML_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="ArduinoML.behavior.ArduinoML_BehaviorDescriptor" />
   <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="48" endPosition="0" unitName="ArduinoML.behavior.BehaviorAspectDescriptor" />
   <unitInfo fileName="Break_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="ArduinoML.behavior.Break_BehaviorDescriptor" />
@@ -19,20 +19,32 @@
   <unitInfo fileName="Module_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="ArduinoML.behavior.Module_BehaviorDescriptor" />
   <unitInfo fileName="PinIN_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="ArduinoML.behavior.PinIN_BehaviorDescriptor" />
   <unitInfo fileName="PinOUT_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="ArduinoML.behavior.PinOUT_BehaviorDescriptor" />
-  <unitInfo fileName="Pin_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="25" endPosition="0" unitName="ArduinoML.behavior.Pin_BehaviorDescriptor" />
+  <unitInfo fileName="Pin_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="29" endPosition="0" unitName="ArduinoML.behavior.Pin_BehaviorDescriptor" />
   <root nodeRef="r:c64d610f-c073-4e0b-bbbd-2c671d635d55(ArduinoML.behavior)/1695169151243066736">
-    <nodeInfo nodeId="1695169151243067650" fileName="AnalogicIN_Behavior.java" startLine="11" startPosition="76" endLine="12" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1695169151243067650" fileName="AnalogicIN_Behavior.java" startLine="11" startPosition="76" endLine="12" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="66643460713629195" fileName="AnalogicIN_Behavior.java" startLine="16" startPosition="31" endLine="17" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="66643460713610113" fileName="AnalogicIN_Behavior.java" startLine="18" startPosition="12" endLine="19" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="1695169151243066736" fileName="AnalogicIN_Behavior.java" startLine="8" startPosition="0" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <nodeInfo nodeId="66643460713627027" fileName="AnalogicIN_Behavior.java" startLine="18" startPosition="10" endLine="20" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="1695169151243066736" fileName="AnalogicIN_Behavior.java" startLine="11" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getType_4453370684997412076#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+    <nodeInfo nodeId="66643460713604679" fileName="AnalogicIN_Behavior.java" startLine="15" startPosition="94" endLine="20" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1695169151243066736" fileName="AnalogicIN_Behavior.java" startLine="15" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_expectedValue_66643460712565918#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Ljava/lang/String;" />
     <scopeInfo nodeId="1695169151243066738" fileName="AnalogicIN_Behavior.java" startLine="8" startPosition="43" endLine="8" endPosition="43" />
-    <scopeInfo nodeId="1695169151243066827" fileName="AnalogicIN_Behavior.java" startLine="11" startPosition="76" endLine="12" endPosition="22" />
+    <scopeInfo nodeId="1695169151243066827" fileName="AnalogicIN_Behavior.java" startLine="11" startPosition="76" endLine="12" endPosition="20" />
+    <scopeInfo nodeId="66643460713627029" fileName="AnalogicIN_Behavior.java" startLine="16" startPosition="31" endLine="17" endPosition="32" />
+    <scopeInfo nodeId="66643460713604680" fileName="AnalogicIN_Behavior.java" startLine="18" startPosition="12" endLine="19" endPosition="31" />
     <scopeInfo nodeId="1695169151243066736" fileName="AnalogicIN_Behavior.java" startLine="8" startPosition="0" endLine="10" endPosition="0">
       <varInfo nodeId="1695169151243066736" varName="thisNode" />
     </scopeInfo>
     <scopeInfo nodeId="1695169151243066736" fileName="AnalogicIN_Behavior.java" startLine="11" startPosition="0" endLine="14" endPosition="0">
       <varInfo nodeId="1695169151243066736" varName="thisNode" />
     </scopeInfo>
-    <unitInfo nodeId="1695169151243066736" fileName="AnalogicIN_Behavior.java" startLine="7" startPosition="0" endLine="15" endPosition="0" unitName="ArduinoML.behavior.AnalogicIN_Behavior" />
+    <scopeInfo nodeId="66643460713603087" fileName="AnalogicIN_Behavior.java" startLine="15" startPosition="94" endLine="20" endPosition="5" />
+    <scopeInfo nodeId="1695169151243066736" fileName="AnalogicIN_Behavior.java" startLine="15" startPosition="0" endLine="22" endPosition="0">
+      <varInfo nodeId="66643460713603088" varName="state" />
+      <varInfo nodeId="1695169151243066736" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="1695169151243066736" fileName="AnalogicIN_Behavior.java" startLine="7" startPosition="0" endLine="23" endPosition="0" unitName="ArduinoML.behavior.AnalogicIN_Behavior" />
   </root>
   <root nodeRef="r:c64d610f-c073-4e0b-bbbd-2c671d635d55(ArduinoML.behavior)/170812001322983006">
     <nodeInfo nodeId="170812001322983006" fileName="Component_Behavior.java" startLine="16" startPosition="78" endLine="17" endPosition="154" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -111,30 +123,65 @@
   </root>
   <root nodeRef="r:c64d610f-c073-4e0b-bbbd-2c671d635d55(ArduinoML.behavior)/4453370684997412073">
     <nodeInfo nodeId="4453370684997791277" fileName="Pin_Behavior.java" startLine="15" startPosition="75" endLine="16" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="20" startPosition="73" endLine="21" endPosition="123" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="25" startPosition="106" endLine="26" endPosition="228" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="66643460712565081" fileName="Pin_Behavior.java" startLine="19" startPosition="93" endLine="20" endPosition="137" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="66643460711941497" fileName="Pin_Behavior.java" startLine="23" startPosition="74" endLine="24" endPosition="192" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="66643460712571375" fileName="Pin_Behavior.java" startLine="27" startPosition="94" endLine="28" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="32" startPosition="73" endLine="33" endPosition="123" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="37" startPosition="106" endLine="38" endPosition="228" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="42" startPosition="91" endLine="43" endPosition="132" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="47" startPosition="124" endLine="48" endPosition="251" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="12" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
     <nodeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="15" startPosition="0" endLine="18" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_pinNumber_4453370684997791203#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-    <nodeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="19" startPosition="0" endLine="23" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_getType_4453370684997412076#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-    <nodeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="24" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="callSuper_getType_4453370684997412076#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Ljava/lang/String;" />
+    <nodeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="19" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_createCondition_66643460712562831#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Ljava/lang/String;" />
+    <nodeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="23" startPosition="0" endLine="26" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_actionRead_66643460711941392#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+    <nodeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="27" startPosition="0" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_expectedValue_66643460712565918#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Ljava/lang/String;" />
+    <nodeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="31" startPosition="0" endLine="35" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_getType_4453370684997412076#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+    <nodeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="36" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="callSuper_getType_4453370684997412076#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Ljava/lang/String;" />
+    <nodeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="41" startPosition="0" endLine="45" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_expectedValue_66643460712565918#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Ljava/lang/String;" />
+    <nodeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="46" startPosition="0" endLine="50" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="callSuper_expectedValue_66643460712565918#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" />
     <scopeInfo nodeId="4453370684997412075" fileName="Pin_Behavior.java" startLine="12" startPosition="43" endLine="12" endPosition="43" />
     <scopeInfo nodeId="4453370684997791206" fileName="Pin_Behavior.java" startLine="15" startPosition="75" endLine="16" endPosition="80" />
-    <scopeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="20" startPosition="73" endLine="21" endPosition="123" />
-    <scopeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="25" startPosition="106" endLine="26" endPosition="228" />
+    <scopeInfo nodeId="66643460712562834" fileName="Pin_Behavior.java" startLine="19" startPosition="93" endLine="20" endPosition="137" />
+    <scopeInfo nodeId="66643460711941395" fileName="Pin_Behavior.java" startLine="23" startPosition="74" endLine="24" endPosition="192" />
+    <scopeInfo nodeId="66643460712565921" fileName="Pin_Behavior.java" startLine="27" startPosition="94" endLine="28" endPosition="24" />
+    <scopeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="32" startPosition="73" endLine="33" endPosition="123" />
+    <scopeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="37" startPosition="106" endLine="38" endPosition="228" />
+    <scopeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="42" startPosition="91" endLine="43" endPosition="132" />
+    <scopeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="47" startPosition="124" endLine="48" endPosition="251" />
     <scopeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="12" startPosition="0" endLine="14" endPosition="0">
       <varInfo nodeId="4453370684997412073" varName="thisNode" />
     </scopeInfo>
     <scopeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="15" startPosition="0" endLine="18" endPosition="0">
       <varInfo nodeId="4453370684997412073" varName="thisNode" />
     </scopeInfo>
-    <scopeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="19" startPosition="0" endLine="23" endPosition="0">
+    <scopeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="19" startPosition="0" endLine="22" endPosition="0">
+      <varInfo nodeId="66643460712574078" varName="state" />
       <varInfo nodeId="4453370684997412073" varName="thisNode" />
     </scopeInfo>
-    <scopeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="24" startPosition="0" endLine="28" endPosition="0">
+    <scopeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="23" startPosition="0" endLine="26" endPosition="0">
+      <varInfo nodeId="4453370684997412073" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="27" startPosition="0" endLine="30" endPosition="0">
+      <varInfo nodeId="66643460712574769" varName="state" />
+      <varInfo nodeId="4453370684997412073" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="31" startPosition="0" endLine="35" endPosition="0">
+      <varInfo nodeId="4453370684997412073" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="36" startPosition="0" endLine="40" endPosition="0">
       <varInfo nodeId="4453370684997412073" varName="callerConceptFqName" />
       <varInfo nodeId="4453370684997412073" varName="thisNode" />
     </scopeInfo>
-    <unitInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="11" startPosition="0" endLine="29" endPosition="0" unitName="ArduinoML.behavior.Pin_Behavior" />
+    <scopeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="41" startPosition="0" endLine="45" endPosition="0">
+      <varInfo nodeId="66643460712574769" varName="state" />
+      <varInfo nodeId="4453370684997412073" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="46" startPosition="0" endLine="50" endPosition="0">
+      <varInfo nodeId="4453370684997412073" varName="callerConceptFqName" />
+      <varInfo nodeId="66643460712574769" varName="state" />
+      <varInfo nodeId="4453370684997412073" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="4453370684997412073" fileName="Pin_Behavior.java" startLine="11" startPosition="0" endLine="51" endPosition="0" unitName="ArduinoML.behavior.Pin_Behavior" />
   </root>
   <root nodeRef="r:c64d610f-c073-4e0b-bbbd-2c671d635d55(ArduinoML.behavior)/4453370684997412721">
     <nodeInfo nodeId="4453370684997412734" fileName="DigitalOUT_Behavior.java" startLine="11" startPosition="76" endLine="12" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />

@@ -213,6 +213,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="ArduinoML.behavior.Pin_BehaviorDescriptor" file="Pin_BehaviorDescriptor.java">
+    <classNode dependClassName="ArduinoML.behavior.Pin_Behavior" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />

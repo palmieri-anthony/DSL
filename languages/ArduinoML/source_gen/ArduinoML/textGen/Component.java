@@ -46,6 +46,5 @@ public abstract class Component {
 
   protected static String action_or_condition(String type, SNode pin, final SNodeTextGen textGen) {
     return BehaviorReflection.invokeVirtual(String.class, pin, "virtual_getType_4453370684997412076", new Object[]{}) + type + "(" + Pin_Behavior.call_pinNumber_4453370684997791203(pin);
-
   }
 }

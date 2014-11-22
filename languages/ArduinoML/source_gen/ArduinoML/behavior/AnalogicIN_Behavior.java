@@ -9,6 +9,14 @@ public class AnalogicIN_Behavior {
   }
 
   public static String virtual_getType_4453370684997412076(SNode thisNode) {
-    return "analogic";
+    return "analog";
+  }
+
+  public static String virtual_expectedValue_66643460712565918(SNode thisNode, String state) {
+    if (state.equals("HIGH")) {
+      return "> THRESHOLD_HIGH";
+    } else {
+      return "< THRESHOLD_LOW";
+    }
   }
 }

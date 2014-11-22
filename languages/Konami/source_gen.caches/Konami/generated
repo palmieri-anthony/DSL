@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="6brcqj32y8oa6cjcs7k5a796s67cf2n">
+<dependencies version="2" modelHash="-bt0igkiafps2qci1bbqdpdq30yd4z74">
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
   <dep model="r:708f7dbf-afda-4e8f-b356-cdd60f7a8185(Konami.typesystem)" hash="5fn0l6jpvr81ygczcb8qeyuptv4j4d1" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
-  <dep model="r:ebf94542-6038-4455-8244-8b8f98cf5522(Konami.editor)" hash="-9kgzzoqa8w8oa1c056e0myrhz3h17uy" />
+  <dep model="r:ebf94542-6038-4455-8244-8b8f98cf5522(Konami.editor)" hash="-5hj4s6thu4y7zmlka88s9lpbc1mc6hv" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
   <common dependsOnNodes="true">
     <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />

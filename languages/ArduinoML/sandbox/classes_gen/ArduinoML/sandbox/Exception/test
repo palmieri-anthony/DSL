@@ -1,12 +1,9 @@
 void mainly ();
 void setup() {
-  pinMode(INPUT,11);
-  pinMode(INPUT,12);
-???}
+  pinMode(INPUT,47);
+  pinMode(INPUT,54);
+}
 void mainly() {
-  if (digitalRead(11) == HIGH) {
-<!TextGen not found for 'ArduinoML.structure.AbstractAction'!>
-  }
 }
 void loop() {
 mainly();

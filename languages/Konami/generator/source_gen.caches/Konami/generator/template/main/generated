@@ -5,7 +5,7 @@
   <dep model="r:00000000-0000-4000-0000-011c895902e9(jetbrains.mps.lang.generator.generator.baseLanguage.template.main@generator)" hash="-15uwdtf1y5pg0o0e3fc6ujv2qcw23bv" />
   <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" hash="-8z73tx2nml9xagbxlfmq60ehji8q3f5" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
-  <dep model="r:c69e8c7c-4425-4b12-95f8-9d84eb8652ac(Konami.structure)" hash="zt1rus5l3hm5b2aeyj5izpu7evnksd" />
+  <dep model="r:c69e8c7c-4425-4b12-95f8-9d84eb8652ac(Konami.structure)" hash="7dc7rjrpqjb07puz3rhq1mldr1aa2v6" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
   <common hash="awojjlv6fhqtyxnzao3v8p8qghcyqir" dependsOnNodes="true">
     <dep root="1695169151245511370" />

@@ -16,6 +16,18 @@ public class Pin_Behavior {
     return Integer.toString(SPropertyOperations.getInteger(thisNode, "number"));
   }
 
+  public static String call_createCondition_66643460712562831(SNode thisNode, String state) {
+    return Pin_Behavior.call_actionRead_66643460711941392(thisNode) + Pin_Behavior.call_expectedValue_66643460712565918(thisNode, state);
+  }
+
+  public static String call_actionRead_66643460711941392(SNode thisNode) {
+    return BehaviorReflection.invokeVirtual(String.class, thisNode, "virtual_getType_4453370684997412076", new Object[]{}) + "Read(" + SPropertyOperations.getInteger(thisNode, "number") + ")";
+  }
+
+  public static String virtual_expectedValue_66643460712565918(SNode thisNode, String state) {
+    return "==" + state;
+  }
+
   @Deprecated
   public static String call_getType_4453370684997412076(SNode thisNode) {
     return BehaviorReflection.invokeVirtual(String.class, thisNode, "virtual_getType_4453370684997412076", new Object[]{});
@@ -24,5 +36,15 @@ public class Pin_Behavior {
   @Deprecated
   public static String callSuper_getType_4453370684997412076(SNode thisNode, String callerConceptFqName) {
     return BehaviorManager.getInstance().invokeSuper(String.class, SNodeOperations.cast(thisNode, "ArduinoML.structure.Pin"), callerConceptFqName, "virtual_getType_4453370684997412076", new Class[]{SNode.class}, new Object[]{});
+  }
+
+  @Deprecated
+  public static String call_expectedValue_66643460712565918(SNode thisNode, String state) {
+    return BehaviorReflection.invokeVirtual(String.class, thisNode, "virtual_expectedValue_66643460712565918", new Object[]{state});
+  }
+
+  @Deprecated
+  public static String callSuper_expectedValue_66643460712565918(SNode thisNode, String callerConceptFqName, String state) {
+    return BehaviorManager.getInstance().invokeSuper(String.class, SNodeOperations.cast(thisNode, "ArduinoML.structure.Pin"), callerConceptFqName, "virtual_expectedValue_66643460712565918", new Class[]{SNode.class, String.class}, new Object[]{state});
   }
 }

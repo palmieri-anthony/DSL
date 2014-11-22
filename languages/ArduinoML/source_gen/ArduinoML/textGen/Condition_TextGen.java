@@ -5,16 +5,19 @@ package ArduinoML.textGen;
 import jetbrains.mps.textGen.SNodeTextGen;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import ArduinoML.behavior.Pin_Behavior;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.smodel.behaviour.BehaviorReflection;
+import java.util.List;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 public class Condition_TextGen extends SNodeTextGen {
   public void doGenerateText(SNode node) {
+
     if ((SLinkOperations.getTarget(node, "pinLook", false) == null)) {
-      Component.condition_component(SLinkOperations.getTarget(node, "component", false), this);
+      this.append(Pin_Behavior.call_createCondition_66643460712562831(ListSequence.fromList(BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), SLinkOperations.getTarget(node, "component", false), "virtual_getPins_4453370684997361065", new Object[]{})).first(), SPropertyOperations.getString_def(node, "expected", "HIGH")));
     } else {
-      Component.condition_component_with_specific_pin(SLinkOperations.getTarget(node, "component", false), SLinkOperations.getTarget(node, "pinLook", false), this);
+      this.append(Pin_Behavior.call_createCondition_66643460712562831(SLinkOperations.getTarget(node, "pinLook", false), SPropertyOperations.getString_def(node, "expected", "HIGH")));
     }
-    this.append(" == ");
-    this.append(SPropertyOperations.getString_def(node, "expected", "HIGH"));
   }
 }

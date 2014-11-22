@@ -4,7 +4,7 @@
   <language namespace="fa9982d3-08c9-4f7d-9e44-6b5c5b7cd4a2(Konami)" />
   <language namespace="89165a04-ff0e-41f7-ae38-9bda96804b03(ArduinoML)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="qdza" modelUID="r:c69e8c7c-4425-4b12-95f8-9d84eb8652ac(Konami.structure)" version="0" implicit="yes" />
+  <import index="qdza" modelUID="r:c69e8c7c-4425-4b12-95f8-9d84eb8652ac(Konami.structure)" version="1" implicit="yes" />
   <import index="upjk" modelUID="r:92c44410-65d7-453c-aed5-43b797abae4b(ArduinoML.structure)" version="8" implicit="yes" />
   <root type="qdza.KonamiProgram" typeId="qdza.1695169151245019564" id="1695169151245511205" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Test" />

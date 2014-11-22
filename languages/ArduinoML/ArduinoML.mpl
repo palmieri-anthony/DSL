@@ -16,6 +16,7 @@
       <external-templates />
       <dependencies>
         <dependency reexport="false">89165a04-ff0e-41f7-ae38-9bda96804b03(ArduinoML)</dependency>
+        <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>89165a04-ff0e-41f7-ae38-9bda96804b03(ArduinoML)</usedLanguage>
