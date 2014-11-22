@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="ArduinoML.sandbox.Konami.map_KonamiProgram" file="map_KonamiProgram" />
+  <dependency className="ArduinoML.sandbox.Konami.null" file="null" />
 </dependenciesRoot>
 
