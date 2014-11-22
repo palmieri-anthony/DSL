@@ -30,6 +30,10 @@
     </node>
     <node role="components" roleId="upjk.5495481488340174672" type="upjk.ComponentOUT" typeId="upjk.5347434755052293904" id="1695169151245864058" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="gg" />
+      <node role="pins" roleId="upjk.6957858817575165771" type="upjk.DigitalOUT" typeId="upjk.6957858817575165833" id="1695169151246722223" nodeInfo="ng">
+        <property name="number" nameId="upjk.6957858817575165709" value="4" />
+        <property name="name" nameId="tpck.1169194664001" value="4" />
+      </node>
       <node role="pins" roleId="upjk.6957858817575165771" type="upjk.DigitalOUT" typeId="upjk.6957858817575165833" id="1695169151245864113" nodeInfo="ng">
         <property name="number" nameId="upjk.6957858817575165709" value="5" />
         <property name="name" nameId="tpck.1169194664001" value="5" />
