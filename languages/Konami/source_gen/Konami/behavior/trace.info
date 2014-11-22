@@ -4,5 +4,56 @@
   <unitInfo fileName="KonamiComposant_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Konami.behavior.KonamiComposant_BehaviorDescriptor" />
   <unitInfo fileName="KonamiProgram_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="Konami.behavior.KonamiProgram_BehaviorDescriptor" />
   <unitInfo fileName="StateProxy_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Konami.behavior.StateProxy_BehaviorDescriptor" />
+  <root nodeRef="r:69d76dd4-b742-46b8-ac87-0a9939af5af3(Konami.behavior)/835646908222904400">
+    <nodeInfo nodeId="835646908223307557" fileName="StateProxy_Behavior.java" startLine="15" startPosition="90" endLine="16" endPosition="88" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="835646908223322003" fileName="StateProxy_Behavior.java" startLine="16" startPosition="88" endLine="17" endPosition="91" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="835646908223439507" fileName="StateProxy_Behavior.java" startLine="17" startPosition="91" endLine="18" endPosition="92" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="835646908223452355" fileName="StateProxy_Behavior.java" startLine="18" startPosition="92" endLine="19" endPosition="95" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="835646908223474194" fileName="StateProxy_Behavior.java" startLine="19" startPosition="95" endLine="20" endPosition="95" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="835646908223453082" fileName="StateProxy_Behavior.java" startLine="21" startPosition="80" endLine="22" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="835646908223484506" fileName="StateProxy_Behavior.java" startLine="24" startPosition="80" endLine="25" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="835646908223495946" fileName="StateProxy_Behavior.java" startLine="27" startPosition="80" endLine="28" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="835646908223508170" fileName="StateProxy_Behavior.java" startLine="30" startPosition="80" endLine="31" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="835646908223512990" fileName="StateProxy_Behavior.java" startLine="32" startPosition="5" endLine="33" endPosition="107" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="835646908223527502" fileName="StateProxy_Behavior.java" startLine="33" startPosition="107" endLine="34" endPosition="107" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="835646908223549111" fileName="StateProxy_Behavior.java" startLine="34" startPosition="107" endLine="35" endPosition="99" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="835646908223559610" fileName="StateProxy_Behavior.java" startLine="35" startPosition="99" endLine="36" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="835646908223541230" fileName="StateProxy_Behavior.java" startLine="36" startPosition="68" endLine="37" endPosition="101" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="835646908223308071" fileName="StateProxy_Behavior.java" startLine="37" startPosition="101" endLine="38" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1695169151246279520" fileName="StateProxy_Behavior.java" startLine="41" startPosition="108" endLine="42" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="835646908222904400" fileName="StateProxy_Behavior.java" startLine="12" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <nodeInfo nodeId="835646908223432111" fileName="StateProxy_Behavior.java" startLine="20" startPosition="95" endLine="23" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="835646908223476148" fileName="StateProxy_Behavior.java" startLine="23" startPosition="5" endLine="26" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="835646908223488226" fileName="StateProxy_Behavior.java" startLine="26" startPosition="5" endLine="29" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="835646908223500661" fileName="StateProxy_Behavior.java" startLine="29" startPosition="5" endLine="32" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="835646908222904400" fileName="StateProxy_Behavior.java" startLine="41" startPosition="0" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_createDecision_835646908223321474#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+    <nodeInfo nodeId="835646908222904400" fileName="StateProxy_Behavior.java" startLine="15" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_populateModule_835646908222906844#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+    <scopeInfo nodeId="835646908222904704" fileName="StateProxy_Behavior.java" startLine="12" startPosition="43" endLine="12" endPosition="43" />
+    <scopeInfo nodeId="835646908223432114" fileName="StateProxy_Behavior.java" startLine="21" startPosition="80" endLine="22" endPosition="61" />
+    <scopeInfo nodeId="835646908223476151" fileName="StateProxy_Behavior.java" startLine="24" startPosition="80" endLine="25" endPosition="62" />
+    <scopeInfo nodeId="835646908223488229" fileName="StateProxy_Behavior.java" startLine="27" startPosition="80" endLine="28" endPosition="62" />
+    <scopeInfo nodeId="835646908223500664" fileName="StateProxy_Behavior.java" startLine="30" startPosition="80" endLine="31" endPosition="61" />
+    <scopeInfo nodeId="835646908223321477" fileName="StateProxy_Behavior.java" startLine="41" startPosition="108" endLine="42" endPosition="16" />
+    <scopeInfo nodeId="835646908222904400" fileName="StateProxy_Behavior.java" startLine="12" startPosition="0" endLine="14" endPosition="0">
+      <varInfo nodeId="835646908222904400" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="835646908222904400" fileName="StateProxy_Behavior.java" startLine="41" startPosition="0" endLine="44" endPosition="0">
+      <varInfo nodeId="835646908223321790" varName="nextStep" />
+      <varInfo nodeId="835646908223321751" varName="state" />
+      <varInfo nodeId="835646908222904400" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="835646908222906847" fileName="StateProxy_Behavior.java" startLine="15" startPosition="90" endLine="38" endPosition="18">
+      <varInfo nodeId="835646908223452358" varName="conditionX" />
+      <varInfo nodeId="835646908223474197" varName="conditionY" />
+      <varInfo nodeId="835646908223439510" varName="decision" />
+      <varInfo nodeId="835646908223307560" varName="module" />
+      <varInfo nodeId="835646908223549114" varName="nextMod" />
+    </scopeInfo>
+    <scopeInfo nodeId="835646908222904400" fileName="StateProxy_Behavior.java" startLine="15" startPosition="0" endLine="40" endPosition="0">
+      <varInfo nodeId="835646908223086084" varName="next" />
+      <varInfo nodeId="835646908222904400" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="835646908222904400" fileName="StateProxy_Behavior.java" startLine="11" startPosition="0" endLine="45" endPosition="0" unitName="Konami.behavior.StateProxy_Behavior" />
+  </root>
 </debugInfo>
 

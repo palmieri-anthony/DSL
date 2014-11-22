@@ -17,6 +17,9 @@
         </modelRoot>
       </models>
       <external-templates />
+      <dependencies>
+        <dependency reexport="false">fa9982d3-08c9-4f7d-9e44-6b5c5b7cd4a2(Konami)</dependency>
+      </dependencies>
       <usedLanguages>
         <usedLanguage>89165a04-ff0e-41f7-ae38-9bda96804b03(ArduinoML)</usedLanguage>
         <usedLanguage>fa9982d3-08c9-4f7d-9e44-6b5c5b7cd4a2(Konami)</usedLanguage>

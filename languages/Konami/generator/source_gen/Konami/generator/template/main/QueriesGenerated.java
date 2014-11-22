@@ -8,6 +8,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 
@@ -16,11 +17,30 @@ public class QueriesGenerated {
   public final boolean NEEDS_OPCONTEXT = false;
 
   public static void mappingScript_CodeBlock_835646908222287883(final MappingScriptContext _context) {
-    SNode konami = ListSequence.fromList(SModelOperations.getNodes(_context.getModel(), "Konami.structure.KonamiProgram")).first();
+    SNode konamiProg = ListSequence.fromList(SModelOperations.getNodes(_context.getModel(), "Konami.structure.KonamiProgram")).first();
     SNode arduinoML = SConceptOperations.createNewNode("ArduinoML.structure.ArduinoML", null);
-    ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).addElement(SLinkOperations.getTarget(konami, "ledError", true));
-    ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).addElement(SLinkOperations.getTarget(konami, "ledOK", true));
-    SNodeOperations.replaceWithAnother(konami, arduinoML);
+    SPropertyOperations.set(arduinoML, "name", SPropertyOperations.getString(konamiProg, "name"));
+    ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).addElement(SLinkOperations.getTarget(konamiProg, "ledError", true));
+    ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).addElement(SLinkOperations.getTarget(konamiProg, "ledOK", true));
+    SNode konamiComposant = SConceptOperations.createNewNode("ArduinoML.structure.ComponentIN", null);
+    ListSequence.fromList(SLinkOperations.getTargets(konamiComposant, "pins", true)).addElement(SLinkOperations.getTarget(SLinkOperations.getTarget(konamiProg, "konami", true), "pinButton", true));
+    ListSequence.fromList(SLinkOperations.getTargets(konamiComposant, "pins", true)).addElement(SLinkOperations.getTarget(SLinkOperations.getTarget(konamiProg, "konami", true), "pinX", true));
+    ListSequence.fromList(SLinkOperations.getTargets(konamiComposant, "pins", true)).addElement(SLinkOperations.getTarget(SLinkOperations.getTarget(konamiProg, "konami", true), "pinY", true));
+    SNode mainly = SConceptOperations.createNewNode("ArduinoML.structure.Module", null);
+    SPropertyOperations.set(mainly, "name", "mainly");
+    SNode begin = SConceptOperations.createNewNode("ArduinoML.structure.Decision", null);
 
+    for (int numTransition = 0; numTransition < 3; numTransition++) {
+      for (int numStep = 0; numStep < ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count(); numStep++) {
+        SNode module = SConceptOperations.createNewNode("ArduinoML.structure.Module", null);
+        SPropertyOperations.set(module, "name", "Step" + Integer.toString(numTransition) + Integer.toString(numStep));
+        ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).addElement(module);
+      }
+      SNode moduleBatard = SConceptOperations.createNewNode("ArduinoML.structure.Module", null);
+      SPropertyOperations.set(moduleBatard, "name", "BatardStep" + Integer.toString(numTransition));
+      ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).addElement(moduleBatard);
+    }
+
+    SNodeOperations.replaceWithAnother(konamiProg, arduinoML);
   }
 }
