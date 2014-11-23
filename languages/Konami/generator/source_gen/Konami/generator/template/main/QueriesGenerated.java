@@ -244,7 +244,7 @@ public class QueriesGenerated {
       for (int j = 0; j < ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count(); j++) {
         SNode nextStep = ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + j + 2);
         if (j == ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() - 1) {
-          nextStep = ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).count() - 3 - i);
+          nextStep = ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).count() - (3 - i));
         }
         SNode nextTentative = ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + 1);
         if (i == 2 && j == ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() - 1) {
