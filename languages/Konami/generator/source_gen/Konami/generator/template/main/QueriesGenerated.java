@@ -136,9 +136,9 @@ public class QueriesGenerated {
     SLinkOperations.setTarget(switchOnLedOk, "component", SNodeOperations.as(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(1), "ArduinoML.structure.ComponentOUT"), false);
     SPropertyOperations.set(switchOnLedOk, "target", "HIGH");
     SNode waitLedBreak = SConceptOperations.createNewNode("ArduinoML.structure.Break", null);
-    SPropertyOperations.set(waitLedBreak, "timeInMilliSecondes", "" + (1000));
+    SPropertyOperations.set(waitLedBreak, "timeInMilliSecondes", "" + (500));
     SNode waitLedBreak2 = SConceptOperations.createNewNode("ArduinoML.structure.Break", null);
-    SPropertyOperations.set(waitLedBreak2, "timeInMilliSecondes", "" + (1000));
+    SPropertyOperations.set(waitLedBreak2, "timeInMilliSecondes", "" + (500));
 
     SNode switchOffLedOk = SConceptOperations.createNewNode("ArduinoML.structure.ActionOnComponent", null);
     SLinkOperations.setTarget(switchOffLedOk, "component", SNodeOperations.as(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(1), "ArduinoML.structure.ComponentOUT"), false);
@@ -154,12 +154,51 @@ public class QueriesGenerated {
     ListSequence.fromList(SLinkOperations.getTargets(win, "rules", true)).addElement(switchLedOk);
     ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).addElement(win);
 
+    // pre-win 
+    for (int i = 0; i < 3; i++) {
+      SNode modulePreWin = SConceptOperations.createNewNode("ArduinoML.structure.Module", null);
+      SPropertyOperations.set(modulePreWin, "name", "PreWin" + Integer.toString(i));
+      ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).addElement(modulePreWin);
+    }
+
+    for (int i = ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).count() - 2; i >= ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).count() - 3; i--) {
+      SNode waitButtonPrewin = SConceptOperations.createNewNode("ArduinoML.structure.Decision", null);
+      SNode buttonOffPreWin = SConceptOperations.createNewNode("ArduinoML.structure.Condition", null);
+      SNode callItSelfPreWin = SConceptOperations.createNewNode("ArduinoML.structure.ActionCallModule", null);
+      SLinkOperations.setTarget(buttonOffPreWin, "component", konamiComposant, false);
+      SLinkOperations.setTarget(buttonOffPreWin, "pinLook", ListSequence.fromList(BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), konamiComposant, "virtual_getPins_4453370684997361065", new Object[]{})).getElement(0), false);
+      SPropertyOperations.set(buttonOffPreWin, "expected", "LOW");
+      ListSequence.fromList(SLinkOperations.getTargets(waitButtonPrewin, "conditions", true)).addElement(buttonOffPreWin);
+      SLinkOperations.setTarget(callItSelfPreWin, "moduleToCall", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i), false);
+      ListSequence.fromList(SLinkOperations.getTargets(waitButtonPrewin, "actions", true)).addElement(callItSelfPreWin);
+
+      SNode bastardModule = SConceptOperations.createNewNode("ArduinoML.structure.Decision", null);
+      SNode buttonOnPreWin = SConceptOperations.createNewNode("ArduinoML.structure.Condition", null);
+      SNode nextTentaModPreWin = SConceptOperations.createNewNode("ArduinoML.structure.ActionCallModule", null);
+      SLinkOperations.setTarget(buttonOnPreWin, "component", konamiComposant, false);
+      SLinkOperations.setTarget(buttonOnPreWin, "pinLook", ListSequence.fromList(BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), konamiComposant, "virtual_getPins_4453370684997361065", new Object[]{})).getElement(0), false);
+      SPropertyOperations.set(buttonOnPreWin, "expected", "HIGH");
+      ListSequence.fromList(SLinkOperations.getTargets(bastardModule, "conditions", true)).addElement(buttonOnPreWin);
+      if (i == 2) {
+        SLinkOperations.setTarget(nextTentaModPreWin, "moduleToCall", ErrStateModule, false);
+      } else {
+        SLinkOperations.setTarget(nextTentaModPreWin, "moduleToCall", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement((i + 1) * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + 1), false);
+      }
+      ListSequence.fromList(SLinkOperations.getTargets(bastardModule, "actions", true)).addElement(nextTentaModPreWin);
+
+      ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 1 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), "rules", true)).addElement(waitButtonPrewin);
+      ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 1 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), "rules", true)).addElement(bastardModule);
+
+
+    }
+
+
     // remplissement des mdodules 
     for (int i = 0; i < 3; i++) {
       for (int j = 0; j < ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count(); j++) {
         SNode nextStep = ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + j + 2);
         if (j == ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() - 1) {
-          nextStep = win;
+          nextStep = ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).count() - 3 - i);
         }
         SNode nextTentative = ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + 1);
         if (i == 2 && j == ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() - 1) {
@@ -187,7 +226,7 @@ public class QueriesGenerated {
       SNode waitLedErrBreak = SConceptOperations.createNewNode("ArduinoML.structure.Break", null);
       SPropertyOperations.set(waitLedErrBreak, "timeInMilliSecondes", "" + (500));
       SNode waitLedErrBreak2 = SConceptOperations.createNewNode("ArduinoML.structure.Break", null);
-      SPropertyOperations.set(waitLedErrBreak2, "timeInMilliSecondes", "" + (1000));
+      SPropertyOperations.set(waitLedErrBreak2, "timeInMilliSecondes", "" + (500));
       ListSequence.fromList(SLinkOperations.getTargets(blinkLedErr, "actions", true)).addElement(waitLedErrBreak);
       ListSequence.fromList(SLinkOperations.getTargets(blinkLedErr, "actions", true)).addElement(switchOnLedErrAction);
       ListSequence.fromList(SLinkOperations.getTargets(blinkLedErr, "actions", true)).addElement(waitLedErrBreak2);
