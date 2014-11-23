@@ -135,9 +135,13 @@ public class QueriesGenerated {
     SPropertyOperations.set(switchOnLedOk, "target", "HIGH");
     SNode waitLedBreak = SConceptOperations.createNewNode("ArduinoML.structure.Break", null);
     SPropertyOperations.set(waitLedBreak, "timeInMilliSecondes", "" + (1000));
+    SNode waitLedBreak2 = SConceptOperations.createNewNode("ArduinoML.structure.Break", null);
+    SPropertyOperations.set(waitLedBreak2, "timeInMilliSecondes", "" + (1000));
+
     SNode switchOffLedOk = SConceptOperations.createNewNode("ArduinoML.structure.ActionOnComponent", null);
     SLinkOperations.setTarget(switchOffLedOk, "component", SNodeOperations.as(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(1), "ArduinoML.structure.ComponentOUT"), false);
-    SPropertyOperations.set(switchOffLedOk, "target", "HIGH");
+    SPropertyOperations.set(switchOffLedOk, "target", "LOW");
+    ListSequence.fromList(SLinkOperations.getTargets(switchLedOk, "actions", true)).addElement(waitLedBreak2);
     ListSequence.fromList(SLinkOperations.getTargets(switchLedOk, "actions", true)).addElement(switchOnLedOk);
     ListSequence.fromList(SLinkOperations.getTargets(switchLedOk, "actions", true)).addElement(waitLedBreak);
     ListSequence.fromList(SLinkOperations.getTargets(switchLedOk, "actions", true)).addElement(switchOffLedOk);
@@ -151,10 +155,42 @@ public class QueriesGenerated {
     // remplissement des mdodules 
     for (int i = 0; i < 3; i++) {
       for (int j = 0; j < ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count(); j++) {
-        StateProxy_Behavior.call_populateModule_835646908222906844(ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).getElement(j), ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + j + 1), ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + j + 2), ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + i + 1), ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + 1), konamiComposant);
+        SNode nextStep = ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + j + 2);
+        if (j == ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() - 1) {
+          nextStep = win;
+        }
+        StateProxy_Behavior.call_populateModule_835646908222906844(ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).getElement(j), ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + j + 1), nextStep, ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + i + 1), ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + 1), konamiComposant);
       }
     }
+    // populate step20,30 => erreur => tant que utilisateur ne touche pas au joystick => clignotement  
+    for (int i = 0; i < 2; i++) {
+      SNode firstStepModule = ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + 1);
+      ListSequence.fromList(SLinkOperations.getTargets(firstStepModule, "rules", true)).removeLastElement();
+      SNode blinkLedErr = SConceptOperations.createNewNode("ArduinoML.structure.Decision", null);
+      SNode ledErrOff = SConceptOperations.createNewNode("ArduinoML.structure.Condition", null);
+      SLinkOperations.setTarget(ledErrOff, "component", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(0), false);
+      SPropertyOperations.set(ledErrOff, "expected", "LOW");
+      ListSequence.fromList(SLinkOperations.getTargets(blinkLedErr, "conditions", true)).addElement(ledErrOff);
+      SNode switchOnLedErrAction = SConceptOperations.createNewNode("ArduinoML.structure.ActionOnComponent", null);
+      SLinkOperations.setTarget(switchOnLedErrAction, "component", SNodeOperations.as(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(0), "ArduinoML.structure.ComponentOUT"), false);
+      SPropertyOperations.set(switchOnLedErrAction, "target", "HIGH");
+      SNode switchOffLedErrAction = SConceptOperations.createNewNode("ArduinoML.structure.ActionOnComponent", null);
+      SLinkOperations.setTarget(switchOffLedErrAction, "component", SNodeOperations.as(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(0), "ArduinoML.structure.ComponentOUT"), false);
+      SPropertyOperations.set(switchOffLedErrAction, "target", "LOW");
 
+      SNode waitLedErrBreak = SConceptOperations.createNewNode("ArduinoML.structure.Break", null);
+      SPropertyOperations.set(waitLedErrBreak, "timeInMilliSecondes", "" + (500));
+      SNode waitLedErrBreak2 = SConceptOperations.createNewNode("ArduinoML.structure.Break", null);
+      SPropertyOperations.set(waitLedErrBreak2, "timeInMilliSecondes", "" + (1000));
+      ListSequence.fromList(SLinkOperations.getTargets(blinkLedErr, "actions", true)).addElement(waitLedErrBreak);
+      ListSequence.fromList(SLinkOperations.getTargets(blinkLedErr, "actions", true)).addElement(switchOnLedErr);
+      ListSequence.fromList(SLinkOperations.getTargets(blinkLedErr, "actions", true)).addElement(waitLedErrBreak2);
+      ListSequence.fromList(SLinkOperations.getTargets(blinkLedErr, "actions", true)).addElement(switchOffLedErrAction);
+      SNode call = SConceptOperations.createNewNode("ArduinoML.structure.ActionCallModule", null);
+      SLinkOperations.setTarget(call, "moduleToCall", firstStepModule, false);
+      ListSequence.fromList(SLinkOperations.getTargets(blinkLedErr, "actions", true)).addElement(call);
+      ListSequence.fromList(SLinkOperations.getTargets(firstStepModule, "rules", true)).addElement(blinkLedErr);
+    }
     SNodeOperations.replaceWithAnother(konamiProg, arduinoML);
   }
 }

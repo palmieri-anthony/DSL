@@ -18,9 +18,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a65b504a-61b5-411d-82ac-b4000067c487" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/generator/classes_gen/Konami/generator/template/main/QueriesGenerated.class" afterPath="$PROJECT_DIR$/languages/Konami/generator/classes_gen/Konami/generator/template/main/QueriesGenerated.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/generator/source_gen/Konami/generator/template/main/QueriesGenerated.java" afterPath="$PROJECT_DIR$/languages/Konami/generator/source_gen/Konami/generator/template/main/QueriesGenerated.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/generator/source_gen.caches/Konami/generator/template/main/generated" afterPath="$PROJECT_DIR$/languages/Konami/generator/source_gen.caches/Konami/generator/template/main/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/generator/template/main@generator.mps" afterPath="$PROJECT_DIR$/languages/Konami/generator/template/main@generator.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/generator/classes_gen/Konami/generator/template/main/trace.info" afterPath="$PROJECT_DIR$/languages/Konami/generator/classes_gen/Konami/generator/template/main/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/generator/source_gen/Konami/generator/template/main/trace.info" afterPath="$PROJECT_DIR$/languages/Konami/generator/source_gen/Konami/generator/template/main/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
     </list>
@@ -59,19 +61,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="script" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="script" pinned="false" current="false" current-in-tab="false">
         <entry file="mps://node://Konami#1695169151241763873/Konami.generator.template.main@generator/script">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="1957">
+              <memento viewPositionX="0" viewPositionY="2475">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="24" />
-                    <property name="caretX" value="255" />
+                    <property name="caretXRelative" value="80" />
+                    <property name="caretX" value="303" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_value" cellNumber="0" isInList="false">
-                      <node node_reference="r:ed11ed62-b073-4570-9ba4-4a8db9777c8e(Konami.generator.template.main@generator)/2964997150778251467" />
+                    <cellInfo cellId="ALIAS_EDITOR_COMPONENT" cellNumber="0" isInList="false">
+                      <node node_reference="r:ed11ed62-b073-4570-9ba4-4a8db9777c8e(Konami.generator.template.main@generator)/2964997150780409749" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -79,7 +81,7 @@
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:ed11ed62-b073-4570-9ba4-4a8db9777c8e(Konami.generator.template.main@generator)/2964997150778251467" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:33a5a5b2-35af-4e3e-b7fb-2bd38a3bcf7f(ArduinoML.sandbox.Konami)/2964997150776955969" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -109,7 +111,7 @@
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:ed11ed62-b073-4570-9ba4-4a8db9777c8e(Konami.generator.template.main@generator)/2964997150778251467" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:33a5a5b2-35af-4e3e-b7fb-2bd38a3bcf7f(ArduinoML.sandbox.Konami)/2964997150776955969" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -119,10 +121,37 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="test" pinned="false" current="true" current-in-tab="true">
+        <entry file="previewA.sandbox.Konami/test">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.298969" vertical-offset="1600" max-vertical-offset="2085">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="test" pinned="false" current="false" current-in-tab="false">
         <entry file="previewA.sandbox.Konami/test">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1487" max-vertical-offset="1980">
+            <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="2175">
+              <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test" pinned="false" current="false" current-in-tab="false">
+        <entry file="previewA.sandbox.Konami/test">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1260" max-vertical-offset="1980">
+              <caret line="94" column="18" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test" pinned="false" current="false" current-in-tab="false">
+        <entry file="previewA.sandbox.Konami/test">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="910" max-vertical-offset="1980">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             </state>
           </provider>
@@ -166,7 +195,7 @@
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:ed11ed62-b073-4570-9ba4-4a8db9777c8e(Konami.generator.template.main@generator)/2964997150778251467" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:33a5a5b2-35af-4e3e-b7fb-2bd38a3bcf7f(ArduinoML.sandbox.Konami)/2964997150776955969" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -730,7 +759,7 @@
       <window_info id="Tree" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843792" sideWeight="0.5" order="20" side_tool="false" content_ui="tabs" />
@@ -806,7 +835,8 @@
     <MESSAGE value="tt" />
     <MESSAGE value="ajout des constantes" />
     <MESSAGE value="ajout buzzer konami + MAJ script konami" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout buzzer konami + MAJ script konami" />
+    <MESSAGE value=" MAJ script konami" />
+    <option name="LAST_COMMIT_MESSAGE" value=" MAJ script konami" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://Konami/Konami.structure/KonamiState">
@@ -1522,15 +1552,15 @@
     <entry file="mps://node://Konami#1695169151241763873/Konami.generator.template.main@generator/script">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="1957">
+          <memento viewPositionX="0" viewPositionY="2475">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="24" />
-                <property name="caretX" value="255" />
+                <property name="caretXRelative" value="80" />
+                <property name="caretX" value="303" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
-                  <node node_reference="r:ed11ed62-b073-4570-9ba4-4a8db9777c8e(Konami.generator.template.main@generator)/2964997150778251467" />
+                <cellInfo cellId="ALIAS_EDITOR_COMPONENT" cellNumber="0" isInList="false">
+                  <node node_reference="r:ed11ed62-b073-4570-9ba4-4a8db9777c8e(Konami.generator.template.main@generator)/2964997150780409749" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1538,7 +1568,7 @@
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:ed11ed62-b073-4570-9ba4-4a8db9777c8e(Konami.generator.template.main@generator)/2964997150778251467" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:33a5a5b2-35af-4e3e-b7fb-2bd38a3bcf7f(ArduinoML.sandbox.Konami)/2964997150776955969" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2029,7 +2059,7 @@
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:ed11ed62-b073-4570-9ba4-4a8db9777c8e(Konami.generator.template.main@generator)/2964997150778251467" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:33a5a5b2-35af-4e3e-b7fb-2bd38a3bcf7f(ArduinoML.sandbox.Konami)/2964997150776955969" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2058,7 +2088,7 @@
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:ed11ed62-b073-4570-9ba4-4a8db9777c8e(Konami.generator.template.main@generator)/2964997150778251467" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:33a5a5b2-35af-4e3e-b7fb-2bd38a3bcf7f(ArduinoML.sandbox.Konami)/2964997150776955969" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
