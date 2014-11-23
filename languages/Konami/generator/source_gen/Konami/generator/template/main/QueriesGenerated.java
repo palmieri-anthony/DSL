@@ -55,15 +55,17 @@ public class QueriesGenerated {
     SPropertyOperations.set(led2Off, "expected", "LOW");
     ListSequence.fromList(SLinkOperations.getTargets(initialization, "conditions", true)).addElement(led2Off);
     ListSequence.fromList(SLinkOperations.getTargets(initialization, "conditions", true)).addElement(led1Off);
+    // actions 
     SNode switchOnLedErr = SConceptOperations.createNewNode("ArduinoML.structure.ActionOnComponent", null);
     SNode firstStep = SConceptOperations.createNewNode("ArduinoML.structure.ActionCallModule", null);
     SLinkOperations.setTarget(switchOnLedErr, "component", SNodeOperations.as(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(0), "ArduinoML.structure.ComponentOUT"), false);
     SPropertyOperations.set(switchOnLedErr, "target", "HIGH");
-
-    SLinkOperations.setTarget(firstStep, "moduleToCall", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(1), false);
     ListSequence.fromList(SLinkOperations.getTargets(initialization, "actions", true)).addElement(switchOnLedErr);
+    SLinkOperations.setTarget(firstStep, "moduleToCall", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(1), false);
+
     ListSequence.fromList(SLinkOperations.getTargets(initialization, "actions", true)).addElement(firstStep);
     ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).first(), "rules", true)).addElement(initialization);
+
     // creation de l'etat derreur , boucle sur lui meme 
     SNode ErrStateModule = SConceptOperations.createNewNode("ArduinoML.structure.Module", null);
     SPropertyOperations.set(ErrStateModule, "name", "ErrorState");
@@ -183,7 +185,7 @@ public class QueriesGenerated {
       SNode waitLedErrBreak2 = SConceptOperations.createNewNode("ArduinoML.structure.Break", null);
       SPropertyOperations.set(waitLedErrBreak2, "timeInMilliSecondes", "" + (1000));
       ListSequence.fromList(SLinkOperations.getTargets(blinkLedErr, "actions", true)).addElement(waitLedErrBreak);
-      ListSequence.fromList(SLinkOperations.getTargets(blinkLedErr, "actions", true)).addElement(switchOnLedErr);
+      ListSequence.fromList(SLinkOperations.getTargets(blinkLedErr, "actions", true)).addElement(switchOnLedErrAction);
       ListSequence.fromList(SLinkOperations.getTargets(blinkLedErr, "actions", true)).addElement(waitLedErrBreak2);
       ListSequence.fromList(SLinkOperations.getTargets(blinkLedErr, "actions", true)).addElement(switchOffLedErrAction);
       SNode call = SConceptOperations.createNewNode("ArduinoML.structure.ActionCallModule", null);

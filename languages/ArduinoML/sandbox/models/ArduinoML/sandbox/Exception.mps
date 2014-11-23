@@ -12,9 +12,21 @@
         <node role="actions" roleId="upjk.6957858817575162257" type="upjk.ActionOnComponent" typeId="upjk.5347434755052293834" id="1695169151245864080" nodeInfo="ng">
           <link role="component" roleId="upjk.6957858817575162263" targetNodeId="1695169151245864058" resolveInfo="gg" />
         </node>
+        <node role="actions" roleId="upjk.6957858817575162257" type="upjk.ActionCallModule" typeId="upjk.1895809058294874947" id="2655232213852712305" nodeInfo="ng">
+          <link role="moduleToCall" roleId="upjk.1895809058294874948" targetNodeId="2655232213852712296" resolveInfo="exception" />
+        </node>
         <node role="conditions" roleId="upjk.6957858817575162259" type="upjk.Condition" typeId="upjk.5347434755052293888" id="1695169151245864177" nodeInfo="ng">
           <link role="component" roleId="upjk.6957858817575162261" targetNodeId="1695169151245864058" resolveInfo="gg" />
           <link role="pinLook" roleId="upjk.1695169151237798900" targetNodeId="1695169151245864113" resolveInfo="5" />
+        </node>
+      </node>
+    </node>
+    <node role="modules" roleId="upjk.3691149528040069865" type="upjk.Module" typeId="upjk.3691149528040067273" id="2655232213852712296" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="exception" />
+      <node role="rules" roleId="upjk.3691149528040069826" type="upjk.Exception" typeId="upjk.6957858817574878885" id="2655232213852712309" nodeInfo="ng">
+        <property name="numError" nameId="upjk.6957858817575369107" value="2" />
+        <node role="conditions" roleId="upjk.6957858817575162259" type="upjk.Condition" typeId="upjk.5347434755052293888" id="2655232213852712310" nodeInfo="ng">
+          <link role="component" roleId="upjk.6957858817575162261" targetNodeId="1695169151245864058" resolveInfo="gg" />
         </node>
       </node>
     </node>
@@ -38,6 +50,12 @@
       <node role="pins" roleId="upjk.6957858817575165771" type="upjk.DigitalOUT" typeId="upjk.6957858817575165833" id="1695169151245864113" nodeInfo="ng">
         <property name="number" nameId="upjk.6957858817575165709" value="5" />
         <property name="name" nameId="tpck.1169194664001" value="5" />
+      </node>
+    </node>
+    <node role="componentException" roleId="upjk.1895809058298660632" type="upjk.ComponentOUT" typeId="upjk.5347434755052293904" id="2655232213852712218" nodeInfo="ng">
+      <node role="pins" roleId="upjk.6957858817575165771" type="upjk.DigitalOUT" typeId="upjk.6957858817575165833" id="2655232213852767353" nodeInfo="ng">
+        <property name="number" nameId="upjk.6957858817575165709" value="3" />
+        <property name="name" nameId="tpck.1169194664001" value="3" />
       </node>
     </node>
   </root>

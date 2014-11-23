@@ -11,22 +11,22 @@
     <node role="ledError" roleId="qdza.1695169151245127563" type="upjk.ComponentOUT" typeId="upjk.5347434755052293904" id="2964997150776681846" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="led1" />
       <node role="pins" roleId="upjk.6957858817575165771" type="upjk.DigitalOUT" typeId="upjk.6957858817575165833" id="2384999650474955956" nodeInfo="ng">
-        <property name="number" nameId="upjk.6957858817575165709" value="2" />
-        <property name="name" nameId="tpck.1169194664001" value="2" />
+        <property name="number" nameId="upjk.6957858817575165709" value="8" />
+        <property name="name" nameId="tpck.1169194664001" value="8" />
       </node>
     </node>
     <node role="ledOK" roleId="qdza.1695169151245127565" type="upjk.ComponentOUT" typeId="upjk.5347434755052293904" id="2964997150776681848" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="led2" />
       <node role="pins" roleId="upjk.6957858817575165771" type="upjk.DigitalOUT" typeId="upjk.6957858817575165833" id="2964997150776955966" nodeInfo="ng">
-        <property name="number" nameId="upjk.6957858817575165709" value="2" />
-        <property name="name" nameId="tpck.1169194664001" value="2" />
+        <property name="number" nameId="upjk.6957858817575165709" value="9" />
+        <property name="name" nameId="tpck.1169194664001" value="9" />
       </node>
     </node>
     <node role="buzzer" roleId="qdza.2964997150776674017" type="upjk.ComponentOUT" typeId="upjk.5347434755052293904" id="2964997150776681850" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="buzzer" />
       <node role="pins" roleId="upjk.6957858817575165771" type="upjk.DigitalOUT" typeId="upjk.6957858817575165833" id="2964997150776955969" nodeInfo="ng">
-        <property name="number" nameId="upjk.6957858817575165709" value="6" />
-        <property name="name" nameId="tpck.1169194664001" value="6" />
+        <property name="number" nameId="upjk.6957858817575165709" value="10" />
+        <property name="name" nameId="tpck.1169194664001" value="10" />
       </node>
     </node>
     <node role="konami" roleId="qdza.1695169151245127580" type="qdza.KonamiComposant" typeId="qdza.1695169151242537851" id="2964997150776681852" nodeInfo="ng">
@@ -46,16 +46,6 @@
     <node role="code" roleId="qdza.1695169151245127631" type="qdza.StateProxy" typeId="qdza.1695169151245127599" id="2964997150776681856" nodeInfo="ng">
       <property name="state" nameId="qdza.1695169151245127614" value="U" />
     </node>
-    <node role="code" roleId="qdza.1695169151245127631" type="qdza.StateProxy" typeId="qdza.1695169151245127599" id="2384999650472204253" nodeInfo="ng" />
-    <node role="code" roleId="qdza.1695169151245127631" type="qdza.StateProxy" typeId="qdza.1695169151245127599" id="2384999650472204273" nodeInfo="ng">
-      <property name="state" nameId="qdza.1695169151245127614" value="D" />
-    </node>
-    <node role="code" roleId="qdza.1695169151245127631" type="qdza.StateProxy" typeId="qdza.1695169151245127599" id="2384999650472204289" nodeInfo="ng" />
-    <node role="code" roleId="qdza.1695169151245127631" type="qdza.StateProxy" typeId="qdza.1695169151245127599" id="2384999650472635545" nodeInfo="ng" />
-    <node role="code" roleId="qdza.1695169151245127631" type="qdza.StateProxy" typeId="qdza.1695169151245127599" id="2384999650472635551" nodeInfo="ng" />
-    <node role="code" roleId="qdza.1695169151245127631" type="qdza.StateProxy" typeId="qdza.1695169151245127599" id="2384999650472635558" nodeInfo="ng" />
-    <node role="code" roleId="qdza.1695169151245127631" type="qdza.StateProxy" typeId="qdza.1695169151245127599" id="2384999650473184027" nodeInfo="ng" />
-    <node role="code" roleId="qdza.1695169151245127631" type="qdza.StateProxy" typeId="qdza.1695169151245127599" id="2384999650473184036" nodeInfo="ng" />
   </root>
 </model>
 
