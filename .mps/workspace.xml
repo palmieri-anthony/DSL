@@ -18,10 +18,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a65b504a-61b5-411d-82ac-b4000067c487" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/generator/source_gen/Konami/generator/template/main/QueriesGenerated.java" afterPath="$PROJECT_DIR$/languages/Konami/generator/source_gen/Konami/generator/template/main/QueriesGenerated.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/generator/source_gen.caches/Konami/generator/template/main/generated" afterPath="$PROJECT_DIR$/languages/Konami/generator/source_gen.caches/Konami/generator/template/main/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/generator/template/main@generator.mps" afterPath="$PROJECT_DIR$/languages/Konami/generator/template/main@generator.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/generator/source_gen/Konami/generator/template/main/trace.info" afterPath="$PROJECT_DIR$/languages/Konami/generator/source_gen/Konami/generator/template/main/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/generator/classes_gen/Konami/generator/template/main/QueriesGenerated.class" afterPath="$PROJECT_DIR$/languages/Konami/generator/classes_gen/Konami/generator/template/main/QueriesGenerated.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/Konami/generator/classes_gen/Konami/generator/template/main/trace.info" afterPath="$PROJECT_DIR$/languages/Konami/generator/classes_gen/Konami/generator/template/main/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
     </list>
     <ignored path="DSL.iws" />
