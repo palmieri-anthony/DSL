@@ -160,34 +160,80 @@ public class QueriesGenerated {
       SPropertyOperations.set(modulePreWin, "name", "PreWin" + Integer.toString(i));
       ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).addElement(modulePreWin);
     }
+    // pour chaque prewin 
+    for (int i = 0; i < 3; i++) {
+      {
+        SNode callwinModule = SConceptOperations.createNewNode("ArduinoML.structure.Decision", null);
+        SNode buttonOnPreWin = SConceptOperations.createNewNode("ArduinoML.structure.Condition", null);
+        SNode nextTentaModPreWin = SConceptOperations.createNewNode("ArduinoML.structure.ActionCallModule", null);
+        SLinkOperations.setTarget(buttonOnPreWin, "component", konamiComposant, false);
+        SLinkOperations.setTarget(buttonOnPreWin, "pinLook", ListSequence.fromList(BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), konamiComposant, "virtual_getPins_4453370684997361065", new Object[]{})).getElement(0), false);
+        SPropertyOperations.set(buttonOnPreWin, "expected", "HIGH");
+        ListSequence.fromList(SLinkOperations.getTargets(callwinModule, "conditions", true)).addElement(buttonOnPreWin);
+        SLinkOperations.setTarget(nextTentaModPreWin, "moduleToCall", win, false);
+        ListSequence.fromList(SLinkOperations.getTargets(callwinModule, "actions", true)).addElement(nextTentaModPreWin);
+        ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 6 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), "rules", true)).addElement(callwinModule);
 
-    for (int i = ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).count() - 2; i >= ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).count() - 3; i--) {
-      SNode waitButtonPrewin = SConceptOperations.createNewNode("ArduinoML.structure.Decision", null);
-      SNode buttonOffPreWin = SConceptOperations.createNewNode("ArduinoML.structure.Condition", null);
-      SNode callItSelfPreWin = SConceptOperations.createNewNode("ArduinoML.structure.ActionCallModule", null);
-      SLinkOperations.setTarget(buttonOffPreWin, "component", konamiComposant, false);
-      SLinkOperations.setTarget(buttonOffPreWin, "pinLook", ListSequence.fromList(BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), konamiComposant, "virtual_getPins_4453370684997361065", new Object[]{})).getElement(0), false);
-      SPropertyOperations.set(buttonOffPreWin, "expected", "LOW");
-      ListSequence.fromList(SLinkOperations.getTargets(waitButtonPrewin, "conditions", true)).addElement(buttonOffPreWin);
-      SLinkOperations.setTarget(callItSelfPreWin, "moduleToCall", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i), false);
-      ListSequence.fromList(SLinkOperations.getTargets(waitButtonPrewin, "actions", true)).addElement(callItSelfPreWin);
-
-      SNode bastardModule = SConceptOperations.createNewNode("ArduinoML.structure.Decision", null);
-      SNode buttonOnPreWin = SConceptOperations.createNewNode("ArduinoML.structure.Condition", null);
-      SNode nextTentaModPreWin = SConceptOperations.createNewNode("ArduinoML.structure.ActionCallModule", null);
-      SLinkOperations.setTarget(buttonOnPreWin, "component", konamiComposant, false);
-      SLinkOperations.setTarget(buttonOnPreWin, "pinLook", ListSequence.fromList(BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), konamiComposant, "virtual_getPins_4453370684997361065", new Object[]{})).getElement(0), false);
-      SPropertyOperations.set(buttonOnPreWin, "expected", "HIGH");
-      ListSequence.fromList(SLinkOperations.getTargets(bastardModule, "conditions", true)).addElement(buttonOnPreWin);
-      if (i == 2) {
-        SLinkOperations.setTarget(nextTentaModPreWin, "moduleToCall", ErrStateModule, false);
-      } else {
-        SLinkOperations.setTarget(nextTentaModPreWin, "moduleToCall", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement((i + 1) * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + 1), false);
       }
-      ListSequence.fromList(SLinkOperations.getTargets(bastardModule, "actions", true)).addElement(nextTentaModPreWin);
 
-      ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 1 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), "rules", true)).addElement(waitButtonPrewin);
-      ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 1 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), "rules", true)).addElement(bastardModule);
+      {
+        SNode callBatard = SConceptOperations.createNewNode("ArduinoML.structure.Decision", null);
+        SNode buttonX = SConceptOperations.createNewNode("ArduinoML.structure.Condition", null);
+        SNode callBatardModule = SConceptOperations.createNewNode("ArduinoML.structure.ActionCallModule", null);
+        SLinkOperations.setTarget(buttonX, "component", konamiComposant, false);
+        SLinkOperations.setTarget(buttonX, "pinLook", ListSequence.fromList(BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), konamiComposant, "virtual_getPins_4453370684997361065", new Object[]{})).getElement(1), false);
+        SPropertyOperations.set(buttonX, "expected", "HIGH");
+        ListSequence.fromList(SLinkOperations.getTargets(callBatard, "conditions", true)).addElement(buttonX);
+        SLinkOperations.setTarget(callBatardModule, "moduleToCall", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 1 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), false);
+        ListSequence.fromList(SLinkOperations.getTargets(callBatard, "actions", true)).addElement(callBatardModule);
+        ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 6 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), "rules", true)).addElement(callBatard);
+      }
+      {
+        SNode callBatard = SConceptOperations.createNewNode("ArduinoML.structure.Decision", null);
+        SNode buttonX = SConceptOperations.createNewNode("ArduinoML.structure.Condition", null);
+        SNode callBatardModule = SConceptOperations.createNewNode("ArduinoML.structure.ActionCallModule", null);
+        SLinkOperations.setTarget(buttonX, "component", konamiComposant, false);
+        SLinkOperations.setTarget(buttonX, "pinLook", ListSequence.fromList(BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), konamiComposant, "virtual_getPins_4453370684997361065", new Object[]{})).getElement(1), false);
+        SPropertyOperations.set(buttonX, "expected", "LOW");
+        ListSequence.fromList(SLinkOperations.getTargets(callBatard, "conditions", true)).addElement(buttonX);
+        SLinkOperations.setTarget(callBatardModule, "moduleToCall", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 1 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), false);
+        ListSequence.fromList(SLinkOperations.getTargets(callBatard, "actions", true)).addElement(callBatardModule);
+        ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 6 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), "rules", true)).addElement(callBatard);
+      }
+      {
+        SNode callBatard = SConceptOperations.createNewNode("ArduinoML.structure.Decision", null);
+        SNode buttonX = SConceptOperations.createNewNode("ArduinoML.structure.Condition", null);
+        SNode callBatardModule = SConceptOperations.createNewNode("ArduinoML.structure.ActionCallModule", null);
+        SLinkOperations.setTarget(buttonX, "component", konamiComposant, false);
+        SLinkOperations.setTarget(buttonX, "pinLook", ListSequence.fromList(BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), konamiComposant, "virtual_getPins_4453370684997361065", new Object[]{})).getElement(2), false);
+        SPropertyOperations.set(buttonX, "expected", "HIGH");
+        ListSequence.fromList(SLinkOperations.getTargets(callBatard, "conditions", true)).addElement(buttonX);
+        SLinkOperations.setTarget(callBatardModule, "moduleToCall", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 1 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), false);
+        ListSequence.fromList(SLinkOperations.getTargets(callBatard, "actions", true)).addElement(callBatardModule);
+        ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 6 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), "rules", true)).addElement(callBatard);
+      }
+      {
+        SNode callBatard = SConceptOperations.createNewNode("ArduinoML.structure.Decision", null);
+        SNode buttonX = SConceptOperations.createNewNode("ArduinoML.structure.Condition", null);
+        SNode callBatardModule = SConceptOperations.createNewNode("ArduinoML.structure.ActionCallModule", null);
+        SLinkOperations.setTarget(buttonX, "component", konamiComposant, false);
+        SLinkOperations.setTarget(buttonX, "pinLook", ListSequence.fromList(BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), konamiComposant, "virtual_getPins_4453370684997361065", new Object[]{})).getElement(2), false);
+        SPropertyOperations.set(buttonX, "expected", "LOW");
+        ListSequence.fromList(SLinkOperations.getTargets(callBatard, "conditions", true)).addElement(buttonX);
+        SLinkOperations.setTarget(callBatardModule, "moduleToCall", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 1 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), false);
+        ListSequence.fromList(SLinkOperations.getTargets(callBatard, "actions", true)).addElement(callBatardModule);
+        ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 6 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), "rules", true)).addElement(callBatard);
+      }
+      SNode callBatard = SConceptOperations.createNewNode("ArduinoML.structure.Decision", null);
+      SNode buttonX = SConceptOperations.createNewNode("ArduinoML.structure.Condition", null);
+      SNode callBatardModule = SConceptOperations.createNewNode("ArduinoML.structure.ActionCallModule", null);
+      SLinkOperations.setTarget(buttonX, "component", konamiComposant, false);
+      SLinkOperations.setTarget(buttonX, "pinLook", ListSequence.fromList(BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), konamiComposant, "virtual_getPins_4453370684997361065", new Object[]{})).getElement(0), false);
+      SPropertyOperations.set(buttonX, "expected", "LOW");
+      ListSequence.fromList(SLinkOperations.getTargets(callBatard, "conditions", true)).addElement(buttonX);
+      SLinkOperations.setTarget(callBatardModule, "moduleToCall", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 6 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), false);
+      ListSequence.fromList(SLinkOperations.getTargets(callBatard, "actions", true)).addElement(callBatardModule);
+      ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 6 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), "rules", true)).addElement(callBatard);
 
 
     }

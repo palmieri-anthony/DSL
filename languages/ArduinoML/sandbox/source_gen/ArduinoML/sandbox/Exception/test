@@ -1,27 +1,34 @@
 const int THRESHOLD_LOW=500;const int THRESHOLD_HIGH = 520;
 void mainly ();
-void tt ();
+void exception ();
 void exception_1243t ();
 void setup() {
-  pinMode(OUTPUT,12);
-  pinMode(OUTPUT,54);
+  pinMode(INPUT,54);
+  pinMode(INPUT,41);
+  pinMode(OUTPUT,4);
+  pinMode(OUTPUT,5);
+  pinMode(OUTPUT,3);
 }
 void mainly() {
+  if (digitalRead(5)==HIGH) {
+    digitalWrite(4,HIGH);
+    exception();
+  }
 }
-void tt() {
-  if (digitalRead(12)==HIGH) {
+void exception() {
+  if (digitalRead(4)==HIGH) {
     exception_1243t();
   }
 }
 void exception_1243t() {
-  if (digitalRead(54)==LOW) {
-    digitalWrite(54,HIGH);
+  if (digitalRead(3)==LOW) {
+    digitalWrite(3,HIGH);
     delay(500);
-    digitalWrite(54,LOW);
+    digitalWrite(3,LOW);
     delay(500);
-    digitalWrite(54,HIGH);
+    digitalWrite(3,HIGH);
     delay(500);
-    digitalWrite(54,LOW);
+    digitalWrite(3,LOW);
     delay(500);
     delay(500);
     exception_1243t();

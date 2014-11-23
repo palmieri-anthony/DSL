@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies version="2" modelHash="7w0wvb88vg88ftsx8kvabkvwarinec2">
+  <dep model="r:2f707cfd-9641-4af5-b37f-3bc8a24f911f(ArduinoML.generator.template.main@generator)" hash="6rdoudt9kkvjpf27yady1uehm4w3izw" />
+  <common hash="dggtvkfjloig3qyivs33t1xx0467t9h" />
+  <source id="1695169151241798142" name="test" hash="47unwjlx0f37lguw8vev5max39tiwdt">
+    <dep model="r:2f707cfd-9641-4af5-b37f-3bc8a24f911f(ArduinoML.generator.template.main@generator)" />
+    <file name="test" />
+  </source>
+</dependencies>
+

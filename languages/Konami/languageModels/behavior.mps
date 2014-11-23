@@ -1031,6 +1031,7 @@
     </node>
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="835646908223960337" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="createDecisionOnX" />
+      <property name="isStatic" nameId="1i04.5864038008284099149" value="false" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="835646908223960338" nodeInfo="nn" />
       <node role="returnType" roleId="tpee.1068580123133" type="tp25.SNodeType" typeId="tp25.1138055754698" id="835646908223961430" nodeInfo="in">
         <link role="concept" roleId="tp25.1138405853777" targetNodeId="upjk.5347434755052293742" resolveInfo="Decision" />
