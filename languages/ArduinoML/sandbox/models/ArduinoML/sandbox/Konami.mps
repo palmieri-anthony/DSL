@@ -10,16 +10,16 @@
     <property name="name" nameId="tpck.1169194664001" value="test" />
     <node role="ledError" roleId="qdza.1695169151245127563" type="upjk.ComponentOUT" typeId="upjk.5347434755052293904" id="2964997150776681846" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="led1" />
-      <node role="pins" roleId="upjk.6957858817575165771" type="upjk.DigitalOUT" typeId="upjk.6957858817575165833" id="2964997150776955963" nodeInfo="ng">
-        <property name="number" nameId="upjk.6957858817575165709" value="7" />
-        <property name="name" nameId="tpck.1169194664001" value="7" />
+      <node role="pins" roleId="upjk.6957858817575165771" type="upjk.DigitalOUT" typeId="upjk.6957858817575165833" id="2384999650474955956" nodeInfo="ng">
+        <property name="number" nameId="upjk.6957858817575165709" value="2" />
+        <property name="name" nameId="tpck.1169194664001" value="2" />
       </node>
     </node>
     <node role="ledOK" roleId="qdza.1695169151245127565" type="upjk.ComponentOUT" typeId="upjk.5347434755052293904" id="2964997150776681848" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="led2" />
       <node role="pins" roleId="upjk.6957858817575165771" type="upjk.DigitalOUT" typeId="upjk.6957858817575165833" id="2964997150776955966" nodeInfo="ng">
-        <property name="number" nameId="upjk.6957858817575165709" value="5" />
-        <property name="name" nameId="tpck.1169194664001" value="5" />
+        <property name="number" nameId="upjk.6957858817575165709" value="2" />
+        <property name="name" nameId="tpck.1169194664001" value="2" />
       </node>
     </node>
     <node role="buzzer" roleId="qdza.2964997150776674017" type="upjk.ComponentOUT" typeId="upjk.5347434755052293904" id="2964997150776681850" nodeInfo="ng">
