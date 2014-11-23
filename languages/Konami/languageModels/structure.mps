@@ -37,22 +37,22 @@
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="1695169151244867888" nodeInfo="ig">
       <property name="internalValue" nameId="tpce.1083923523171" value="U" />
       <property name="javaIdentifier" nameId="tpce.1192116978809" value="U" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="UP" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="U" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="1695169151244867895" nodeInfo="ig">
       <property name="javaIdentifier" nameId="tpce.1192116978809" value="D" />
       <property name="internalValue" nameId="tpce.1083923523171" value="D" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="DOWN" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="D" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="1695169151244882169" nodeInfo="ig">
       <property name="javaIdentifier" nameId="tpce.1192116978809" value="L" />
       <property name="internalValue" nameId="tpce.1083923523171" value="L" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="LEFT" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="L" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="1695169151244882173" nodeInfo="ig">
       <property name="javaIdentifier" nameId="tpce.1192116978809" value="R" />
       <property name="internalValue" nameId="tpce.1083923523171" value="R" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="RIGHT" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="R" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1695169151245019564" nodeInfo="ig">

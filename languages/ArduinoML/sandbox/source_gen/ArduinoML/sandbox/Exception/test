@@ -10,10 +10,6 @@ void setup() {
   pinMode(OUTPUT,3);
 }
 void mainly() {
-  if (digitalRead(5)==HIGH) {
-    digitalWrite(4,HIGH);
-    exception();
-  }
 }
 void exception() {
   if (digitalRead(4)==HIGH) {
