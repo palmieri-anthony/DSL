@@ -15,6 +15,12 @@
     <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="upjk.5347434755052014377" resolveInfo="ArduinoML" />
     <node role="textGenBlock" roleId="2omo.1233749296504" type="2omo.GenerateTextDeclaration" typeId="2omo.1233749247888" id="170812001321886221" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="170812001321886222" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="5466054241324253610" nodeInfo="nn">
+          <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="5466054241324253784" nodeInfo="ng">
+            <property name="value" nameId="2omo.1237305576108" value="const int THRESHOLD_LOW=500;const int THRESHOLD_HIGH = 520;" />
+          </node>
+          <node role="part" roleId="2omo.1237306115446" type="2omo.NewLineAppendPart" typeId="2omo.1237305208784" id="5466054241324255103" nodeInfo="ng" />
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="6703693537822389323" nodeInfo="nn">
           <node role="part" roleId="2omo.1237306115446" type="2omo.OperationCall" typeId="2omo.1233924848298" id="6703693537822389477" nodeInfo="ng">
             <link role="function" roleId="2omo.1234190664409" targetNodeId="6703693537822383043" resolveInfo="declareModules" />

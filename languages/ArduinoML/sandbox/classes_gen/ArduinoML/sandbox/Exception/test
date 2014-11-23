@@ -6,7 +6,7 @@ void setup() {
   pinMode(OUTPUT,5);
 }
 void mainly() {
-  if (digitalRead(4)==HIGH) {
+  if (digitalRead(5)==HIGH) {
     digitalWrite(4,HIGH);
   }
 }
