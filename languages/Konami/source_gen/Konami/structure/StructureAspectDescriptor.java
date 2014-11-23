@@ -16,7 +16,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 0:
         return new ConceptDescriptorBuilder("Konami.structure.KonamiComposant").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").children(new String[]{"pinX", "pinY", "pinButton"}, new boolean[]{false, false, false}).create();
       case 1:
-        return new ConceptDescriptorBuilder("Konami.structure.KonamiProgram").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").children(new String[]{"ledError", "ledOK", "konami", "code"}, new boolean[]{false, false, false, true}).create();
+        return new ConceptDescriptorBuilder("Konami.structure.KonamiProgram").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").children(new String[]{"ledError", "ledOK", "buzzer", "konami", "code"}, new boolean[]{false, false, false, false, true}).create();
       case 2:
         return new ConceptDescriptorBuilder("Konami.structure.StateProxy").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").properties("ID", "state").create();
       default:

@@ -10,8 +10,10 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import Konami.behavior.StateProxy_Behavior;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.smodel.behaviour.BehaviorReflection;
+import java.util.List;
+import Konami.behavior.StateProxy_Behavior;
 
 @Generated
 public class QueriesGenerated {
@@ -28,6 +30,7 @@ public class QueriesGenerated {
     ListSequence.fromList(SLinkOperations.getTargets(konamiComposant, "pins", true)).addElement(SLinkOperations.getTarget(SLinkOperations.getTarget(konamiProg, "konami", true), "pinX", true));
     ListSequence.fromList(SLinkOperations.getTargets(konamiComposant, "pins", true)).addElement(SLinkOperations.getTarget(SLinkOperations.getTarget(konamiProg, "konami", true), "pinY", true));
     ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).addElement(konamiComposant);
+    ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).addElement(SLinkOperations.getTarget(konamiProg, "buzzer", true));
     for (int numTransition = 0; numTransition < 3; numTransition++) {
       for (int numStep = 0; numStep < ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count(); numStep++) {
         SNode module = SConceptOperations.createNewNode("ArduinoML.structure.Module", null);
@@ -35,15 +38,97 @@ public class QueriesGenerated {
         ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).addElement(module);
       }
     }
+    // creation des modules 
     for (int i = 0; i < 3; i++) {
       SNode moduleBatard = SConceptOperations.createNewNode("ArduinoML.structure.Module", null);
       SPropertyOperations.set(moduleBatard, "name", "BatardStep" + Integer.toString(i));
       ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).addElement(moduleBatard);
     }
+    // populate main 
 
+    SNode initialization = SConceptOperations.createNewNode("ArduinoML.structure.Decision", null);
+    SNode led1Off = SConceptOperations.createNewNode("ArduinoML.structure.Condition", null);
+    SLinkOperations.setTarget(led1Off, "component", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(0), false);
+    SPropertyOperations.set(led1Off, "expected", "LOW");
+    SNode led2Off = SConceptOperations.createNewNode("ArduinoML.structure.Condition", null);
+    SLinkOperations.setTarget(led2Off, "component", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(1), false);
+    SPropertyOperations.set(led2Off, "expected", "LOW");
+    ListSequence.fromList(SLinkOperations.getTargets(initialization, "conditions", true)).addElement(led2Off);
+    ListSequence.fromList(SLinkOperations.getTargets(initialization, "conditions", true)).addElement(led1Off);
+    SNode switchOnLedErr = SConceptOperations.createNewNode("ArduinoML.structure.ActionOnComponent", null);
+    SNode firstStep = SConceptOperations.createNewNode("ArduinoML.structure.ActionCallModule", null);
+    SLinkOperations.setTarget(switchOnLedErr, "component", SNodeOperations.as(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(0), "ArduinoML.structure.ComponentOUT"), false);
+    SPropertyOperations.set(switchOnLedErr, "target", "HIGH");
+
+    SLinkOperations.setTarget(firstStep, "moduleToCall", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(1), false);
+    ListSequence.fromList(SLinkOperations.getTargets(initialization, "actions", true)).addElement(switchOnLedErr);
+    ListSequence.fromList(SLinkOperations.getTargets(initialization, "actions", true)).addElement(firstStep);
+    ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).first(), "rules", true)).addElement(initialization);
+    // creation de l'etat derreur , boucle sur lui meme 
+    SNode ErrStateModule = SConceptOperations.createNewNode("ArduinoML.structure.Module", null);
+    SPropertyOperations.set(ErrStateModule, "name", "ErrorState");
+    // pour la premiere entréée => buzzer on 
+    SNode buzzerOff = SConceptOperations.createNewNode("ArduinoML.structure.Decision", null);
+    SNode buzzerOffCond = SConceptOperations.createNewNode("ArduinoML.structure.Condition", null);
+    SLinkOperations.setTarget(buzzerOffCond, "component", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(3), false);
+    SPropertyOperations.set(buzzerOffCond, "expected", "LOW");
+    ListSequence.fromList(SLinkOperations.getTargets(buzzerOff, "conditions", true)).addElement(buzzerOffCond);
+    SNode buzzerOnAction = SConceptOperations.createNewNode("ArduinoML.structure.ActionOnComponent", null);
+    SLinkOperations.setTarget(buzzerOnAction, "component", SNodeOperations.as(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(3), "ArduinoML.structure.ComponentOUT"), false);
+    SPropertyOperations.set(buzzerOnAction, "target", "HIGH");
+    ListSequence.fromList(SLinkOperations.getTargets(buzzerOff, "actions", true)).addElement(buzzerOnAction);
+    SNode goToHimSelf = SConceptOperations.createNewNode("ArduinoML.structure.ActionCallModule", null);
+    SLinkOperations.setTarget(goToHimSelf, "moduleToCall", ErrStateModule, false);
+    ListSequence.fromList(SLinkOperations.getTargets(buzzerOff, "actions", true)).addElement(goToHimSelf);
+    // pour boucler dans letat derreur 
+    SNode buzzerOn = SConceptOperations.createNewNode("ArduinoML.structure.Decision", null);
+    SNode buzzerOnCond = SConceptOperations.createNewNode("ArduinoML.structure.Condition", null);
+    SLinkOperations.setTarget(buzzerOnCond, "component", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(3), false);
+    SPropertyOperations.set(buzzerOnCond, "expected", "HIGH");
+    ListSequence.fromList(SLinkOperations.getTargets(buzzerOn, "conditions", true)).addElement(buzzerOnCond);
+    ListSequence.fromList(SLinkOperations.getTargets(buzzerOn, "actions", true)).addElement(goToHimSelf);
+    ListSequence.fromList(SLinkOperations.getTargets(ErrStateModule, "rules", true)).addElement(buzzerOff);
+    ListSequence.fromList(SLinkOperations.getTargets(ErrStateModule, "rules", true)).addElement(buzzerOn);
+
+
+    ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).addElement(ErrStateModule);
+
+    // populate bastard step: bouton appuyé => goto next step, sinon boucle 
+    for (int i = 0; i < 3; i++) {
+      SNode waitButton = SConceptOperations.createNewNode("ArduinoML.structure.Decision", null);
+      SNode buttonOff = SConceptOperations.createNewNode("ArduinoML.structure.Condition", null);
+      SNode callItSelf = SConceptOperations.createNewNode("ArduinoML.structure.ActionCallModule", null);
+      SLinkOperations.setTarget(buttonOff, "component", konamiComposant, false);
+      SLinkOperations.setTarget(buttonOff, "pinLook", ListSequence.fromList(BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), konamiComposant, "virtual_getPins_4453370684997361065", new Object[]{})).getElement(0), false);
+      SPropertyOperations.set(buttonOff, "expected", "LOW");
+      ListSequence.fromList(SLinkOperations.getTargets(waitButton, "conditions", true)).addElement(buttonOff);
+      SLinkOperations.setTarget(callItSelf, "moduleToCall", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 1 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), false);
+      ListSequence.fromList(SLinkOperations.getTargets(waitButton, "actions", true)).addElement(callItSelf);
+      SNode nextTentative = SConceptOperations.createNewNode("ArduinoML.structure.Decision", null);
+      SNode buttonOn = SConceptOperations.createNewNode("ArduinoML.structure.Condition", null);
+      SNode nextTentaMod = SConceptOperations.createNewNode("ArduinoML.structure.ActionCallModule", null);
+      SLinkOperations.setTarget(buttonOn, "component", konamiComposant, false);
+      SLinkOperations.setTarget(buttonOn, "pinLook", ListSequence.fromList(BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), konamiComposant, "virtual_getPins_4453370684997361065", new Object[]{})).getElement(0), false);
+      SPropertyOperations.set(buttonOn, "expected", "HIGH");
+      ListSequence.fromList(SLinkOperations.getTargets(nextTentative, "conditions", true)).addElement(buttonOn);
+      if (i == 2) {
+        SLinkOperations.setTarget(nextTentaMod, "moduleToCall", ErrStateModule, false);
+      } else {
+        SLinkOperations.setTarget(nextTentaMod, "moduleToCall", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement((i + 1) * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + 1), false);
+      }
+      ListSequence.fromList(SLinkOperations.getTargets(nextTentative, "actions", true)).addElement(nextTentaMod);
+
+      ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 1 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), "rules", true)).addElement(waitButton);
+      ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 1 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), "rules", true)).addElement(nextTentative);
+
+
+    }
+
+
+    // remplissement des mdodules 
     for (int i = 0; i < 3; i++) {
       for (int j = 0; j < ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count(); j++) {
-        StateProxy_Behavior.call_populateModule_835646908222906844(ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).getElement(j), ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + j), ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + j + 1), ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + i), ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), konamiComposant);
+        StateProxy_Behavior.call_populateModule_835646908222906844(ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).getElement(j), ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + j + 1), ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + j + 2), ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + i + 1), ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + 1), konamiComposant);
       }
     }
 

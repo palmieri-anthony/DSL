@@ -8,6 +8,8 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
 public class ArduinoML_TextGen extends SNodeTextGen {
   public void doGenerateText(SNode node) {
+    this.append("const int THRESHOLD_LOW=500;const int THRESHOLD_HIGH = 520;");
+    this.appendNewLine();
     DeclarationModules.declareModules(SLinkOperations.getTargets(node, "modules", true), this);
     this.append("void setup() {");
     this.appendNewLine();

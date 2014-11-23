@@ -247,143 +247,177 @@
     <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="102" startPosition="85" endLine="103" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="103" startPosition="85" endLine="104" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="103" startPosition="85" endLine="104" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="104" startPosition="85" endLine="105" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="108" startPosition="89" endLine="109" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="109" startPosition="81" endLine="110" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="110" startPosition="31" endLine="111" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="111" startPosition="44" endLine="112" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="112" startPosition="26" endLine="113" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="114" startPosition="39" endLine="115" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="116" startPosition="5" endLine="117" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="117" startPosition="73" endLine="118" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="118" startPosition="57" endLine="119" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="120" startPosition="35" endLine="121" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="121" startPosition="72" endLine="122" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="122" startPosition="78" endLine="123" endPosition="109" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="124" startPosition="10" endLine="125" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="128" startPosition="92" endLine="129" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="129" startPosition="96" endLine="130" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="130" startPosition="51" endLine="131" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="131" startPosition="34" endLine="132" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="132" startPosition="49" endLine="133" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="133" startPosition="40" endLine="134" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="133" startPosition="40" endLine="134" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="134" startPosition="84" endLine="135" endPosition="87" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="134" startPosition="84" endLine="135" endPosition="87" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="135" startPosition="87" endLine="136" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1695169151245242689" fileName="KonamiProgram_Editor.java" startLine="139" startPosition="91" endLine="140" endPosition="93" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245242689" fileName="KonamiProgram_Editor.java" startLine="140" startPosition="93" endLine="141" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245242689" fileName="KonamiProgram_Editor.java" startLine="141" startPosition="50" endLine="142" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245242689" fileName="KonamiProgram_Editor.java" startLine="142" startPosition="34" endLine="143" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="146" startPosition="94" endLine="147" endPosition="121" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="147" startPosition="121" endLine="148" endPosition="110" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="148" startPosition="110" endLine="149" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="149" startPosition="45" endLine="150" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="150" startPosition="34" endLine="151" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="151" startPosition="49" endLine="152" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="152" startPosition="40" endLine="153" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="153" startPosition="49" endLine="154" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="158" startPosition="99" endLine="159" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="162" startPosition="66" endLine="163" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="163" startPosition="41" endLine="164" endPosition="93" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="167" startPosition="86" endLine="168" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="168" startPosition="80" endLine="169" endPosition="95" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="169" startPosition="95" endLine="170" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="173" startPosition="68" endLine="174" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="174" startPosition="34" endLine="175" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="175" startPosition="55" endLine="176" endPosition="87" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="176" startPosition="87" endLine="177" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="181" startPosition="96" endLine="182" endPosition="134" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="183" startPosition="34" endLine="184" endPosition="95" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="184" startPosition="95" endLine="185" endPosition="98" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="187" startPosition="131" endLine="188" endPosition="139" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="194" startPosition="92" endLine="195" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="195" startPosition="96" endLine="196" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="196" startPosition="51" endLine="197" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="197" startPosition="34" endLine="198" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="198" startPosition="49" endLine="199" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="199" startPosition="40" endLine="200" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="199" startPosition="40" endLine="200" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="200" startPosition="84" endLine="201" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="200" startPosition="84" endLine="201" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="201" startPosition="83" endLine="202" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1695169151245185668" fileName="KonamiProgram_Editor.java" startLine="205" startPosition="91" endLine="206" endPosition="98" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245185668" fileName="KonamiProgram_Editor.java" startLine="206" startPosition="98" endLine="207" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245185668" fileName="KonamiProgram_Editor.java" startLine="207" startPosition="50" endLine="208" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245185668" fileName="KonamiProgram_Editor.java" startLine="208" startPosition="34" endLine="209" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="212" startPosition="90" endLine="213" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="213" startPosition="81" endLine="214" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="214" startPosition="33" endLine="215" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="215" startPosition="46" endLine="216" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="216" startPosition="26" endLine="217" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="218" startPosition="39" endLine="219" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="220" startPosition="5" endLine="221" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="221" startPosition="73" endLine="222" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="222" startPosition="57" endLine="223" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="224" startPosition="35" endLine="225" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="225" startPosition="72" endLine="226" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="226" startPosition="78" endLine="227" endPosition="109" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="228" startPosition="10" endLine="229" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="232" startPosition="92" endLine="233" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="233" startPosition="96" endLine="234" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="234" startPosition="51" endLine="235" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="235" startPosition="34" endLine="236" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="236" startPosition="49" endLine="237" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="237" startPosition="40" endLine="238" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="237" startPosition="40" endLine="238" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="238" startPosition="84" endLine="239" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="238" startPosition="84" endLine="239" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="239" startPosition="83" endLine="240" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1695169151245185716" fileName="KonamiProgram_Editor.java" startLine="243" startPosition="91" endLine="244" endPosition="103" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245185716" fileName="KonamiProgram_Editor.java" startLine="244" startPosition="103" endLine="245" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245185716" fileName="KonamiProgram_Editor.java" startLine="245" startPosition="50" endLine="246" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245185716" fileName="KonamiProgram_Editor.java" startLine="246" startPosition="34" endLine="247" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="250" startPosition="90" endLine="251" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="251" startPosition="81" endLine="252" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="252" startPosition="30" endLine="253" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="253" startPosition="43" endLine="254" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="254" startPosition="26" endLine="255" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="256" startPosition="39" endLine="257" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="258" startPosition="5" endLine="259" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="259" startPosition="73" endLine="260" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="260" startPosition="57" endLine="261" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="262" startPosition="35" endLine="263" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="263" startPosition="72" endLine="264" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="264" startPosition="78" endLine="265" endPosition="109" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="266" startPosition="10" endLine="267" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="104" startPosition="85" endLine="105" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="104" startPosition="85" endLine="105" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="105" startPosition="85" endLine="106" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="109" startPosition="89" endLine="110" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="110" startPosition="81" endLine="111" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="111" startPosition="31" endLine="112" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="112" startPosition="44" endLine="113" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="113" startPosition="26" endLine="114" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="115" startPosition="39" endLine="116" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="117" startPosition="5" endLine="118" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="118" startPosition="73" endLine="119" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="119" startPosition="57" endLine="120" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="121" startPosition="35" endLine="122" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="122" startPosition="72" endLine="123" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="123" startPosition="78" endLine="124" endPosition="109" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="125" startPosition="10" endLine="126" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="129" startPosition="92" endLine="130" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="130" startPosition="96" endLine="131" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="131" startPosition="51" endLine="132" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="132" startPosition="34" endLine="133" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="133" startPosition="49" endLine="134" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="134" startPosition="40" endLine="135" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="134" startPosition="40" endLine="135" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="135" startPosition="84" endLine="136" endPosition="87" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="135" startPosition="84" endLine="136" endPosition="87" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="136" startPosition="87" endLine="137" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1695169151245242689" fileName="KonamiProgram_Editor.java" startLine="140" startPosition="91" endLine="141" endPosition="93" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245242689" fileName="KonamiProgram_Editor.java" startLine="141" startPosition="93" endLine="142" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245242689" fileName="KonamiProgram_Editor.java" startLine="142" startPosition="50" endLine="143" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245242689" fileName="KonamiProgram_Editor.java" startLine="143" startPosition="34" endLine="144" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="147" startPosition="94" endLine="148" endPosition="121" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="148" startPosition="121" endLine="149" endPosition="110" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="149" startPosition="110" endLine="150" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="150" startPosition="45" endLine="151" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="151" startPosition="34" endLine="152" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="152" startPosition="49" endLine="153" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="153" startPosition="40" endLine="154" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="154" startPosition="49" endLine="155" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="159" startPosition="99" endLine="160" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="163" startPosition="66" endLine="164" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="164" startPosition="41" endLine="165" endPosition="93" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="168" startPosition="86" endLine="169" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="169" startPosition="80" endLine="170" endPosition="95" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="170" startPosition="95" endLine="171" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="174" startPosition="68" endLine="175" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="175" startPosition="34" endLine="176" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="176" startPosition="55" endLine="177" endPosition="87" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="177" startPosition="87" endLine="178" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="182" startPosition="96" endLine="183" endPosition="134" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="184" startPosition="34" endLine="185" endPosition="95" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="185" startPosition="95" endLine="186" endPosition="98" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="188" startPosition="131" endLine="189" endPosition="139" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="195" startPosition="92" endLine="196" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="196" startPosition="96" endLine="197" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="197" startPosition="51" endLine="198" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="198" startPosition="34" endLine="199" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="199" startPosition="49" endLine="200" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="200" startPosition="40" endLine="201" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="200" startPosition="40" endLine="201" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="201" startPosition="84" endLine="202" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="201" startPosition="84" endLine="202" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="202" startPosition="83" endLine="203" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1695169151245185668" fileName="KonamiProgram_Editor.java" startLine="206" startPosition="91" endLine="207" endPosition="98" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245185668" fileName="KonamiProgram_Editor.java" startLine="207" startPosition="98" endLine="208" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245185668" fileName="KonamiProgram_Editor.java" startLine="208" startPosition="50" endLine="209" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245185668" fileName="KonamiProgram_Editor.java" startLine="209" startPosition="34" endLine="210" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="213" startPosition="90" endLine="214" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="214" startPosition="81" endLine="215" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="215" startPosition="33" endLine="216" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="216" startPosition="46" endLine="217" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="217" startPosition="26" endLine="218" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="219" startPosition="39" endLine="220" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="221" startPosition="5" endLine="222" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="222" startPosition="73" endLine="223" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="223" startPosition="57" endLine="224" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="225" startPosition="35" endLine="226" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="226" startPosition="72" endLine="227" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="227" startPosition="78" endLine="228" endPosition="109" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="229" startPosition="10" endLine="230" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="233" startPosition="92" endLine="234" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="234" startPosition="96" endLine="235" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="235" startPosition="51" endLine="236" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="236" startPosition="34" endLine="237" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="237" startPosition="49" endLine="238" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="238" startPosition="40" endLine="239" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="238" startPosition="40" endLine="239" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="239" startPosition="84" endLine="240" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="239" startPosition="84" endLine="240" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="240" startPosition="83" endLine="241" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1695169151245185716" fileName="KonamiProgram_Editor.java" startLine="244" startPosition="91" endLine="245" endPosition="103" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245185716" fileName="KonamiProgram_Editor.java" startLine="245" startPosition="103" endLine="246" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245185716" fileName="KonamiProgram_Editor.java" startLine="246" startPosition="50" endLine="247" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245185716" fileName="KonamiProgram_Editor.java" startLine="247" startPosition="34" endLine="248" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="251" startPosition="90" endLine="252" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="252" startPosition="81" endLine="253" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="253" startPosition="30" endLine="254" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="254" startPosition="43" endLine="255" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="255" startPosition="26" endLine="256" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="257" startPosition="39" endLine="258" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="259" startPosition="5" endLine="260" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="260" startPosition="73" endLine="261" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="261" startPosition="57" endLine="262" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="263" startPosition="35" endLine="264" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="264" startPosition="72" endLine="265" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="265" startPosition="78" endLine="266" endPosition="109" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="267" startPosition="10" endLine="268" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="271" startPosition="92" endLine="272" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="272" startPosition="96" endLine="273" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="273" startPosition="51" endLine="274" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="274" startPosition="34" endLine="275" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="275" startPosition="49" endLine="276" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="276" startPosition="40" endLine="277" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="276" startPosition="40" endLine="277" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="277" startPosition="84" endLine="278" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="277" startPosition="84" endLine="278" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="278" startPosition="83" endLine="279" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2964997150776680912" fileName="KonamiProgram_Editor.java" startLine="282" startPosition="91" endLine="283" endPosition="93" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2964997150776680912" fileName="KonamiProgram_Editor.java" startLine="283" startPosition="93" endLine="284" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2964997150776680912" fileName="KonamiProgram_Editor.java" startLine="284" startPosition="50" endLine="285" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2964997150776680912" fileName="KonamiProgram_Editor.java" startLine="285" startPosition="34" endLine="286" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2964997150776680918" fileName="KonamiProgram_Editor.java" startLine="289" startPosition="90" endLine="290" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2964997150776680918" fileName="KonamiProgram_Editor.java" startLine="290" startPosition="81" endLine="291" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2964997150776680918" fileName="KonamiProgram_Editor.java" startLine="291" startPosition="31" endLine="292" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2964997150776680918" fileName="KonamiProgram_Editor.java" startLine="292" startPosition="44" endLine="293" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2964997150776680918" fileName="KonamiProgram_Editor.java" startLine="293" startPosition="26" endLine="294" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2964997150776680918" fileName="KonamiProgram_Editor.java" startLine="295" startPosition="39" endLine="296" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2964997150776680918" fileName="KonamiProgram_Editor.java" startLine="297" startPosition="5" endLine="298" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2964997150776680918" fileName="KonamiProgram_Editor.java" startLine="298" startPosition="73" endLine="299" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2964997150776680918" fileName="KonamiProgram_Editor.java" startLine="299" startPosition="57" endLine="300" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2964997150776680918" fileName="KonamiProgram_Editor.java" startLine="301" startPosition="35" endLine="302" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2964997150776680918" fileName="KonamiProgram_Editor.java" startLine="302" startPosition="72" endLine="303" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2964997150776680918" fileName="KonamiProgram_Editor.java" startLine="303" startPosition="78" endLine="304" endPosition="109" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2964997150776680918" fileName="KonamiProgram_Editor.java" startLine="305" startPosition="10" endLine="306" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="30" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="113" startPosition="58" endLine="116" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="158" startPosition="0" endLine="161" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="codeListHandler_aw6pu5_b1b1a#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="186" startPosition="9" endLine="189" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="217" startPosition="58" endLine="220" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="255" startPosition="58" endLine="258" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="114" startPosition="58" endLine="117" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="159" startPosition="0" endLine="162" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="codeListHandler_aw6pu5_b1b1a#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="187" startPosition="9" endLine="190" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="218" startPosition="58" endLine="221" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="256" startPosition="58" endLine="259" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2964997150776680918" fileName="KonamiProgram_Editor.java" startLine="294" startPosition="58" endLine="297" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="1695169151245129643" fileName="KonamiProgram_Editor.java" startLine="90" startPosition="0" endLine="94" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createIndentCell_aw6pu5_a1a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="162" startPosition="0" endLine="166" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createNodeToInsert#(Ljetbrains/mps/openapi/editor/EditorContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="182" startPosition="134" endLine="186" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="167" startPosition="0" endLine="172" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createNodeCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="163" startPosition="0" endLine="167" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createNodeToInsert#(Ljetbrains/mps/openapi/editor/EditorContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="183" startPosition="134" endLine="187" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="168" startPosition="0" endLine="173" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createNodeCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
     <nodeInfo nodeId="1695169151245129472" fileName="KonamiProgram_Editor.java" startLine="54" startPosition="0" endLine="60" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createConstant_aw6pu5_a0a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
     <nodeInfo nodeId="1695169151245129559" fileName="KonamiProgram_Editor.java" startLine="70" startPosition="59" endLine="76" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="119" startPosition="59" endLine="125" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1695169151245242689" fileName="KonamiProgram_Editor.java" startLine="139" startPosition="0" endLine="145" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createConstant_aw6pu5_a1b1a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="173" startPosition="0" endLine="179" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createEmptyCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="1695169151245185668" fileName="KonamiProgram_Editor.java" startLine="205" startPosition="0" endLine="211" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createConstant_aw6pu5_a2b1a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="223" startPosition="59" endLine="229" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1695169151245185716" fileName="KonamiProgram_Editor.java" startLine="243" startPosition="0" endLine="249" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createConstant_aw6pu5_a3b1a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="261" startPosition="59" endLine="267" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="120" startPosition="59" endLine="126" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1695169151245242689" fileName="KonamiProgram_Editor.java" startLine="140" startPosition="0" endLine="146" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createConstant_aw6pu5_a1b1a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="174" startPosition="0" endLine="180" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createEmptyCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="1695169151245185668" fileName="KonamiProgram_Editor.java" startLine="206" startPosition="0" endLine="212" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createConstant_aw6pu5_a2b1a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="224" startPosition="59" endLine="230" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1695169151245185716" fileName="KonamiProgram_Editor.java" startLine="244" startPosition="0" endLine="250" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createConstant_aw6pu5_a3b1a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="262" startPosition="59" endLine="268" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2964997150776680912" fileName="KonamiProgram_Editor.java" startLine="282" startPosition="0" endLine="288" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createConstant_aw6pu5_a4b1a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="2964997150776680918" fileName="KonamiProgram_Editor.java" startLine="300" startPosition="59" endLine="306" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="34" startPosition="0" endLine="42" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createCollection_aw6pu5_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
     <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="43" startPosition="0" endLine="53" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createCollection_aw6pu5_a0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
     <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="79" startPosition="0" endLine="89" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createCollection_aw6pu5_b0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="128" startPosition="0" endLine="138" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createCollection_aw6pu5_b1b0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="146" startPosition="0" endLine="156" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createRefNodeList_aw6pu5_b1b1a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="180" startPosition="132" endLine="190" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="194" startPosition="0" endLine="204" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createCollection_aw6pu5_c1b0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="232" startPosition="0" endLine="242" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createCollection_aw6pu5_d1b0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="95" startPosition="0" endLine="107" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createCollection_aw6pu5_b1a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="180" startPosition="0" endLine="192" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="installElementCellActions#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/cells/EditorCell;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="129" startPosition="0" endLine="139" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createCollection_aw6pu5_b1b0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="147" startPosition="0" endLine="157" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createRefNodeList_aw6pu5_b1b1a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="181" startPosition="132" endLine="191" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="195" startPosition="0" endLine="205" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createCollection_aw6pu5_c1b0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="233" startPosition="0" endLine="243" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createCollection_aw6pu5_d1b0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="271" startPosition="0" endLine="281" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createCollection_aw6pu5_e1b0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="181" startPosition="0" endLine="193" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="installElementCellActions#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/cells/EditorCell;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+    <nodeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="95" startPosition="0" endLine="108" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createCollection_aw6pu5_b1a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
     <nodeInfo nodeId="1695169151245129559" fileName="KonamiProgram_Editor.java" startLine="61" startPosition="0" endLine="78" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createProperty_aw6pu5_b0a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="108" startPosition="0" endLine="127" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createRefNode_aw6pu5_a1b0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="212" startPosition="0" endLine="231" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createRefNode_aw6pu5_b2b1a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="250" startPosition="0" endLine="269" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createRefNode_aw6pu5_b3b1a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="109" startPosition="0" endLine="128" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createRefNode_aw6pu5_a1b0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="213" startPosition="0" endLine="232" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createRefNode_aw6pu5_b2b1a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="251" startPosition="0" endLine="270" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createRefNode_aw6pu5_b3b1a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="2964997150776680918" fileName="KonamiProgram_Editor.java" startLine="289" startPosition="0" endLine="308" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createRefNode_aw6pu5_b4b1a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
     <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="30" startPosition="79" endLine="31" endPosition="63" />
     <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="37" startPosition="28" endLine="38" endPosition="83" />
     <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="38" startPosition="83" endLine="39" endPosition="83" />
@@ -395,24 +429,28 @@
     <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="101" startPosition="82" endLine="102" endPosition="85" />
     <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="102" startPosition="85" endLine="103" endPosition="85" />
     <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="103" startPosition="85" endLine="104" endPosition="85" />
-    <scopeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="114" startPosition="39" endLine="115" endPosition="35" />
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="133" startPosition="40" endLine="134" endPosition="84" />
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="134" startPosition="84" endLine="135" endPosition="87" />
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="158" startPosition="99" endLine="159" endPosition="50" />
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="187" startPosition="131" endLine="188" endPosition="139" />
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="199" startPosition="40" endLine="200" endPosition="84" />
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="200" startPosition="84" endLine="201" endPosition="83" />
-    <scopeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="218" startPosition="39" endLine="219" endPosition="37" />
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="237" startPosition="40" endLine="238" endPosition="84" />
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="238" startPosition="84" endLine="239" endPosition="83" />
-    <scopeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="256" startPosition="39" endLine="257" endPosition="34" />
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="104" startPosition="85" endLine="105" endPosition="85" />
+    <scopeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="115" startPosition="39" endLine="116" endPosition="35" />
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="134" startPosition="40" endLine="135" endPosition="84" />
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="135" startPosition="84" endLine="136" endPosition="87" />
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="159" startPosition="99" endLine="160" endPosition="50" />
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="188" startPosition="131" endLine="189" endPosition="139" />
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="200" startPosition="40" endLine="201" endPosition="84" />
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="201" startPosition="84" endLine="202" endPosition="83" />
+    <scopeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="219" startPosition="39" endLine="220" endPosition="37" />
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="238" startPosition="40" endLine="239" endPosition="84" />
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="239" startPosition="84" endLine="240" endPosition="83" />
+    <scopeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="257" startPosition="39" endLine="258" endPosition="34" />
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="276" startPosition="40" endLine="277" endPosition="84" />
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="277" startPosition="84" endLine="278" endPosition="83" />
+    <scopeInfo nodeId="2964997150776680918" fileName="KonamiProgram_Editor.java" startLine="295" startPosition="39" endLine="296" endPosition="35" />
     <scopeInfo nodeId="1695169151245129643" fileName="KonamiProgram_Editor.java" startLine="90" startPosition="91" endLine="92" endPosition="22">
       <varInfo nodeId="1695169151245129643" varName="editorCell" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="162" startPosition="66" endLine="164" endPosition="93">
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="163" startPosition="66" endLine="165" endPosition="93">
       <varInfo nodeId="1695169151245127657" varName="listOwner" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="183" startPosition="34" endLine="185" endPosition="98" />
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="184" startPosition="34" endLine="186" endPosition="98" />
     <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="30" startPosition="0" endLine="33" endPosition="0">
       <varInfo nodeId="1695169151245127657" varName="editorContext" />
       <varInfo nodeId="1695169151245127657" varName="node" />
@@ -421,25 +459,29 @@
       <varInfo nodeId="1695169151245129559" varName="manager" />
       <varInfo nodeId="1695169151245129559" varName="opContext" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="120" startPosition="35" endLine="123" endPosition="109">
+    <scopeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="121" startPosition="35" endLine="124" endPosition="109">
       <varInfo nodeId="1695169151245129679" varName="manager" />
       <varInfo nodeId="1695169151245129679" varName="opContext" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="158" startPosition="0" endLine="161" endPosition="0">
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="159" startPosition="0" endLine="162" endPosition="0">
       <varInfo nodeId="1695169151245127657" varName="childRole" />
       <varInfo nodeId="1695169151245127657" varName="context" />
       <varInfo nodeId="1695169151245127657" varName="ownerNode" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="167" startPosition="86" endLine="170" endPosition="25">
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="168" startPosition="86" endLine="171" endPosition="25">
       <varInfo nodeId="1695169151245127657" varName="elementCell" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="224" startPosition="35" endLine="227" endPosition="109">
+    <scopeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="225" startPosition="35" endLine="228" endPosition="109">
       <varInfo nodeId="1695169151245185690" varName="manager" />
       <varInfo nodeId="1695169151245185690" varName="opContext" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="262" startPosition="35" endLine="265" endPosition="109">
+    <scopeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="263" startPosition="35" endLine="266" endPosition="109">
       <varInfo nodeId="1695169151245185748" varName="manager" />
       <varInfo nodeId="1695169151245185748" varName="opContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="2964997150776680918" fileName="KonamiProgram_Editor.java" startLine="301" startPosition="35" endLine="304" endPosition="109">
+      <varInfo nodeId="2964997150776680918" varName="manager" />
+      <varInfo nodeId="2964997150776680918" varName="opContext" />
     </scopeInfo>
     <scopeInfo nodeId="1695169151245129472" fileName="KonamiProgram_Editor.java" startLine="54" startPosition="89" endLine="58" endPosition="22">
       <varInfo nodeId="1695169151245129472" varName="editorCell" />
@@ -448,22 +490,25 @@
       <varInfo nodeId="1695169151245129643" varName="editorContext" />
       <varInfo nodeId="1695169151245129643" varName="node" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245242689" fileName="KonamiProgram_Editor.java" startLine="139" startPosition="91" endLine="143" endPosition="22">
+    <scopeInfo nodeId="1695169151245242689" fileName="KonamiProgram_Editor.java" startLine="140" startPosition="91" endLine="144" endPosition="22">
       <varInfo nodeId="1695169151245242689" varName="editorCell" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="162" startPosition="0" endLine="166" endPosition="0">
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="163" startPosition="0" endLine="167" endPosition="0">
       <varInfo nodeId="1695169151245127657" varName="editorContext" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="173" startPosition="68" endLine="177" endPosition="23">
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="174" startPosition="68" endLine="178" endPosition="23">
       <varInfo nodeId="1695169151245127657" varName="emptyCell" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245185668" fileName="KonamiProgram_Editor.java" startLine="205" startPosition="91" endLine="209" endPosition="22">
+    <scopeInfo nodeId="1695169151245185668" fileName="KonamiProgram_Editor.java" startLine="206" startPosition="91" endLine="210" endPosition="22">
       <varInfo nodeId="1695169151245185668" varName="editorCell" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245185716" fileName="KonamiProgram_Editor.java" startLine="243" startPosition="91" endLine="247" endPosition="22">
+    <scopeInfo nodeId="1695169151245185716" fileName="KonamiProgram_Editor.java" startLine="244" startPosition="91" endLine="248" endPosition="22">
       <varInfo nodeId="1695169151245185716" varName="editorCell" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="167" startPosition="0" endLine="172" endPosition="0">
+    <scopeInfo nodeId="2964997150776680912" fileName="KonamiProgram_Editor.java" startLine="282" startPosition="91" endLine="286" endPosition="22">
+      <varInfo nodeId="2964997150776680912" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="168" startPosition="0" endLine="173" endPosition="0">
       <varInfo nodeId="1695169151245127657" varName="editorContext" />
       <varInfo nodeId="1695169151245127657" varName="elementNode" />
     </scopeInfo>
@@ -474,20 +519,24 @@
       <varInfo nodeId="1695169151245129472" varName="editorContext" />
       <varInfo nodeId="1695169151245129472" varName="node" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245242689" fileName="KonamiProgram_Editor.java" startLine="139" startPosition="0" endLine="145" endPosition="0">
+    <scopeInfo nodeId="1695169151245242689" fileName="KonamiProgram_Editor.java" startLine="140" startPosition="0" endLine="146" endPosition="0">
       <varInfo nodeId="1695169151245242689" varName="editorContext" />
       <varInfo nodeId="1695169151245242689" varName="node" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="173" startPosition="0" endLine="179" endPosition="0">
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="174" startPosition="0" endLine="180" endPosition="0">
       <varInfo nodeId="1695169151245127657" varName="editorContext" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245185668" fileName="KonamiProgram_Editor.java" startLine="205" startPosition="0" endLine="211" endPosition="0">
+    <scopeInfo nodeId="1695169151245185668" fileName="KonamiProgram_Editor.java" startLine="206" startPosition="0" endLine="212" endPosition="0">
       <varInfo nodeId="1695169151245185668" varName="editorContext" />
       <varInfo nodeId="1695169151245185668" varName="node" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245185716" fileName="KonamiProgram_Editor.java" startLine="243" startPosition="0" endLine="249" endPosition="0">
+    <scopeInfo nodeId="1695169151245185716" fileName="KonamiProgram_Editor.java" startLine="244" startPosition="0" endLine="250" endPosition="0">
       <varInfo nodeId="1695169151245185716" varName="editorContext" />
       <varInfo nodeId="1695169151245185716" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="2964997150776680912" fileName="KonamiProgram_Editor.java" startLine="282" startPosition="0" endLine="288" endPosition="0">
+      <varInfo nodeId="2964997150776680912" varName="editorContext" />
+      <varInfo nodeId="2964997150776680912" varName="node" />
     </scopeInfo>
     <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="34" startPosition="0" endLine="42" endPosition="0">
       <varInfo nodeId="1695169151245127657" varName="editorContext" />
@@ -501,21 +550,25 @@
       <varInfo nodeId="1695169151245127657" varName="editorCell" />
       <varInfo nodeId="1695169151245127657" varName="style" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="128" startPosition="92" endLine="136" endPosition="22">
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="129" startPosition="92" endLine="137" endPosition="22">
       <varInfo nodeId="1695169151245127657" varName="editorCell" />
       <varInfo nodeId="1695169151245127657" varName="style" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="146" startPosition="94" endLine="154" endPosition="22">
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="147" startPosition="94" endLine="155" endPosition="22">
       <varInfo nodeId="1695169151245127657" varName="editorCell" />
       <varInfo nodeId="1695169151245127657" varName="handler" />
       <varInfo nodeId="1695169151245127657" varName="style" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="181" startPosition="96" endLine="189" endPosition="9" />
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="194" startPosition="92" endLine="202" endPosition="22">
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="182" startPosition="96" endLine="190" endPosition="9" />
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="195" startPosition="92" endLine="203" endPosition="22">
       <varInfo nodeId="1695169151245127657" varName="editorCell" />
       <varInfo nodeId="1695169151245127657" varName="style" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="232" startPosition="92" endLine="240" endPosition="22">
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="233" startPosition="92" endLine="241" endPosition="22">
+      <varInfo nodeId="1695169151245127657" varName="editorCell" />
+      <varInfo nodeId="1695169151245127657" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="271" startPosition="92" endLine="279" endPosition="22">
       <varInfo nodeId="1695169151245127657" varName="editorCell" />
       <varInfo nodeId="1695169151245127657" varName="style" />
     </scopeInfo>
@@ -527,36 +580,40 @@
       <varInfo nodeId="1695169151245127657" varName="editorContext" />
       <varInfo nodeId="1695169151245127657" varName="node" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="95" startPosition="91" endLine="105" endPosition="22">
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="129" startPosition="0" endLine="139" endPosition="0">
+      <varInfo nodeId="1695169151245127657" varName="editorContext" />
+      <varInfo nodeId="1695169151245127657" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="147" startPosition="0" endLine="157" endPosition="0">
+      <varInfo nodeId="1695169151245127657" varName="editorContext" />
+      <varInfo nodeId="1695169151245127657" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="181" startPosition="132" endLine="191" endPosition="7" />
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="195" startPosition="0" endLine="205" endPosition="0">
+      <varInfo nodeId="1695169151245127657" varName="editorContext" />
+      <varInfo nodeId="1695169151245127657" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="233" startPosition="0" endLine="243" endPosition="0">
+      <varInfo nodeId="1695169151245127657" varName="editorContext" />
+      <varInfo nodeId="1695169151245127657" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="271" startPosition="0" endLine="281" endPosition="0">
+      <varInfo nodeId="1695169151245127657" varName="editorContext" />
+      <varInfo nodeId="1695169151245127657" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="95" startPosition="91" endLine="106" endPosition="22">
       <varInfo nodeId="1695169151245127657" varName="editorCell" />
       <varInfo nodeId="1695169151245127657" varName="style" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="128" startPosition="0" endLine="138" endPosition="0">
-      <varInfo nodeId="1695169151245127657" varName="editorContext" />
-      <varInfo nodeId="1695169151245127657" varName="node" />
-    </scopeInfo>
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="146" startPosition="0" endLine="156" endPosition="0">
-      <varInfo nodeId="1695169151245127657" varName="editorContext" />
-      <varInfo nodeId="1695169151245127657" varName="node" />
-    </scopeInfo>
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="180" startPosition="132" endLine="190" endPosition="7" />
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="194" startPosition="0" endLine="204" endPosition="0">
-      <varInfo nodeId="1695169151245127657" varName="editorContext" />
-      <varInfo nodeId="1695169151245127657" varName="node" />
-    </scopeInfo>
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="232" startPosition="0" endLine="242" endPosition="0">
-      <varInfo nodeId="1695169151245127657" varName="editorContext" />
-      <varInfo nodeId="1695169151245127657" varName="node" />
-    </scopeInfo>
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="95" startPosition="0" endLine="107" endPosition="0">
-      <varInfo nodeId="1695169151245127657" varName="editorContext" />
-      <varInfo nodeId="1695169151245127657" varName="node" />
-    </scopeInfo>
-    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="180" startPosition="0" endLine="192" endPosition="0">
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="181" startPosition="0" endLine="193" endPosition="0">
       <varInfo nodeId="1695169151245127657" varName="editorContext" />
       <varInfo nodeId="1695169151245127657" varName="elementCell" />
       <varInfo nodeId="1695169151245127657" varName="elementNode" />
       <varInfo nodeId="1695169151245127657" varName="listOwner" />
+    </scopeInfo>
+    <scopeInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="95" startPosition="0" endLine="108" endPosition="0">
+      <varInfo nodeId="1695169151245127657" varName="editorContext" />
+      <varInfo nodeId="1695169151245127657" varName="node" />
     </scopeInfo>
     <scopeInfo nodeId="1695169151245129559" fileName="KonamiProgram_Editor.java" startLine="61" startPosition="89" endLine="76" endPosition="22">
       <varInfo nodeId="1695169151245129559" varName="attributeConcept" />
@@ -568,38 +625,48 @@
       <varInfo nodeId="1695169151245129559" varName="editorContext" />
       <varInfo nodeId="1695169151245129559" varName="node" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="108" startPosition="89" endLine="125" endPosition="22">
+    <scopeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="109" startPosition="89" endLine="126" endPosition="22">
       <varInfo nodeId="1695169151245129679" varName="attributeConcept" />
       <varInfo nodeId="1695169151245129679" varName="attributeKind" />
       <varInfo nodeId="1695169151245129679" varName="editorCell" />
       <varInfo nodeId="1695169151245129679" varName="provider" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="212" startPosition="90" endLine="229" endPosition="22">
+    <scopeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="213" startPosition="90" endLine="230" endPosition="22">
       <varInfo nodeId="1695169151245185690" varName="attributeConcept" />
       <varInfo nodeId="1695169151245185690" varName="attributeKind" />
       <varInfo nodeId="1695169151245185690" varName="editorCell" />
       <varInfo nodeId="1695169151245185690" varName="provider" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="250" startPosition="90" endLine="267" endPosition="22">
+    <scopeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="251" startPosition="90" endLine="268" endPosition="22">
       <varInfo nodeId="1695169151245185748" varName="attributeConcept" />
       <varInfo nodeId="1695169151245185748" varName="attributeKind" />
       <varInfo nodeId="1695169151245185748" varName="editorCell" />
       <varInfo nodeId="1695169151245185748" varName="provider" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="108" startPosition="0" endLine="127" endPosition="0">
+    <scopeInfo nodeId="2964997150776680918" fileName="KonamiProgram_Editor.java" startLine="289" startPosition="90" endLine="306" endPosition="22">
+      <varInfo nodeId="2964997150776680918" varName="attributeConcept" />
+      <varInfo nodeId="2964997150776680918" varName="attributeKind" />
+      <varInfo nodeId="2964997150776680918" varName="editorCell" />
+      <varInfo nodeId="2964997150776680918" varName="provider" />
+    </scopeInfo>
+    <scopeInfo nodeId="1695169151245129679" fileName="KonamiProgram_Editor.java" startLine="109" startPosition="0" endLine="128" endPosition="0">
       <varInfo nodeId="1695169151245129679" varName="editorContext" />
       <varInfo nodeId="1695169151245129679" varName="node" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="212" startPosition="0" endLine="231" endPosition="0">
+    <scopeInfo nodeId="1695169151245185690" fileName="KonamiProgram_Editor.java" startLine="213" startPosition="0" endLine="232" endPosition="0">
       <varInfo nodeId="1695169151245185690" varName="editorContext" />
       <varInfo nodeId="1695169151245185690" varName="node" />
     </scopeInfo>
-    <scopeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="250" startPosition="0" endLine="269" endPosition="0">
+    <scopeInfo nodeId="1695169151245185748" fileName="KonamiProgram_Editor.java" startLine="251" startPosition="0" endLine="270" endPosition="0">
       <varInfo nodeId="1695169151245185748" varName="editorContext" />
       <varInfo nodeId="1695169151245185748" varName="node" />
     </scopeInfo>
-    <unitInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="157" startPosition="0" endLine="193" endPosition="0" unitName="Konami.editor.KonamiProgram_Editor$codeListHandler_aw6pu5_b1b1a" />
-    <unitInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="29" startPosition="0" endLine="270" endPosition="0" unitName="Konami.editor.KonamiProgram_Editor" />
+    <scopeInfo nodeId="2964997150776680918" fileName="KonamiProgram_Editor.java" startLine="289" startPosition="0" endLine="308" endPosition="0">
+      <varInfo nodeId="2964997150776680918" varName="editorContext" />
+      <varInfo nodeId="2964997150776680918" varName="node" />
+    </scopeInfo>
+    <unitInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="158" startPosition="0" endLine="194" endPosition="0" unitName="Konami.editor.KonamiProgram_Editor$codeListHandler_aw6pu5_b1b1a" />
+    <unitInfo nodeId="1695169151245127657" fileName="KonamiProgram_Editor.java" startLine="29" startPosition="0" endLine="309" endPosition="0" unitName="Konami.editor.KonamiProgram_Editor" />
   </root>
   <root nodeRef="r:ebf94542-6038-4455-8244-8b8f98cf5522(Konami.editor)/1695169151245185933">
     <nodeInfo nodeId="1695169151245185933" fileName="StateProxy_Editor.java" startLine="16" startPosition="79" endLine="17" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />

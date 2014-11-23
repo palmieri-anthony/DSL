@@ -1,3 +1,4 @@
+const int THRESHOLD_LOW=500;const int THRESHOLD_HIGH = 520;
 void mainly ();
 void setup() {
   pinMode(INPUT,54);

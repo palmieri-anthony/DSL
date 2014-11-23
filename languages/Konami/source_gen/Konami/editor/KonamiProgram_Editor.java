@@ -102,6 +102,7 @@ public class KonamiProgram_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createCollection_aw6pu5_b1b0(editorContext, node));
     editorCell.addEditorCell(this.createCollection_aw6pu5_c1b0(editorContext, node));
     editorCell.addEditorCell(this.createCollection_aw6pu5_d1b0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_aw6pu5_e1b0(editorContext, node));
     return editorCell;
   }
 
@@ -255,6 +256,44 @@ public class KonamiProgram_Editor extends DefaultNodeEditor {
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setRole("ledOK");
+    }
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      IOperationContext opContext = editorContext.getOperationContext();
+      EditorManager manager = EditorManager.getInstanceFromContext(opContext);
+      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+    } else
+    return editorCell;
+  }
+
+  private EditorCell createCollection_aw6pu5_e1b0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_aw6pu5_e1b0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(this.createConstant_aw6pu5_a4b1a(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_aw6pu5_b4b1a(editorContext, node));
+    return editorCell;
+  }
+
+  private EditorCell createConstant_aw6pu5_a4b1a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Buzzer:");
+    editorCell.setCellId("Constant_aw6pu5_a4b1a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createRefNode_aw6pu5_b4b1a(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
+    provider.setRole("buzzer");
+    provider.setNoTargetText("<no buzzer>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    if (editorCell.getRole() == null) {
+      editorCell.setRole("buzzer");
     }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
