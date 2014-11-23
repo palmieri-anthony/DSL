@@ -4,6 +4,16 @@
   <unitInfo fileName="KonamiComposant_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Konami.behavior.KonamiComposant_BehaviorDescriptor" />
   <unitInfo fileName="KonamiProgram_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="Konami.behavior.KonamiProgram_BehaviorDescriptor" />
   <unitInfo fileName="StateProxy_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Konami.behavior.StateProxy_BehaviorDescriptor" />
+  <root nodeRef="r:69d76dd4-b742-46b8-ac87-0a9939af5af3(Konami.behavior)/2384999650472272302">
+    <nodeInfo nodeId="2384999650473074027" fileName="KonamiProgram_Behavior.java" startLine="10" startPosition="43" endLine="11" endPosition="134" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2384999650473076846" fileName="KonamiProgram_Behavior.java" startLine="11" startPosition="134" endLine="12" endPosition="129" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2384999650472272302" fileName="KonamiProgram_Behavior.java" startLine="10" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <scopeInfo nodeId="2384999650472272606" fileName="KonamiProgram_Behavior.java" startLine="10" startPosition="43" endLine="12" endPosition="129" />
+    <scopeInfo nodeId="2384999650472272302" fileName="KonamiProgram_Behavior.java" startLine="10" startPosition="0" endLine="14" endPosition="0">
+      <varInfo nodeId="2384999650472272302" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="2384999650472272302" fileName="KonamiProgram_Behavior.java" startLine="9" startPosition="0" endLine="15" endPosition="0" unitName="Konami.behavior.KonamiProgram_Behavior" />
+  </root>
   <root nodeRef="r:69d76dd4-b742-46b8-ac87-0a9939af5af3(Konami.behavior)/835646908222904400">
     <nodeInfo nodeId="1695169151246871568" fileName="StateProxy_Behavior.java" startLine="18" startPosition="80" endLine="19" endPosition="366" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="1695169151246885271" fileName="StateProxy_Behavior.java" startLine="19" startPosition="366" endLine="20" endPosition="370" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />

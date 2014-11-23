@@ -25,6 +25,8 @@ import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultReferenceSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
+import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
+import jetbrains.mps.nodeEditor.InlineCellProvider;
 
 public class KonamiProgram_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -199,7 +201,7 @@ public class KonamiProgram_Editor extends DefaultNodeEditor {
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(this.createConstant_aw6pu5_a2b1a(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_aw6pu5_b2b1a(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_aw6pu5_b2b1a(editorContext, node));
     return editorCell;
   }
 
@@ -210,13 +212,15 @@ public class KonamiProgram_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNode_aw6pu5_b2b1a(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
+  private EditorCell createRefCell_aw6pu5_b2b1a(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("ledError");
     provider.setNoTargetText("<no ledError>");
     EditorCell editorCell;
+    provider.setAuxiliaryCellProvider(new KonamiProgram_Editor._Inline_aw6pu5_a1c1b0());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
+      editorCell.setReferenceCell(true);
       editorCell.setRole("ledError");
     }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
@@ -230,6 +234,72 @@ public class KonamiProgram_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
+  public static class _Inline_aw6pu5_a1c1b0 extends InlineCellProvider {
+    public _Inline_aw6pu5_a1c1b0() {
+      super();
+    }
+
+    public EditorCell createEditorCell(EditorContext editorContext) {
+      return this.createEditorCell(editorContext, this.getSNode());
+    }
+
+    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
+      return this.createCollection_aw6pu5_a0b2b1a(editorContext, node);
+    }
+
+    private EditorCell createCollection_aw6pu5_a0b2b1a(EditorContext editorContext, SNode node) {
+      EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+      editorCell.setCellId("Collection_aw6pu5_a0b2b1a");
+      editorCell.addEditorCell(this.createRefNodeList_aw6pu5_a0a1c1b0(editorContext, node));
+      return editorCell;
+    }
+
+    private EditorCell createRefNodeList_aw6pu5_a0a1c1b0(EditorContext editorContext, SNode node) {
+      AbstractCellListHandler handler = new KonamiProgram_Editor._Inline_aw6pu5_a1c1b0.pinsListHandler_aw6pu5_a0a1c1b0(node, "pins", editorContext);
+      EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Horizontal(), false);
+      editorCell.setCellId("refNodeList_pins");
+      editorCell.setRole(handler.getElementRole());
+      return editorCell;
+    }
+
+    private static class pinsListHandler_aw6pu5_a0a1c1b0 extends RefNodeListHandler {
+      public pinsListHandler_aw6pu5_a0a1c1b0(SNode ownerNode, String childRole, EditorContext context) {
+        super(ownerNode, childRole, context, false);
+      }
+
+      public SNode createNodeToInsert(EditorContext editorContext) {
+        SNode listOwner = super.getOwner();
+        return NodeFactoryManager.createNode(listOwner, editorContext, super.getElementRole());
+      }
+
+      public EditorCell createNodeCell(EditorContext editorContext, SNode elementNode) {
+        EditorCell elementCell = super.createNodeCell(editorContext, elementNode);
+        this.installElementCellActions(this.getOwner(), elementNode, elementCell, editorContext);
+        return elementCell;
+      }
+
+      public EditorCell createEmptyCell(EditorContext editorContext) {
+        EditorCell emptyCell = null;
+        emptyCell = super.createEmptyCell(editorContext);
+        this.installElementCellActions(super.getOwner(), null, emptyCell, editorContext);
+        return emptyCell;
+      }
+
+      public void installElementCellActions(SNode listOwner, SNode elementNode, EditorCell elementCell, EditorContext editorContext) {
+        if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET) == null) {
+          elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET, AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET);
+          if (elementNode != null) {
+            elementCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(elementNode));
+            elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode));
+          }
+          if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultReferenceSubstituteInfo) {
+            elementCell.setSubstituteInfo(new DefaultChildSubstituteInfo(listOwner, elementNode, super.getLinkDeclaration(), editorContext));
+          }
+        }
+      }
+    }
+  }
+
   private EditorCell createCollection_aw6pu5_d1b0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_aw6pu5_d1b0");
@@ -237,7 +307,7 @@ public class KonamiProgram_Editor extends DefaultNodeEditor {
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(this.createConstant_aw6pu5_a3b1a(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_aw6pu5_b3b1a(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_aw6pu5_b3b1a(editorContext, node));
     return editorCell;
   }
 
@@ -248,13 +318,15 @@ public class KonamiProgram_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNode_aw6pu5_b3b1a(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
+  private EditorCell createRefCell_aw6pu5_b3b1a(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("ledOK");
     provider.setNoTargetText("<no ledOK>");
     EditorCell editorCell;
+    provider.setAuxiliaryCellProvider(new KonamiProgram_Editor._Inline_aw6pu5_a1d1b0());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
+      editorCell.setReferenceCell(true);
       editorCell.setRole("ledOK");
     }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
@@ -268,6 +340,72 @@ public class KonamiProgram_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
+  public static class _Inline_aw6pu5_a1d1b0 extends InlineCellProvider {
+    public _Inline_aw6pu5_a1d1b0() {
+      super();
+    }
+
+    public EditorCell createEditorCell(EditorContext editorContext) {
+      return this.createEditorCell(editorContext, this.getSNode());
+    }
+
+    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
+      return this.createCollection_aw6pu5_a0b3b1a(editorContext, node);
+    }
+
+    private EditorCell createCollection_aw6pu5_a0b3b1a(EditorContext editorContext, SNode node) {
+      EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+      editorCell.setCellId("Collection_aw6pu5_a0b3b1a");
+      editorCell.addEditorCell(this.createRefNodeList_aw6pu5_a0a1d1b0(editorContext, node));
+      return editorCell;
+    }
+
+    private EditorCell createRefNodeList_aw6pu5_a0a1d1b0(EditorContext editorContext, SNode node) {
+      AbstractCellListHandler handler = new KonamiProgram_Editor._Inline_aw6pu5_a1d1b0.pinsListHandler_aw6pu5_a0a1d1b0(node, "pins", editorContext);
+      EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Horizontal(), false);
+      editorCell.setCellId("refNodeList_pins_1");
+      editorCell.setRole(handler.getElementRole());
+      return editorCell;
+    }
+
+    private static class pinsListHandler_aw6pu5_a0a1d1b0 extends RefNodeListHandler {
+      public pinsListHandler_aw6pu5_a0a1d1b0(SNode ownerNode, String childRole, EditorContext context) {
+        super(ownerNode, childRole, context, false);
+      }
+
+      public SNode createNodeToInsert(EditorContext editorContext) {
+        SNode listOwner = super.getOwner();
+        return NodeFactoryManager.createNode(listOwner, editorContext, super.getElementRole());
+      }
+
+      public EditorCell createNodeCell(EditorContext editorContext, SNode elementNode) {
+        EditorCell elementCell = super.createNodeCell(editorContext, elementNode);
+        this.installElementCellActions(this.getOwner(), elementNode, elementCell, editorContext);
+        return elementCell;
+      }
+
+      public EditorCell createEmptyCell(EditorContext editorContext) {
+        EditorCell emptyCell = null;
+        emptyCell = super.createEmptyCell(editorContext);
+        this.installElementCellActions(super.getOwner(), null, emptyCell, editorContext);
+        return emptyCell;
+      }
+
+      public void installElementCellActions(SNode listOwner, SNode elementNode, EditorCell elementCell, EditorContext editorContext) {
+        if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET) == null) {
+          elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET, AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET);
+          if (elementNode != null) {
+            elementCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(elementNode));
+            elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode));
+          }
+          if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultReferenceSubstituteInfo) {
+            elementCell.setSubstituteInfo(new DefaultChildSubstituteInfo(listOwner, elementNode, super.getLinkDeclaration(), editorContext));
+          }
+        }
+      }
+    }
+  }
+
   private EditorCell createCollection_aw6pu5_e1b0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_aw6pu5_e1b0");
@@ -275,7 +413,7 @@ public class KonamiProgram_Editor extends DefaultNodeEditor {
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(this.createConstant_aw6pu5_a4b1a(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_aw6pu5_b4b1a(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_aw6pu5_b4b1a(editorContext, node));
     return editorCell;
   }
 
@@ -286,13 +424,15 @@ public class KonamiProgram_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNode_aw6pu5_b4b1a(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
+  private EditorCell createRefCell_aw6pu5_b4b1a(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("buzzer");
     provider.setNoTargetText("<no buzzer>");
     EditorCell editorCell;
+    provider.setAuxiliaryCellProvider(new KonamiProgram_Editor._Inline_aw6pu5_a1e1b0());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
+      editorCell.setReferenceCell(true);
       editorCell.setRole("buzzer");
     }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
@@ -304,5 +444,71 @@ public class KonamiProgram_Editor extends DefaultNodeEditor {
       return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
     } else
     return editorCell;
+  }
+
+  public static class _Inline_aw6pu5_a1e1b0 extends InlineCellProvider {
+    public _Inline_aw6pu5_a1e1b0() {
+      super();
+    }
+
+    public EditorCell createEditorCell(EditorContext editorContext) {
+      return this.createEditorCell(editorContext, this.getSNode());
+    }
+
+    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
+      return this.createCollection_aw6pu5_a0b4b1a(editorContext, node);
+    }
+
+    private EditorCell createCollection_aw6pu5_a0b4b1a(EditorContext editorContext, SNode node) {
+      EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+      editorCell.setCellId("Collection_aw6pu5_a0b4b1a");
+      editorCell.addEditorCell(this.createRefNodeList_aw6pu5_a0a1e1b0(editorContext, node));
+      return editorCell;
+    }
+
+    private EditorCell createRefNodeList_aw6pu5_a0a1e1b0(EditorContext editorContext, SNode node) {
+      AbstractCellListHandler handler = new KonamiProgram_Editor._Inline_aw6pu5_a1e1b0.pinsListHandler_aw6pu5_a0a1e1b0(node, "pins", editorContext);
+      EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Horizontal(), false);
+      editorCell.setCellId("refNodeList_pins_2");
+      editorCell.setRole(handler.getElementRole());
+      return editorCell;
+    }
+
+    private static class pinsListHandler_aw6pu5_a0a1e1b0 extends RefNodeListHandler {
+      public pinsListHandler_aw6pu5_a0a1e1b0(SNode ownerNode, String childRole, EditorContext context) {
+        super(ownerNode, childRole, context, false);
+      }
+
+      public SNode createNodeToInsert(EditorContext editorContext) {
+        SNode listOwner = super.getOwner();
+        return NodeFactoryManager.createNode(listOwner, editorContext, super.getElementRole());
+      }
+
+      public EditorCell createNodeCell(EditorContext editorContext, SNode elementNode) {
+        EditorCell elementCell = super.createNodeCell(editorContext, elementNode);
+        this.installElementCellActions(this.getOwner(), elementNode, elementCell, editorContext);
+        return elementCell;
+      }
+
+      public EditorCell createEmptyCell(EditorContext editorContext) {
+        EditorCell emptyCell = null;
+        emptyCell = super.createEmptyCell(editorContext);
+        this.installElementCellActions(super.getOwner(), null, emptyCell, editorContext);
+        return emptyCell;
+      }
+
+      public void installElementCellActions(SNode listOwner, SNode elementNode, EditorCell elementCell, EditorContext editorContext) {
+        if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET) == null) {
+          elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET, AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET);
+          if (elementNode != null) {
+            elementCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(elementNode));
+            elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode));
+          }
+          if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultReferenceSubstituteInfo) {
+            elementCell.setSubstituteInfo(new DefaultChildSubstituteInfo(listOwner, elementNode, super.getLinkDeclaration(), editorContext));
+          }
+        }
+      }
+    }
   }
 }
