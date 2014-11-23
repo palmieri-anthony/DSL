@@ -123,7 +123,30 @@ public class QueriesGenerated {
 
 
     }
-
+    // win module 
+    SNode win = SConceptOperations.createNewNode("ArduinoML.structure.Module", null);
+    SNode switchLedOk = SConceptOperations.createNewNode("ArduinoML.structure.Decision", null);
+    SNode ledOkOff = SConceptOperations.createNewNode("ArduinoML.structure.Condition", null);
+    SLinkOperations.setTarget(ledOkOff, "component", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(1), false);
+    SPropertyOperations.set(ledOkOff, "expected", "LOW");
+    ListSequence.fromList(SLinkOperations.getTargets(switchLedOk, "conditions", true)).addElement(ledOkOff);
+    SNode switchOnLedOk = SConceptOperations.createNewNode("ArduinoML.structure.ActionOnComponent", null);
+    SLinkOperations.setTarget(switchOnLedOk, "component", SNodeOperations.as(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(1), "ArduinoML.structure.ComponentOUT"), false);
+    SPropertyOperations.set(switchOnLedOk, "target", "HIGH");
+    SNode waitLedBreak = SConceptOperations.createNewNode("ArduinoML.structure.Break", null);
+    SPropertyOperations.set(waitLedBreak, "timeInMilliSecondes", "" + (1000));
+    SNode switchOffLedOk = SConceptOperations.createNewNode("ArduinoML.structure.ActionOnComponent", null);
+    SLinkOperations.setTarget(switchOffLedOk, "component", SNodeOperations.as(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(1), "ArduinoML.structure.ComponentOUT"), false);
+    SPropertyOperations.set(switchOffLedOk, "target", "HIGH");
+    ListSequence.fromList(SLinkOperations.getTargets(switchLedOk, "actions", true)).addElement(switchOnLedOk);
+    ListSequence.fromList(SLinkOperations.getTargets(switchLedOk, "actions", true)).addElement(waitLedBreak);
+    ListSequence.fromList(SLinkOperations.getTargets(switchLedOk, "actions", true)).addElement(switchOffLedOk);
+    SNode callItSelf = SConceptOperations.createNewNode("ArduinoML.structure.ActionCallModule", null);
+    SLinkOperations.setTarget(callItSelf, "moduleToCall", win, false);
+    ListSequence.fromList(SLinkOperations.getTargets(switchLedOk, "actions", true)).addElement(callItSelf);
+    SPropertyOperations.set(win, "name", "win");
+    ListSequence.fromList(SLinkOperations.getTargets(win, "rules", true)).addElement(switchLedOk);
+    ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).addElement(win);
 
     // remplissement des mdodules 
     for (int i = 0; i < 3; i++) {
