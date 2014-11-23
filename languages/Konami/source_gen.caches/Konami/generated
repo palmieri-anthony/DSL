@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-ewvfulj9yxdr4jwc860zdsy7mydcdrs">
+<dependencies version="2" modelHash="7fojd63uoai94ico587m4l2voa38c4y">
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
   <dep model="r:708f7dbf-afda-4e8f-b356-cdd60f7a8185(Konami.typesystem)" hash="5fn0l6jpvr81ygczcb8qeyuptv4j4d1" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />

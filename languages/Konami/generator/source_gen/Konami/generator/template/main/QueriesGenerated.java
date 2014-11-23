@@ -118,6 +118,9 @@ public class QueriesGenerated {
       } else {
         SLinkOperations.setTarget(nextTentaMod, "moduleToCall", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement((i + 1) * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count() + 1), false);
       }
+      SNode waitBreak = SConceptOperations.createNewNode("ArduinoML.structure.Break", null);
+      SPropertyOperations.set(waitBreak, "timeInMilliSecondes", "" + (500));
+      ListSequence.fromList(SLinkOperations.getTargets(nextTentative, "actions", true)).addElement(waitBreak);
       ListSequence.fromList(SLinkOperations.getTargets(nextTentative, "actions", true)).addElement(nextTentaMod);
 
       ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 1 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), "rules", true)).addElement(waitButton);
@@ -127,31 +130,39 @@ public class QueriesGenerated {
     }
     // win module 
     SNode win = SConceptOperations.createNewNode("ArduinoML.structure.Module", null);
-    SNode switchLedOk = SConceptOperations.createNewNode("ArduinoML.structure.Decision", null);
-    SNode ledOkOff = SConceptOperations.createNewNode("ArduinoML.structure.Condition", null);
-    SLinkOperations.setTarget(ledOkOff, "component", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(1), false);
-    SPropertyOperations.set(ledOkOff, "expected", "LOW");
-    ListSequence.fromList(SLinkOperations.getTargets(switchLedOk, "conditions", true)).addElement(ledOkOff);
-    SNode switchOnLedOk = SConceptOperations.createNewNode("ArduinoML.structure.ActionOnComponent", null);
-    SLinkOperations.setTarget(switchOnLedOk, "component", SNodeOperations.as(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(1), "ArduinoML.structure.ComponentOUT"), false);
-    SPropertyOperations.set(switchOnLedOk, "target", "HIGH");
-    SNode waitLedBreak = SConceptOperations.createNewNode("ArduinoML.structure.Break", null);
-    SPropertyOperations.set(waitLedBreak, "timeInMilliSecondes", "" + (500));
-    SNode waitLedBreak2 = SConceptOperations.createNewNode("ArduinoML.structure.Break", null);
-    SPropertyOperations.set(waitLedBreak2, "timeInMilliSecondes", "" + (500));
+    {
+      SNode switchLedOk = SConceptOperations.createNewNode("ArduinoML.structure.Decision", null);
+      SNode ledOkOff = SConceptOperations.createNewNode("ArduinoML.structure.Condition", null);
+      SLinkOperations.setTarget(ledOkOff, "component", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(1), false);
+      SPropertyOperations.set(ledOkOff, "expected", "LOW");
+      ListSequence.fromList(SLinkOperations.getTargets(switchLedOk, "conditions", true)).addElement(ledOkOff);
+      SNode switchOnLedOk = SConceptOperations.createNewNode("ArduinoML.structure.ActionOnComponent", null);
+      SLinkOperations.setTarget(switchOnLedOk, "component", SNodeOperations.as(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(1), "ArduinoML.structure.ComponentOUT"), false);
+      SPropertyOperations.set(switchOnLedOk, "target", "HIGH");
+      ListSequence.fromList(SLinkOperations.getTargets(switchLedOk, "actions", true)).addElement(switchOnLedOk);
+      SNode callItSelf = SConceptOperations.createNewNode("ArduinoML.structure.ActionCallModule", null);
+      SLinkOperations.setTarget(callItSelf, "moduleToCall", win, false);
+      ListSequence.fromList(SLinkOperations.getTargets(switchLedOk, "actions", true)).addElement(callItSelf);
+      SPropertyOperations.set(win, "name", "win");
+      ListSequence.fromList(SLinkOperations.getTargets(win, "rules", true)).addElement(switchLedOk);
+    }
+    {
+      SNode switchLedOk = SConceptOperations.createNewNode("ArduinoML.structure.Decision", null);
+      SNode ledOkOff = SConceptOperations.createNewNode("ArduinoML.structure.Condition", null);
+      SLinkOperations.setTarget(ledOkOff, "component", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(1), false);
+      SPropertyOperations.set(ledOkOff, "expected", "HIGH");
+      ListSequence.fromList(SLinkOperations.getTargets(switchLedOk, "conditions", true)).addElement(ledOkOff);
+      SNode switchOnLedOk = SConceptOperations.createNewNode("ArduinoML.structure.ActionOnComponent", null);
+      SLinkOperations.setTarget(switchOnLedOk, "component", SNodeOperations.as(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(1), "ArduinoML.structure.ComponentOUT"), false);
+      SPropertyOperations.set(switchOnLedOk, "target", "HIGH");
+      ListSequence.fromList(SLinkOperations.getTargets(switchLedOk, "actions", true)).addElement(switchOnLedOk);
+      SNode callItSelf = SConceptOperations.createNewNode("ArduinoML.structure.ActionCallModule", null);
+      SLinkOperations.setTarget(callItSelf, "moduleToCall", win, false);
+      ListSequence.fromList(SLinkOperations.getTargets(switchLedOk, "actions", true)).addElement(callItSelf);
+      SPropertyOperations.set(win, "name", "win");
+      ListSequence.fromList(SLinkOperations.getTargets(win, "rules", true)).addElement(switchLedOk);
 
-    SNode switchOffLedOk = SConceptOperations.createNewNode("ArduinoML.structure.ActionOnComponent", null);
-    SLinkOperations.setTarget(switchOffLedOk, "component", SNodeOperations.as(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "components", true)).getElement(1), "ArduinoML.structure.ComponentOUT"), false);
-    SPropertyOperations.set(switchOffLedOk, "target", "LOW");
-    ListSequence.fromList(SLinkOperations.getTargets(switchLedOk, "actions", true)).addElement(waitLedBreak2);
-    ListSequence.fromList(SLinkOperations.getTargets(switchLedOk, "actions", true)).addElement(switchOnLedOk);
-    ListSequence.fromList(SLinkOperations.getTargets(switchLedOk, "actions", true)).addElement(waitLedBreak);
-    ListSequence.fromList(SLinkOperations.getTargets(switchLedOk, "actions", true)).addElement(switchOffLedOk);
-    SNode callItSelf = SConceptOperations.createNewNode("ArduinoML.structure.ActionCallModule", null);
-    SLinkOperations.setTarget(callItSelf, "moduleToCall", win, false);
-    ListSequence.fromList(SLinkOperations.getTargets(switchLedOk, "actions", true)).addElement(callItSelf);
-    SPropertyOperations.set(win, "name", "win");
-    ListSequence.fromList(SLinkOperations.getTargets(win, "rules", true)).addElement(switchLedOk);
+    }
     ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).addElement(win);
 
     // pre-win 
@@ -171,6 +182,9 @@ public class QueriesGenerated {
         SPropertyOperations.set(buttonOnPreWin, "expected", "HIGH");
         ListSequence.fromList(SLinkOperations.getTargets(callwinModule, "conditions", true)).addElement(buttonOnPreWin);
         SLinkOperations.setTarget(nextTentaModPreWin, "moduleToCall", win, false);
+        SNode waitBreak = SConceptOperations.createNewNode("ArduinoML.structure.Break", null);
+        SPropertyOperations.set(waitBreak, "timeInMilliSecondes", "" + (500));
+        ListSequence.fromList(SLinkOperations.getTargets(callwinModule, "actions", true)).addElement(waitBreak);
         ListSequence.fromList(SLinkOperations.getTargets(callwinModule, "actions", true)).addElement(nextTentaModPreWin);
         ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 6 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), "rules", true)).addElement(callwinModule);
 
@@ -185,6 +199,10 @@ public class QueriesGenerated {
         SPropertyOperations.set(buttonX, "expected", "HIGH");
         ListSequence.fromList(SLinkOperations.getTargets(callBatard, "conditions", true)).addElement(buttonX);
         SLinkOperations.setTarget(callBatardModule, "moduleToCall", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 1 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), false);
+        SNode waitBreak = SConceptOperations.createNewNode("ArduinoML.structure.Break", null);
+        SPropertyOperations.set(waitBreak, "timeInMilliSecondes", "" + (500));
+        ListSequence.fromList(SLinkOperations.getTargets(callBatard, "actions", true)).addElement(waitBreak);
+
         ListSequence.fromList(SLinkOperations.getTargets(callBatard, "actions", true)).addElement(callBatardModule);
         ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 6 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), "rules", true)).addElement(callBatard);
       }
@@ -197,6 +215,10 @@ public class QueriesGenerated {
         SPropertyOperations.set(buttonX, "expected", "LOW");
         ListSequence.fromList(SLinkOperations.getTargets(callBatard, "conditions", true)).addElement(buttonX);
         SLinkOperations.setTarget(callBatardModule, "moduleToCall", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 1 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), false);
+        SNode waitBreak = SConceptOperations.createNewNode("ArduinoML.structure.Break", null);
+        SPropertyOperations.set(waitBreak, "timeInMilliSecondes", "" + (500));
+        ListSequence.fromList(SLinkOperations.getTargets(callBatard, "actions", true)).addElement(waitBreak);
+
         ListSequence.fromList(SLinkOperations.getTargets(callBatard, "actions", true)).addElement(callBatardModule);
         ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 6 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), "rules", true)).addElement(callBatard);
       }
@@ -209,6 +231,10 @@ public class QueriesGenerated {
         SPropertyOperations.set(buttonX, "expected", "HIGH");
         ListSequence.fromList(SLinkOperations.getTargets(callBatard, "conditions", true)).addElement(buttonX);
         SLinkOperations.setTarget(callBatardModule, "moduleToCall", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 1 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), false);
+        SNode waitBreak = SConceptOperations.createNewNode("ArduinoML.structure.Break", null);
+        SPropertyOperations.set(waitBreak, "timeInMilliSecondes", "" + (500));
+        ListSequence.fromList(SLinkOperations.getTargets(callBatard, "actions", true)).addElement(waitBreak);
+
         ListSequence.fromList(SLinkOperations.getTargets(callBatard, "actions", true)).addElement(callBatardModule);
         ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 6 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), "rules", true)).addElement(callBatard);
       }
@@ -221,6 +247,10 @@ public class QueriesGenerated {
         SPropertyOperations.set(buttonX, "expected", "LOW");
         ListSequence.fromList(SLinkOperations.getTargets(callBatard, "conditions", true)).addElement(buttonX);
         SLinkOperations.setTarget(callBatardModule, "moduleToCall", ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 1 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), false);
+        SNode waitBreak = SConceptOperations.createNewNode("ArduinoML.structure.Break", null);
+        SPropertyOperations.set(waitBreak, "timeInMilliSecondes", "" + (500));
+        ListSequence.fromList(SLinkOperations.getTargets(callBatard, "actions", true)).addElement(waitBreak);
+
         ListSequence.fromList(SLinkOperations.getTargets(callBatard, "actions", true)).addElement(callBatardModule);
         ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(arduinoML, "modules", true)).getElement(i + 6 + 3 * ListSequence.fromList(SLinkOperations.getTargets(konamiProg, "code", true)).count()), "rules", true)).addElement(callBatard);
       }
